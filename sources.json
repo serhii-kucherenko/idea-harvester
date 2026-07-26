@@ -1,5 +1,5 @@
 {
-  "_note": "Commercial products with public trackers. Maintainers often answer why-not-fixed in-thread. Prefer products where gaps can be sold as standalone workflows (solo indie), not host plugins.",
+  "_note": "Commercial products with public trackers. Prefer gaps sellable as standalone solo workflows.",
   "repos": [
     "calcom/cal.diy",
     "supabase/supabase",
@@ -20,12 +20,43 @@
     "windmill-labs/windmill",
     "formbricks/formbricks",
     "dubinc/dub",
-    "plausible/analytics"
+    "plausible/analytics",
+    "chatwoot/chatwoot",
+    "growthbook/growthbook",
+    "directus/directus",
+    "payloadcms/payload",
+    "outline/outline",
+    "appwrite/appwrite",
+    "hoppscotch/hoppscotch",
+    "knadh/listmonk",
+    "umami-software/umami",
+    "openstatusHQ/openstatus",
+    "mfts/papermark",
+    "midday-ai/midday"
   ],
+  "young_repos": [
+    "twentyhq/twenty",
+    "formbricks/formbricks",
+    "triggerdotdev/trigger.dev",
+    "dubinc/dub",
+    "documenso/documenso",
+    "openstatusHQ/openstatus",
+    "mfts/papermark",
+    "midday-ai/midday",
+    "novuhq/novu",
+    "growthbook/growthbook"
+  ],
+  "young_min_age_days": 120,
+  "young_min_reactions": 8,
   "boards": [
     {
-      "name": "Canny / Featurebase (next connector)",
-      "_todo": "Add public board URLs here when the boards harvest adapter ships. Same Top-5 + RUBRIC flow."
+      "name": "Featurebase / Canny (manual until adapter)",
+      "urls": [
+        "https://feedback.posthog.com",
+        "https://portal.productboard.com/goykwbzrsebhivjn3xbewahi",
+        "https://n8n-community.canny.io"
+      ],
+      "_todo": "boards harvest adapter: top 5 open by votes, same RUBRIC.md"
     }
   ]
 }

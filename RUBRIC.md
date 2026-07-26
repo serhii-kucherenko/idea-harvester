@@ -21,6 +21,13 @@ workflow you can sell **without** the host's permission or marketplace.
 - Host drivers/plugins as the product
 - Core host engine/UI features
 - Infra that needs multi-tenant query engines on day one
+- Self-host / Docker / packaging requests
+- One-shot migration/export utilities (no monthly buyer)
+
+## Rubric deltas
+
+- **2026-07-25:** Mature GitHub feature trackers skew “make the host better.” Idle ticks must expand intake (younger products, public vote boards), not lower the solo bar.
+- **2026-07-25:** `MIN_AGE_DAYS=540` starves products younger than ~18mo — use `sources.json` `young_repos` with softer age/reaction floors, same Top-5 + rubric.
 
 ## Card frontmatter
 

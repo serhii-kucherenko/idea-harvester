@@ -13,6 +13,8 @@ Repo-as-DB. `cards/` and `killed/` are the memory. Read `RUBRIC.md` before judgi
 3. Agent scores every `status: new` item with `RUBRIC.md` → `cards/` or `killed/`
 4. `python3 gc_cards.py` - enforce score floor, 45-day stale, 15-card cap
 
+Keep-going autonomous loop: `LOOP.md` + `CONTROLLER.json` (ai-method-lab endless-loop mechanics only).
+
 ## Rules of thumb
 
 - Pain quote ≠ company. Card only solo-shippable monthly products (≥8/10).
