@@ -25,7 +25,7 @@
   "notes": "Keep-going harvest loop armed (30m). Tick 1 done: 1 live card (Hoppscotch git collection sync).",
   "defaults": {
     "always_commit": true,
-    "always_push": false
+    "always_push": true
   },
   "loop": {
     "interval": "30m",

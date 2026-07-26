@@ -14,7 +14,7 @@ Borrowed from ai-method-lab's endless keep-executing loop — **loop mechanics o
    - sharpen `RUBRIC.md` if a new fail pattern appeared
    - optionally retune `MIN_REACTIONS` / `MIN_AGE_DAYS` for young products
    - re-harvest once in the same tick if sources changed
-6. Commit (message: what this tick learned or carded). Do not ask the human.
+6. Commit (message: what this tick learned or carded), then `git push origin HEAD`. Do not ask the human.
 7. Re-arm the loop sentinel. Stop only on human stop or `hard_stop`.
 
 ## Rules
