@@ -1,27 +1,26 @@
 {
   "schema_version": "1.0.0",
-  "updated_at": "2026-07-26T06:11:10Z",
+  "updated_at": "2026-07-26T06:45:20Z",
   "mode": "autonomous",
   "phase": "idle",
   "ask_human": false,
   "hard_stop": false,
   "hard_stop_reason": null,
   "live_cards": 2,
-  "killed_count": 211,
+  "killed_count": 240,
   "last_tick": {
-    "at": "2026-07-26T06:10:57Z",
-    "new_judged": 36,
+    "at": "2026-07-26T06:45:20Z",
+    "new_judged": 29,
     "cards_added": 0,
-    "kills_added": 36,
+    "kills_added": 29,
     "idle_actions": [
-      "dedupe_loops",
-      "expand_paas_auth_ai_sources",
-      "reharvest"
+      "expand_notes_whiteboard_sources",
+      "delta_reharvest"
     ],
-    "highlight": "still 2 live cards; no new solo pass"
+    "highlight": "2 live cards unchanged"
   },
   "last_error": null,
-  "notes": "Single keep-going loop re-armed (pid 55132). Tick 4 done.",
+  "notes": "Tick 5: Continue + notes/whiteboard batch killed. Loop 55132 stays.",
   "defaults": {
     "always_commit": true,
     "always_push": true
@@ -32,7 +31,7 @@
     "purpose": "harvest",
     "chain": "harvest_score_gc_expand_commit",
     "do_not_rearm_if_alive": true,
-    "ticks_observed": 4,
+    "ticks_observed": 5,
     "pid": 55132
   },
   "idle_policy": {

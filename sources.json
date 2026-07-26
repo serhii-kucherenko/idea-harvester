@@ -57,7 +57,12 @@
     "zitadel/zitadel",
     "open-webui/open-webui",
     "Aider-AI/aider",
-    "continuedev/continue"
+    "continuedev/continue",
+    "siyuan-note/siyuan",
+    "logseq/logseq",
+    "excalidraw/excalidraw",
+    "tldraw/tldraw",
+    "AppFlowy-IO/AppFlowy"
   ],
   "young_repos": [
     "twentyhq/twenty",
@@ -87,7 +92,12 @@
     "Dokploy/dokploy",
     "open-webui/open-webui",
     "Aider-AI/aider",
-    "continuedev/continue"
+    "continuedev/continue",
+    "siyuan-note/siyuan",
+    "logseq/logseq",
+    "excalidraw/excalidraw",
+    "tldraw/tldraw",
+    "AppFlowy-IO/AppFlowy"
   ],
   "young_min_age_days": 90,
   "young_min_reactions": 5,
