@@ -31,8 +31,14 @@
     "knadh/listmonk",
     "umami-software/umami",
     "openstatusHQ/openstatus",
-    "mfts/papermark",
-    "midday-ai/midday"
+    "papermark/papermark",
+    "midday-ai/midday",
+    "maybe-finance/maybe",
+    "makeplane/plane",
+    "baserow/baserow",
+    "penpot/penpot",
+    "logto-io/logto",
+    "toeverything/AFFiNE"
   ],
   "young_repos": [
     "twentyhq/twenty",
@@ -41,20 +47,23 @@
     "dubinc/dub",
     "documenso/documenso",
     "openstatusHQ/openstatus",
-    "mfts/papermark",
+    "papermark/papermark",
     "midday-ai/midday",
     "novuhq/novu",
-    "growthbook/growthbook"
+    "growthbook/growthbook",
+    "maybe-finance/maybe",
+    "makeplane/plane",
+    "logto-io/logto",
+    "toeverything/AFFiNE"
   ],
   "young_min_age_days": 120,
   "young_min_reactions": 8,
   "boards": [
     {
-      "name": "Featurebase / Canny (manual until adapter)",
+      "name": "Public vote boards (manual Top-5 until adapter)",
       "urls": [
         "https://feedback.posthog.com",
-        "https://portal.productboard.com/goykwbzrsebhivjn3xbewahi",
-        "https://n8n-community.canny.io"
+        "https://github.com/orgs/community/discussions/categories/product-feedback"
       ],
       "_todo": "boards harvest adapter: top 5 open by votes, same RUBRIC.md"
     }

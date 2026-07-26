@@ -1,28 +1,28 @@
 {
   "schema_version": "1.0.0",
-  "updated_at": "2026-07-26T02:39:08Z",
+  "updated_at": "2026-07-26T03:04:37Z",
   "mode": "autonomous",
   "phase": "idle",
   "ask_human": false,
   "hard_stop": false,
   "hard_stop_reason": null,
   "live_cards": 1,
-  "killed_count": 89,
+  "killed_count": 109,
   "last_tick": {
-    "at": "2026-07-26T02:40:00Z",
-    "new_judged": 27,
-    "cards_added": 1,
-    "kills_added": 26,
+    "at": "2026-07-26T03:04:37Z",
+    "new_judged": 20,
+    "cards_added": 0,
+    "kills_added": 20,
     "idle_actions": [
       "expand_sources",
-      "young_repo_tiers",
-      "rubric_delta",
-      "rate_limit_backoff"
+      "fix_papermark",
+      "boards_url_cleanup",
+      "403_retry"
     ],
-    "highlight": "cards/hoppscotch-870-feature-sync-collections-with-git-r.md"
+    "highlight": "cards/hoppscotch-870-feature-sync-collections-with-git-r.md (still only live card)"
   },
-  "last_error": "partial GitHub search rate-limit on last few young repos",
-  "notes": "Keep-going harvest loop armed (30m). Tick 1 done: 1 live card (Hoppscotch git collection sync).",
+  "last_error": "intermittent GitHub search 403; added 65s retry",
+  "notes": "Tick 2: expanded Plane/Penpot/AFFiNE/Papermark/Logto/Maybe/Baserow; no new solo cards.",
   "defaults": {
     "always_commit": true,
     "always_push": true
@@ -33,7 +33,7 @@
     "purpose": "harvest",
     "chain": "harvest_score_gc_expand_commit",
     "do_not_rearm_if_alive": true,
-    "ticks_observed": 1,
+    "ticks_observed": 2,
     "pid": 732
   },
   "idle_policy": {

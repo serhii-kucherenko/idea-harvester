@@ -26,6 +26,8 @@ workflow you can sell **without** the host's permission or marketplace.
 
 ## Rubric deltas
 
+- **2026-07-25b:** Time-tracking / PM adjuncts for a single host (e.g. Plane) fail solo — category already owned by Toggl/Clockify/Harvest.
+
 - **2026-07-25:** Mature GitHub feature trackers skew “make the host better.” Idle ticks must expand intake (younger products, public vote boards), not lower the solo bar.
 - **2026-07-25:** `MIN_AGE_DAYS=540` starves products younger than ~18mo — use `sources.json` `young_repos` with softer age/reaction floors, same Top-5 + rubric.
 
