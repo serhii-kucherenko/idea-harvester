@@ -199,6 +199,72 @@
       "query_extra": "",
       "min_upvotes": 15,
       "min_age_days": 180
+    },
+    {
+      "repo": "sveltejs/svelte",
+      "query_extra": "category:Ideas",
+      "min_upvotes": 15,
+      "min_age_days": 180
+    },
+    {
+      "repo": "angular/angular",
+      "query_extra": "",
+      "min_upvotes": 15,
+      "min_age_days": 180
+    },
+    {
+      "repo": "nuxt/nuxt",
+      "query_extra": "category:Ideas",
+      "min_upvotes": 15,
+      "min_age_days": 180
+    },
+    {
+      "repo": "oven-sh/bun",
+      "query_extra": "category:Ideas",
+      "min_upvotes": 15,
+      "min_age_days": 180
+    },
+    {
+      "repo": "biomejs/biome",
+      "query_extra": "category:Ideas",
+      "min_upvotes": 15,
+      "min_age_days": 180
+    },
+    {
+      "repo": "oxc-project/oxc",
+      "query_extra": "",
+      "min_upvotes": 15,
+      "min_age_days": 180
+    },
+    {
+      "repo": "drizzle-team/drizzle-orm",
+      "query_extra": "category:Ideas",
+      "min_upvotes": 15,
+      "min_age_days": 180
+    },
+    {
+      "repo": "TanStack/query",
+      "query_extra": "category:Ideas",
+      "min_upvotes": 15,
+      "min_age_days": 180
+    },
+    {
+      "repo": "TanStack/router",
+      "query_extra": "",
+      "min_upvotes": 15,
+      "min_age_days": 180
+    },
+    {
+      "repo": "radix-ui/primitives",
+      "query_extra": "category:Ideas",
+      "min_upvotes": 15,
+      "min_age_days": 180
+    },
+    {
+      "repo": "mui/material-ui",
+      "query_extra": "",
+      "min_upvotes": 15,
+      "min_age_days": 180
     }
   ]
 }

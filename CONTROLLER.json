@@ -1,26 +1,26 @@
 {
   "schema_version": "1.0.0",
-  "updated_at": "2026-07-26T08:13:51Z",
+  "updated_at": "2026-07-26T08:47:05Z",
   "mode": "autonomous",
   "phase": "idle",
   "ask_human": false,
   "hard_stop": false,
   "hard_stop_reason": null,
   "live_cards": 5,
-  "killed_count": 324,
+  "killed_count": 359,
   "last_tick": {
-    "at": "2026-07-26T08:13:51Z",
+    "at": "2026-07-26T08:47:05Z",
     "new_judged": 35,
-    "cards_added": 2,
-    "kills_added": 33,
+    "cards_added": 0,
+    "kills_added": 35,
     "idle_actions": [
-      "ship_harvest_boards",
-      "discussion_boards_intake"
+      "expand_discussion_boards_frameworks",
+      "issues_harvest_empty"
     ],
-    "highlight": "LLM docs pack + Supabase RLS debugger cards"
+    "highlight": "5 live cards unchanged"
   },
   "last_error": null,
-  "notes": "Tick 8: Discussions adapter live. 5 cards.",
+  "notes": "Tick 9: framework Discussions expanded; no new solo cards.",
   "defaults": {
     "always_commit": true,
     "always_push": true
@@ -31,7 +31,7 @@
     "purpose": "harvest",
     "chain": "harvest_score_gc_expand_commit",
     "do_not_rearm_if_alive": true,
-    "ticks_observed": 8,
+    "ticks_observed": 9,
     "pid": 55132
   },
   "idle_policy": {
