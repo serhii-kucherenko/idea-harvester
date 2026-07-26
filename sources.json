@@ -48,7 +48,16 @@
     "coollabsio/coolify",
     "pocketbase/pocketbase",
     "Infisical/infisical",
-    "webstudio-is/webstudio"
+    "webstudio-is/webstudio",
+    "Dokploy/dokploy",
+    "caprover/caprover",
+    "portainer/portainer",
+    "traefik/traefik",
+    "goauthentik/authentik",
+    "zitadel/zitadel",
+    "open-webui/open-webui",
+    "Aider-AI/aider",
+    "continuedev/continue"
   ],
   "young_repos": [
     "twentyhq/twenty",
@@ -74,7 +83,11 @@
     "coollabsio/coolify",
     "pocketbase/pocketbase",
     "Infisical/infisical",
-    "webstudio-is/webstudio"
+    "webstudio-is/webstudio",
+    "Dokploy/dokploy",
+    "open-webui/open-webui",
+    "Aider-AI/aider",
+    "continuedev/continue"
   ],
   "young_min_age_days": 90,
   "young_min_reactions": 5,
