@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "updated_at": "2026-07-26T02:40:00Z",
+  "updated_at": "2026-07-26T02:39:08Z",
   "mode": "autonomous",
   "phase": "idle",
   "ask_human": false,
@@ -22,7 +22,7 @@
     "highlight": "cards/hoppscotch-870-feature-sync-collections-with-git-r.md"
   },
   "last_error": "partial GitHub search rate-limit on last few young repos",
-  "notes": "Keep-going harvest loop (ai-method-lab endless-loop mechanics only). Solo rubric.",
+  "notes": "Keep-going harvest loop armed (30m). Tick 1 done: 1 live card (Hoppscotch git collection sync).",
   "defaults": {
     "always_commit": true,
     "always_push": false
@@ -34,7 +34,7 @@
     "chain": "harvest_score_gc_expand_commit",
     "do_not_rearm_if_alive": true,
     "ticks_observed": 1,
-    "pid": null
+    "pid": 732
   },
   "idle_policy": {
     "when": "zero_new_or_zero_cards",
