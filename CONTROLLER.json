@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "updated_at": "2026-07-26T06:10:57Z",
+  "updated_at": "2026-07-26T06:11:10Z",
   "mode": "autonomous",
   "phase": "idle",
   "ask_human": false,
@@ -20,8 +20,8 @@
     ],
     "highlight": "still 2 live cards; no new solo pass"
   },
-  "last_error": "duplicate loops killed each other; re-arming one",
-  "notes": "Tick 4 after loop cleanup. Re-arm single 30m loop.",
+  "last_error": null,
+  "notes": "Single keep-going loop re-armed (pid 55132). Tick 4 done.",
   "defaults": {
     "always_commit": true,
     "always_push": true
@@ -33,7 +33,7 @@
     "chain": "harvest_score_gc_expand_commit",
     "do_not_rearm_if_alive": true,
     "ticks_observed": 4,
-    "pid": null
+    "pid": 55132
   },
   "idle_policy": {
     "when": "zero_new_or_zero_cards",
