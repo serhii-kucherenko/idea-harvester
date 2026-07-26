@@ -53,14 +53,19 @@ def search(repo, token, min_age_days):
         "Accept": "application/vnd.github+json",
         "User-Agent": "idea-harvester",
     })
-    # ponytail: no retry/backoff beyond one sleep. Search API is 30 req/min authed.
-    try:
-        with urllib.request.urlopen(req) as r:
-            return json.load(r)["items"]
-    except urllib.error.HTTPError as e:
-        body = e.read().decode()[:300]
-        print(f"# ERROR {repo}: HTTP {e.code} {body}", file=sys.stderr)
-        return []
+    # Search API is 30 req/min authed; one wait+retry on 403 rate limit.
+    for attempt in range(2):
+        try:
+            with urllib.request.urlopen(req) as r:
+                return json.load(r)["items"]
+        except urllib.error.HTTPError as e:
+            body = e.read().decode()[:300]
+            if e.code == 403 and attempt == 0:
+                time.sleep(65)
+                continue
+            print(f"# ERROR {repo}: HTTP {e.code} {body}", file=sys.stderr)
+            return []
+    return []
 
 
 def top_n(issues, min_reactions):
