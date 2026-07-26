@@ -9,9 +9,10 @@ Repo-as-DB. `cards/` and `killed/` are the memory. Read `RUBRIC.md` before judgi
 ## Run
 
 1. `GH_TOKEN=` in `.env` (plain PAT, no scopes)
-2. `python3 harvest.py > candidates.md` - top 5 per source, marks `new` vs `seen`
-3. Agent scores every `status: new` item with `RUBRIC.md` → `cards/` or `killed/`
-4. `python3 gc_cards.py` - enforce score floor, 45-day stale, 15-card cap
+2. `python3 harvest.py > candidates.md` - top 5 issues per source, marks `new` vs `seen`
+3. `python3 harvest_boards.py > candidates_boards.md` - top 5 GitHub Discussions Ideas
+4. Agent scores every `status: new` item with `RUBRIC.md` → `cards/` or `killed/`
+5. `python3 gc_cards.py` - enforce score floor, 45-day stale, 15-card cap
 
 Keep-going autonomous loop: `LOOP.md` + `CONTROLLER.json` (ai-method-lab endless-loop mechanics only).
 

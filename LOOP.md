@@ -6,7 +6,7 @@ Borrowed from ai-method-lab's endless keep-executing loop — **loop mechanics o
 ## One tick
 
 1. Read `CONTROLLER.json`. If `mode` is `paused` or `hard_stop`, stop.
-2. `python3 harvest.py > candidates.md`
+2. `python3 harvest.py > candidates.md` and `python3 harvest_boards.py > candidates_boards.md`
 3. Score every `status: new` item with `RUBRIC.md` (≥8 → `cards/`, else `killed/`).
 4. `python3 gc_cards.py`
 5. **Idle branch** (0 new, or 0 live cards after GC): improve the machine —
