@@ -1,27 +1,26 @@
 {
   "schema_version": "1.0.0",
-  "updated_at": "2026-07-26T07:16:19Z",
+  "updated_at": "2026-07-26T07:47:26Z",
   "mode": "autonomous",
   "phase": "idle",
   "ask_human": false,
   "hard_stop": false,
   "hard_stop_reason": null,
   "live_cards": 3,
-  "killed_count": 273,
+  "killed_count": 291,
   "last_tick": {
-    "at": "2026-07-26T07:16:19Z",
-    "new_judged": 34,
-    "cards_added": 1,
-    "kills_added": 33,
+    "at": "2026-07-26T07:47:26Z",
+    "new_judged": 18,
+    "cards_added": 0,
+    "kills_added": 18,
     "idle_actions": [
-      "expand_mail_invoice_remote_sources",
-      "delta_reharvest",
-      "revalidate_live_cards"
+      "expand_ecommerce_dashboard_sources",
+      "delta_reharvest"
     ],
-    "highlight": "cards/mailcow-dockerized-1341-feature-request-dmarc-report-parser.md"
+    "highlight": "3 live cards unchanged"
   },
   "last_error": null,
-  "notes": "Tick 6: 3 live cards. Loop stays single.",
+  "notes": "Tick 7: GitHub intake saturating under solo bar; next idle should prioritize boards adapter.",
   "defaults": {
     "always_commit": true,
     "always_push": true
@@ -32,7 +31,7 @@
     "purpose": "harvest",
     "chain": "harvest_score_gc_expand_commit",
     "do_not_rearm_if_alive": true,
-    "ticks_observed": 6,
+    "ticks_observed": 7,
     "pid": 55132
   },
   "idle_policy": {

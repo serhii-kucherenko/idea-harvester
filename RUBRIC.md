@@ -26,6 +26,7 @@ workflow you can sell **without** the host's permission or marketplace.
 
 ## Rubric deltas
 
+- **2026-07-26:** After ~200+ GitHub kills, solo cards cluster in multi-host ops wedges (sync/backup/DMARC), not host feature requests. Prefer boards/G2 next.
 - **2026-07-25c:** Soften young-repo floors (90d / 5+1s) to fill Top-5 for newer products; solo bar unchanged.
 - **2026-07-25b:** Time-tracking / PM adjuncts for a single host (e.g. Plane) fail solo — category already owned by Toggl/Clockify/Harvest.
 

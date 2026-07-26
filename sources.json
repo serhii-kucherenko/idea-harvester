@@ -74,7 +74,18 @@
     "rustdesk/rustdesk",
     "gravitl/netmaker",
     "tailscale/tailscale",
-    "screego/server"
+    "screego/server",
+    "invoiceninja/invoiceninja",
+    "nocobase/nocobase",
+    "gethomepage/homepage",
+    "lissy93/dashy",
+    "glanceapp/glance",
+    "homarr-labs/homarr",
+    "refinedev/refine",
+    "medusajs/medusa",
+    "vendurehq/vendure",
+    "saleor/saleor",
+    "solidusio/solidus"
   ],
   "young_repos": [
     "twentyhq/twenty",
@@ -114,7 +125,13 @@
     "freescout-help-desk/freescout",
     "stalwartlabs/stalwart",
     "gravitl/netmaker",
-    "screego/server"
+    "screego/server",
+    "nocobase/nocobase",
+    "gethomepage/homepage",
+    "lissy93/dashy",
+    "glanceapp/glance",
+    "homarr-labs/homarr",
+    "refinedev/refine"
   ],
   "young_min_age_days": 90,
   "young_min_reactions": 5,
