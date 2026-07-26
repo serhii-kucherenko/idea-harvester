@@ -21,3 +21,6 @@ SimpleBackups, Veeam-ish tools, DIY restic/cron. Wedge is Coolify-native UX + re
 
 ## Kill if
 Coolify ships excellent native backup+restore that removes willingness to pay, or <3 paying design partners after concierge.
+
+## Tick note
+Revalidated 2026-07-26: still open gap; solo bar still passes.

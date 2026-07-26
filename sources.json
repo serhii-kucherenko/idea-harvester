@@ -62,7 +62,19 @@
     "logseq/logseq",
     "excalidraw/excalidraw",
     "tldraw/tldraw",
-    "AppFlowy-IO/AppFlowy"
+    "AppFlowy-IO/AppFlowy",
+    "crater-invoice-inc/crater",
+    "akaunting/akaunting",
+    "kimai/kimai",
+    "BookStackApp/BookStack",
+    "freescout-help-desk/freescout",
+    "mailcow/mailcow-dockerized",
+    "docker-mailserver/docker-mailserver",
+    "stalwartlabs/stalwart",
+    "rustdesk/rustdesk",
+    "gravitl/netmaker",
+    "tailscale/tailscale",
+    "screego/server"
   ],
   "young_repos": [
     "twentyhq/twenty",
@@ -97,7 +109,12 @@
     "logseq/logseq",
     "excalidraw/excalidraw",
     "tldraw/tldraw",
-    "AppFlowy-IO/AppFlowy"
+    "AppFlowy-IO/AppFlowy",
+    "crater-invoice-inc/crater",
+    "freescout-help-desk/freescout",
+    "stalwartlabs/stalwart",
+    "gravitl/netmaker",
+    "screego/server"
   ],
   "young_min_age_days": 90,
   "young_min_reactions": 5,

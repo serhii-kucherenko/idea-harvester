@@ -1,26 +1,27 @@
 {
   "schema_version": "1.0.0",
-  "updated_at": "2026-07-26T06:45:20Z",
+  "updated_at": "2026-07-26T07:16:19Z",
   "mode": "autonomous",
   "phase": "idle",
   "ask_human": false,
   "hard_stop": false,
   "hard_stop_reason": null,
-  "live_cards": 2,
-  "killed_count": 240,
+  "live_cards": 3,
+  "killed_count": 273,
   "last_tick": {
-    "at": "2026-07-26T06:45:20Z",
-    "new_judged": 29,
-    "cards_added": 0,
-    "kills_added": 29,
+    "at": "2026-07-26T07:16:19Z",
+    "new_judged": 34,
+    "cards_added": 1,
+    "kills_added": 33,
     "idle_actions": [
-      "expand_notes_whiteboard_sources",
-      "delta_reharvest"
+      "expand_mail_invoice_remote_sources",
+      "delta_reharvest",
+      "revalidate_live_cards"
     ],
-    "highlight": "2 live cards unchanged"
+    "highlight": "cards/mailcow-dockerized-1341-feature-request-dmarc-report-parser.md"
   },
   "last_error": null,
-  "notes": "Tick 5: Continue + notes/whiteboard batch killed. Loop 55132 stays.",
+  "notes": "Tick 6: 3 live cards. Loop stays single.",
   "defaults": {
     "always_commit": true,
     "always_push": true
@@ -31,7 +32,7 @@
     "purpose": "harvest",
     "chain": "harvest_score_gc_expand_commit",
     "do_not_rearm_if_alive": true,
-    "ticks_observed": 5,
+    "ticks_observed": 6,
     "pid": 55132
   },
   "idle_policy": {

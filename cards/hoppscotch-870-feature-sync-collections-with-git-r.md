@@ -21,3 +21,6 @@ Postman cloud sync (vendor lock), manual JSON in git, Insomnia git sync (partial
 
 ## Kill if
 Hoppscotch ships excellent native git sync AND multi-client users still will not pay; or <3 design partners after concierge.
+
+## Tick note
+Revalidated 2026-07-26: still open gap; solo bar still passes.
