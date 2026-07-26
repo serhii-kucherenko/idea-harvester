@@ -38,7 +38,17 @@
     "baserow/baserow",
     "penpot/penpot",
     "logto-io/logto",
-    "toeverything/AFFiNE"
+    "toeverything/AFFiNE",
+    "actualbudget/actual",
+    "firefly-iii/firefly-iii",
+    "ghostfolio/ghostfolio",
+    "langfuse/langfuse",
+    "baptisteArno/typebot.io",
+    "anomalyco/sst",
+    "coollabsio/coolify",
+    "pocketbase/pocketbase",
+    "Infisical/infisical",
+    "webstudio-is/webstudio"
   ],
   "young_repos": [
     "twentyhq/twenty",
@@ -54,10 +64,20 @@
     "maybe-finance/maybe",
     "makeplane/plane",
     "logto-io/logto",
-    "toeverything/AFFiNE"
+    "toeverything/AFFiNE",
+    "actualbudget/actual",
+    "firefly-iii/firefly-iii",
+    "ghostfolio/ghostfolio",
+    "langfuse/langfuse",
+    "baptisteArno/typebot.io",
+    "anomalyco/sst",
+    "coollabsio/coolify",
+    "pocketbase/pocketbase",
+    "Infisical/infisical",
+    "webstudio-is/webstudio"
   ],
-  "young_min_age_days": 120,
-  "young_min_reactions": 8,
+  "young_min_age_days": 90,
+  "young_min_reactions": 5,
   "boards": [
     {
       "name": "Public vote boards (manual Top-5 until adapter)",

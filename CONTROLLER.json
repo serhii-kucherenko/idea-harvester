@@ -1,28 +1,27 @@
 {
   "schema_version": "1.0.0",
-  "updated_at": "2026-07-26T03:05:06Z",
+  "updated_at": "2026-07-26T04:11:43Z",
   "mode": "autonomous",
   "phase": "idle",
   "ask_human": false,
   "hard_stop": false,
   "hard_stop_reason": null,
-  "live_cards": 1,
-  "killed_count": 109,
+  "live_cards": 2,
+  "killed_count": 175,
   "last_tick": {
-    "at": "2026-07-26T03:04:37Z",
-    "new_judged": 20,
-    "cards_added": 0,
-    "kills_added": 20,
+    "at": "2026-07-26T04:11:43Z",
+    "new_judged": 67,
+    "cards_added": 1,
+    "kills_added": 66,
     "idle_actions": [
-      "expand_sources",
-      "fix_papermark",
-      "boards_url_cleanup",
-      "403_retry"
+      "soften_young_floors",
+      "expand_finance_paas_sources",
+      "reharvest"
     ],
-    "highlight": "cards/hoppscotch-870-feature-sync-collections-with-git-r.md (still only live card)"
+    "highlight": "cards/coolify-2389-feature-backup-manger-in-the-ui.md"
   },
-  "last_error": "intermittent GitHub search 403; added 65s retry",
-  "notes": "Tick 2 done; loop re-armed pid 53359 after prior abort.",
+  "last_error": null,
+  "notes": "Tick 3: 2 live cards (Hoppscotch git sync + Coolify backups). Loop pid 53359.",
   "defaults": {
     "always_commit": true,
     "always_push": true
@@ -33,7 +32,7 @@
     "purpose": "harvest",
     "chain": "harvest_score_gc_expand_commit",
     "do_not_rearm_if_alive": true,
-    "ticks_observed": 2,
+    "ticks_observed": 3,
     "pid": 53359
   },
   "idle_policy": {
