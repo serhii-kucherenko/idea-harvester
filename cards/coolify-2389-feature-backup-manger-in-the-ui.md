@@ -5,7 +5,7 @@ repo: coollabsio/coolify
 +1s: 36 | comments: 42 | opened: 2024-06-08
 score: 8/10
 dimensions: standalone=2 wtp=2 host-risk=1 solo-ship=2 distribution=1
-scored: 2026-07-25
+scored: 2026-07-26
 
 ## Gap
 Self-hosted PaaS users (Coolify and peers) want reliable, UI-simple backups and restores without wiring their own S3 cron scripts.
@@ -24,3 +24,6 @@ Coolify ships excellent native backup+restore that removes willingness to pay, o
 
 ## Tick note
 Revalidated 2026-07-26: still open gap; solo bar still passes.
+
+## Related signal
+Also see Coolify discussion [Backup Docker Volumes](https://github.com/coollabsio/coolify/discussions/4597) (68 upvotes) - same backup/restore job.

@@ -24,3 +24,5 @@ Keep-going autonomous loop: `LOOP.md` + `CONTROLLER.json` (ai-method-lab endless
 
 Prefilter knobs: `TOP_N`, `MIN_REACTIONS`, `MIN_AGE_DAYS` in `harvest.py`.
 Sources: `sources.json` (GitHub repos now; boards listed for the next connector).
+
+Live ranking of kept ideas: `SCORECARD.md`.

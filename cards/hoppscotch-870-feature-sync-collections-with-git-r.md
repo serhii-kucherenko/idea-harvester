@@ -5,7 +5,7 @@ repo: hoppscotch/hoppscotch
 +1s: 106 | comments: 68 | opened: 2020-05-13
 score: 9/10
 dimensions: standalone=2 wtp=2 host-risk=2 solo-ship=2 distribution=1
-scored: 2026-07-25
+scored: 2026-07-26
 
 ## Gap
 API teams want collections versioned in Git and shared across machines/clients without vendor lock-in to one client UI.

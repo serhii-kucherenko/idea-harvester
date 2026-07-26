@@ -265,6 +265,48 @@
       "query_extra": "",
       "min_upvotes": 15,
       "min_age_days": 180
+    },
+    {
+      "repo": "coollabsio/coolify",
+      "query_extra": "category:\"Feature Requests\"",
+      "min_upvotes": 10,
+      "min_age_days": 180
+    },
+    {
+      "repo": "Dokploy/dokploy",
+      "query_extra": "category:Ideas",
+      "min_upvotes": 10,
+      "min_age_days": 180
+    },
+    {
+      "repo": "chatwoot/chatwoot",
+      "query_extra": "category:\"Feature Requests\"",
+      "min_upvotes": 10,
+      "min_age_days": 180
+    },
+    {
+      "repo": "twentyhq/twenty",
+      "query_extra": "category:Ideas",
+      "min_upvotes": 10,
+      "min_age_days": 180
+    },
+    {
+      "repo": "directus/directus",
+      "query_extra": "category:\"Feature Requests\"",
+      "min_upvotes": 10,
+      "min_age_days": 180
+    },
+    {
+      "repo": "ghostfolio/ghostfolio",
+      "query_extra": "category:Ideas",
+      "min_upvotes": 10,
+      "min_age_days": 180
+    },
+    {
+      "repo": "Infisical/infisical",
+      "query_extra": "",
+      "min_upvotes": 10,
+      "min_age_days": 180
     }
   ]
 }
