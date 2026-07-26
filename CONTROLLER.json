@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "updated_at": "2026-07-26T04:11:43Z",
+  "updated_at": "2026-07-26T04:11:54Z",
   "mode": "autonomous",
   "phase": "idle",
   "ask_human": false,
@@ -21,7 +21,7 @@
     "highlight": "cards/coolify-2389-feature-backup-manger-in-the-ui.md"
   },
   "last_error": null,
-  "notes": "Tick 3: 2 live cards (Hoppscotch git sync + Coolify backups). Loop pid 53359.",
+  "notes": "Tick 3 done (2 cards). Loop re-armed pid 61312.",
   "defaults": {
     "always_commit": true,
     "always_push": true
@@ -33,7 +33,7 @@
     "chain": "harvest_score_gc_expand_commit",
     "do_not_rearm_if_alive": true,
     "ticks_observed": 3,
-    "pid": 53359
+    "pid": 61312
   },
   "idle_policy": {
     "when": "zero_new_or_zero_cards",
