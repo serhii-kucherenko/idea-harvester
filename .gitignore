@@ -1,3 +1,4 @@
 .env
 candidates.md
 __pycache__/
+harvest_err.txt

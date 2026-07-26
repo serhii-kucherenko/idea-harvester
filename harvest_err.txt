@@ -1,7 +1,0 @@
-# ERROR listmonk/listmonk: HTTP 422 {"message":"Validation Failed","errors":[{"message":"The listed users and repositories cannot be searched either because the resources do not exist or you do not have permission to view them.","resource":"Search","field":"q","code":"invalid"}],"documentation_url":"https://docs.github.com/v3/search/"
-# ERROR papermarkio/papermark: HTTP 403 {
-	"message": "API rate limit exceeded for user ID 21200035. If you reach out to GitHub Support for help, please include the request ID EBAA:356B58:169DD1:4DBAD5:6A6572E0 and timestamp 2026-07-26 02:37:20 UTC. For more on scraping GitHub and how it may affect your rights, please review our Terms of 
-# ERROR midday-ai/midday: HTTP 403 {
-	"message": "API rate limit exceeded for user ID 21200035. If you reach out to GitHub Support for help, please include the request ID EBAC:33E909:160B49:4B9FB2:6A6572E1 and timestamp 2026-07-26 02:37:21 UTC. For more on scraping GitHub and how it may affect your rights, please review our Terms of 
-# ERROR calcom/atoms: HTTP 403 {
-	"message": "API rate limit exceeded for user ID 21200035. If you reach out to GitHub Support for help, please include the request ID EBAE:1BA2EA:161F6F:4C2A16:6A6572E1 and timestamp 2026-07-26 02:37:21 UTC. For more on scraping GitHub and how it may affect your rights, please review our Terms of 
