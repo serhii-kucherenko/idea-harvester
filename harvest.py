@@ -1,8 +1,11 @@
 #!/usr/bin/env python3
 """Fetch old, open, heavily-upvoted issues from commercial products' public trackers.
 
-No LLM. Numeric prefilter only - the agent does the judgment on the survivors.
+No LLM. Numeric prefilter only - the agent scores survivors with RUBRIC.md.
 Needs GH_TOKEN in .env (a plain GitHub PAT, no scopes needed for public repos).
+
+Always emits up to TOP_N issues per repo (the shortlist). Already-judged URLs are
+marked status: seen so the agent does not re-score them; only status: new is judged.
 
     python3 harvest.py > candidates.md
 """
@@ -13,7 +16,7 @@ from pathlib import Path
 HERE = Path(__file__).parent
 MIN_REACTIONS = 15
 MIN_AGE_DAYS = 540  # ~18mo unaddressed is the "they won't fix it" tell
-PER_REPO = 10
+TOP_N = 5  # always shortlist top 5 per source
 
 
 def load_env():
@@ -38,8 +41,9 @@ def seen_urls():
 def search(repo, token):
     cutoff = (date.today() - timedelta(days=MIN_AGE_DAYS)).isoformat()
     q = f"repo:{repo} is:issue is:open created:<{cutoff}"
+    # pull a wider page then filter locally so TOP_N is reaction-true after MIN_REACTIONS
     url = "https://api.github.com/search/issues?" + urllib.parse.urlencode(
-        {"q": q, "sort": "reactions", "order": "desc", "per_page": PER_REPO}
+        {"q": q, "sort": "reactions", "order": "desc", "per_page": 30}
     )
     req = urllib.request.Request(url, headers={
         "Authorization": f"Bearer {token}",
@@ -51,11 +55,9 @@ def search(repo, token):
         return json.load(r)["items"]
 
 
-def keep(issue, seen):
-    return (
-        issue["html_url"] not in seen
-        and issue["reactions"]["total_count"] >= MIN_REACTIONS
-    )
+def top_n(issues):
+    strong = [i for i in issues if i["reactions"]["total_count"] >= MIN_REACTIONS]
+    return strong[:TOP_N]
 
 
 def main():
@@ -65,23 +67,45 @@ def main():
         sys.exit("put GH_TOKEN=... in .env (plain GitHub PAT, no scopes needed for public repos)")
     seen = seen_urls()
     repos = json.loads((HERE / "sources.json").read_text())["repos"]
-    print(f"# candidates {date.today()}\n")
+    print(f"# candidates {date.today()}")
+    print(f"# top {TOP_N} per repo, min +1s={MIN_REACTIONS}, age>={MIN_AGE_DAYS}d")
+    print(f"# score new items with RUBRIC.md; ignore status: seen\n")
+    new_count = 0
     for repo in repos:
-        for i in search(repo, token):
-            if not keep(i, seen):
-                continue
+        shortlist = top_n(search(repo, token))
+        print(f"# {repo} ({len(shortlist)}/{TOP_N})")
+        if not shortlist:
+            print(f"# (no issues met filters)\n")
+            continue
+        for i in shortlist:
+            url = i["html_url"]
+            status = "seen" if url in seen else "new"
+            if status == "new":
+                new_count += 1
             print(f"## {i['title']}")
-            print(f"source: {i['html_url']}")
+            print(f"source: {url}")
+            print(f"status: {status}")
             print(f"repo: {repo} | +1s: {i['reactions']['total_count']} "
                   f"| comments: {i['comments']} | opened: {i['created_at'][:10]}\n")
-            print((i["body"] or "")[:400].strip() + "\n")
+            if status == "new":
+                print((i["body"] or "")[:400].strip() + "\n")
+        print()
+    print(f"# summary: {new_count} new to judge")
 
 
 def selftest():
-    old = {"html_url": "u", "reactions": {"total_count": 20}}
-    assert keep(old, set())
-    assert not keep(old, {"u"}), "dedupe failed"
-    assert not keep({"html_url": "v", "reactions": {"total_count": 2}}, set())
+    issues = [
+        {"html_url": "a", "reactions": {"total_count": 100}},
+        {"html_url": "b", "reactions": {"total_count": 50}},
+        {"html_url": "c", "reactions": {"total_count": 20}},
+        {"html_url": "d", "reactions": {"total_count": 18}},
+        {"html_url": "e", "reactions": {"total_count": 16}},
+        {"html_url": "f", "reactions": {"total_count": 14}},
+        {"html_url": "g", "reactions": {"total_count": 90}},
+    ]
+    got = top_n(issues)
+    assert [x["html_url"] for x in got] == ["a", "b", "c", "d", "e"]
+    assert all(x["reactions"]["total_count"] >= MIN_REACTIONS for x in got)
     print("ok")
 
 

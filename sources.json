@@ -1,5 +1,5 @@
 {
-  "_note": "Commercial products with public issue trackers. Maintainers answer 'why-not-fixed' themselves in these threads.",
+  "_note": "Commercial products with public trackers. Maintainers often answer why-not-fixed in-thread. Prefer products where gaps can be sold as standalone workflows (solo indie), not host plugins.",
   "repos": [
     "calcom/cal.diy",
     "supabase/supabase",
@@ -10,6 +10,22 @@
     "grafana/grafana",
     "hasura/graphql-engine",
     "appsmithorg/appsmith",
-    "documenso/documenso"
+    "documenso/documenso",
+    "posthog/posthog",
+    "nocodb/nocodb",
+    "tooljet/tooljet",
+    "twentyhq/twenty",
+    "novuhq/novu",
+    "triggerdotdev/trigger.dev",
+    "windmill-labs/windmill",
+    "formbricks/formbricks",
+    "dubinc/dub",
+    "plausible/analytics"
+  ],
+  "boards": [
+    {
+      "name": "Canny / Featurebase (next connector)",
+      "_todo": "Add public board URLs here when the boards harvest adapter ships. Same Top-5 + RUBRIC flow."
+    }
   ]
 }
