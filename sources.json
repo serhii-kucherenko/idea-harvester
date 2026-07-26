@@ -1,0 +1,15 @@
+{
+  "_note": "Commercial products with public issue trackers. Maintainers answer 'why-not-fixed' themselves in these threads.",
+  "repos": [
+    "calcom/cal.diy",
+    "supabase/supabase",
+    "n8n-io/n8n",
+    "getsentry/sentry",
+    "metabase/metabase",
+    "strapi/strapi",
+    "grafana/grafana",
+    "hasura/graphql-engine",
+    "appsmithorg/appsmith",
+    "documenso/documenso"
+  ]
+}
