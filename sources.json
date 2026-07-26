@@ -85,7 +85,14 @@
     "medusajs/medusa",
     "vendurehq/vendure",
     "saleor/saleor",
-    "solidusio/solidus"
+    "solidusio/solidus",
+    "louislam/uptime-kuma",
+    "go-gitea/gitea",
+    "forgejo/forgejo",
+    "minio/minio",
+    "mattermost/mattermost",
+    "nextcloud/server",
+    "rocketchat/Rocket.Chat"
   ],
   "young_repos": [
     "twentyhq/twenty",
@@ -304,6 +311,72 @@
     },
     {
       "repo": "Infisical/infisical",
+      "query_extra": "",
+      "min_upvotes": 10,
+      "min_age_days": 180
+    },
+    {
+      "repo": "hoppscotch/hoppscotch",
+      "query_extra": "",
+      "min_upvotes": 10,
+      "min_age_days": 180
+    },
+    {
+      "repo": "n8n-io/n8n",
+      "query_extra": "",
+      "min_upvotes": 15,
+      "min_age_days": 180
+    },
+    {
+      "repo": "nocodb/nocodb",
+      "query_extra": "",
+      "min_upvotes": 10,
+      "min_age_days": 180
+    },
+    {
+      "repo": "baserow/baserow",
+      "query_extra": "",
+      "min_upvotes": 10,
+      "min_age_days": 180
+    },
+    {
+      "repo": "formbricks/formbricks",
+      "query_extra": "",
+      "min_upvotes": 10,
+      "min_age_days": 180
+    },
+    {
+      "repo": "langfuse/langfuse",
+      "query_extra": "",
+      "min_upvotes": 10,
+      "min_age_days": 180
+    },
+    {
+      "repo": "open-webui/open-webui",
+      "query_extra": "",
+      "min_upvotes": 15,
+      "min_age_days": 180
+    },
+    {
+      "repo": "makeplane/plane",
+      "query_extra": "",
+      "min_upvotes": 10,
+      "min_age_days": 180
+    },
+    {
+      "repo": "louislam/uptime-kuma",
+      "query_extra": "",
+      "min_upvotes": 15,
+      "min_age_days": 180
+    },
+    {
+      "repo": "go-gitea/gitea",
+      "query_extra": "",
+      "min_upvotes": 15,
+      "min_age_days": 180
+    },
+    {
+      "repo": "knadh/listmonk",
       "query_extra": "",
       "min_upvotes": 10,
       "min_age_days": 180
