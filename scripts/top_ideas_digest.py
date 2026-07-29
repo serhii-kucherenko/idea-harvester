@@ -120,10 +120,12 @@ def compute_payload() -> dict:
     for card in top_cards:
         card_slug = _slugify(card.get("title", "idea"))
         demo_rel = f"demos/top-ideas/{card_slug}/index.html"
+        demo_folder_rel = f"demos/top-ideas/{card_slug}"
         card["demo_path"] = demo_rel
+        card["demo_folder"] = demo_folder_rel
         card["stackblitz_url"] = (
-            f"https://stackblitz.com/fork/github/{GITHUB_REPO}"
-            f"?file={demo_rel}&view=preview"
+            f"https://stackblitz.com/github/{GITHUB_REPO}/tree/{GITHUB_BRANCH}/{demo_folder_rel}"
+            f"?file=index.html&view=preview"
         )
         card["github_demo_url"] = (
             f"https://github.com/{GITHUB_REPO}/blob/{GITHUB_BRANCH}/{demo_rel}"
