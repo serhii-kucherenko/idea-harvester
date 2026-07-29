@@ -1,27 +1,27 @@
 {
   "schema_version": "1.0.0",
-  "updated_at": "2026-07-29T11:40:00Z",
+  "updated_at": "2026-07-29T12:10:00Z",
   "mode": "autonomous",
   "phase": "idle",
   "ask_human": false,
   "hard_stop": false,
   "hard_stop_reason": null,
   "live_cards": 4,
-  "killed_count": 476,
+  "killed_count": 513,
   "last_tick": {
-    "at": "2026-07-29T11:40:00Z",
-    "new_judged": 21,
+    "at": "2026-07-29T12:10:00Z",
+    "new_judged": 37,
     "cards_added": 0,
-    "kills_added": 21,
+    "kills_added": 37,
     "idle_actions": [
       "expand_sources",
       "reharvest_same_tick",
       "rubric_delta"
     ],
-    "highlight": "Idle expand: Polar, better-auth, Backrest, Syncthing, restic, filebrowser; 21 new all killed as core-host/packaging; 4 live cards unchanged"
+    "highlight": "Idle expand toward SaaS/obs (Inngest, SigNoz, OpenObserve, OpenReplay, Highlight, HeyForm, Ghost, Fider + Sentry/PostHog boards); 37 new all killed; 4 live cards unchanged"
   },
   "last_error": null,
-  "notes": "Tick 14 idle: backup/sync/auth shortlists still core-host. Prefer validating SCORECARD #1; next idle should prefer public boards over more CLI backup hosts.",
+  "notes": "Tick 15 idle: observability/session-replay shortlists still core-host. Prefer validating SCORECARD #1; next idle needs public vote boards outside GitHub host trackers.",
   "defaults": {
     "always_commit": true,
     "always_push": true
@@ -32,7 +32,7 @@
     "purpose": "harvest",
     "chain": "harvest_score_gc_expand_commit",
     "do_not_rearm_if_alive": true,
-    "ticks_observed": 14,
+    "ticks_observed": 15,
     "pid": 16624
   },
   "idle_policy": {

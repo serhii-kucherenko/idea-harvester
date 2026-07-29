@@ -109,7 +109,17 @@
     "garethgeorge/backrest",
     "syncthing/syncthing",
     "filebrowser/filebrowser",
-    "restic/restic"
+    "restic/restic",
+    "inngest/inngest",
+    "SigNoz/signoz",
+    "openobserve/openobserve",
+    "heyform/heyform",
+    "flagsmith/flagsmith",
+    "openreplay/openreplay",
+    "highlight/highlight",
+    "glitchtip/glitchtip",
+    "TryGhost/Ghost",
+    "getfider/fider"
   ],
   "young_repos": [
     "twentyhq/twenty",
@@ -166,7 +176,17 @@
     "better-auth/better-auth",
     "garethgeorge/backrest",
     "syncthing/syncthing",
-    "filebrowser/filebrowser"
+    "filebrowser/filebrowser",
+    "inngest/inngest",
+    "SigNoz/signoz",
+    "openobserve/openobserve",
+    "heyform/heyform",
+    "flagsmith/flagsmith",
+    "openreplay/openreplay",
+    "highlight/highlight",
+    "glitchtip/glitchtip",
+    "TryGhost/Ghost",
+    "getfider/fider"
   ],
   "young_min_age_days": 90,
   "young_min_reactions": 5,
@@ -453,6 +473,72 @@
     },
     {
       "repo": "garethgeorge/backrest",
+      "query_extra": "",
+      "min_upvotes": 5,
+      "min_age_days": 90
+    },
+    {
+      "repo": "posthog/posthog",
+      "query_extra": "",
+      "min_upvotes": 15,
+      "min_age_days": 180
+    },
+    {
+      "repo": "getsentry/sentry",
+      "query_extra": "",
+      "min_upvotes": 15,
+      "min_age_days": 180
+    },
+    {
+      "repo": "novuhq/novu",
+      "query_extra": "",
+      "min_upvotes": 10,
+      "min_age_days": 180
+    },
+    {
+      "repo": "triggerdotdev/trigger.dev",
+      "query_extra": "",
+      "min_upvotes": 10,
+      "min_age_days": 90
+    },
+    {
+      "repo": "dubinc/dub",
+      "query_extra": "",
+      "min_upvotes": 10,
+      "min_age_days": 90
+    },
+    {
+      "repo": "documenso/documenso",
+      "query_extra": "",
+      "min_upvotes": 10,
+      "min_age_days": 90
+    },
+    {
+      "repo": "growthbook/growthbook",
+      "query_extra": "",
+      "min_upvotes": 10,
+      "min_age_days": 180
+    },
+    {
+      "repo": "inngest/inngest",
+      "query_extra": "",
+      "min_upvotes": 10,
+      "min_age_days": 90
+    },
+    {
+      "repo": "SigNoz/signoz",
+      "query_extra": "",
+      "min_upvotes": 10,
+      "min_age_days": 180
+    },
+    {
+      "repo": "TryGhost/Ghost",
+      "query_extra": "",
+      "min_upvotes": 15,
+      "min_age_days": 180
+    },
+    {
+      "repo": "heyform/heyform",
       "query_extra": "",
       "min_upvotes": 5,
       "min_age_days": 90
