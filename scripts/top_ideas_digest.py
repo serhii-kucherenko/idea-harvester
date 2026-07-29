@@ -125,7 +125,7 @@ def compute_payload() -> dict:
         card["demo_folder"] = demo_folder_rel
         card["stackblitz_url"] = (
             f"https://stackblitz.com/github/{GITHUB_REPO}/tree/{GITHUB_BRANCH}/{demo_folder_rel}"
-            f"?file=index.html&view=preview"
+            f"?file=index.html&view=preview&startScript=start"
         )
         card["github_demo_url"] = (
             f"https://github.com/{GITHUB_REPO}/blob/{GITHUB_BRANCH}/{demo_rel}"
@@ -589,6 +589,20 @@ def generate_demo_files(cards: list[dict]) -> list[str]:
         demo_dir.mkdir(parents=True, exist_ok=True)
         demo_file = demo_dir / "index.html"
         demo_file.write_text(_generate_mvp_single_file_html(card), encoding="utf-8")
+        package_file = demo_dir / "package.json"
+        package_file.write_text(
+            json.dumps(
+                {
+                    "name": f"idea-demo-{card_slug}",
+                    "private": True,
+                    "scripts": {"start": "python3 -m http.server 4173"},
+                    "stackblitz": {"startCommand": "npm run start"},
+                },
+                indent=2,
+            )
+            + "\n",
+            encoding="utf-8",
+        )
         generated.append(str(demo_file.relative_to(ROOT)).replace("\\", "/"))
     return generated
 

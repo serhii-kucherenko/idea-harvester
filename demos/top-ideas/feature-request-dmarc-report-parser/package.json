@@ -1,0 +1,10 @@
+{
+  "name": "idea-demo-feature-request-dmarc-report-parser",
+  "private": true,
+  "scripts": {
+    "start": "python3 -m http.server 4173"
+  },
+  "stackblitz": {
+    "startCommand": "npm run start"
+  }
+}

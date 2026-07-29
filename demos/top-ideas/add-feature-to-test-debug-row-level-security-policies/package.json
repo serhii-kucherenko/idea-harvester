@@ -1,0 +1,10 @@
+{
+  "name": "idea-demo-add-feature-to-test-debug-row-level-security-policies",
+  "private": true,
+  "scripts": {
+    "start": "python3 -m http.server 4173"
+  },
+  "stackblitz": {
+    "startCommand": "npm run start"
+  }
+}
