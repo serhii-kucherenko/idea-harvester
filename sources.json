@@ -134,7 +134,9 @@
     "IceWhaleTech/CasaOS",
     "getumbrel/umbrel",
     "runtipi/runtipi",
-    "SelfhostedPro/Yacht"
+    "SelfhostedPro/Yacht",
+    "mountain-loop/yaak",
+    "Kong/insomnia"
   ],
   "young_repos": [
     "twentyhq/twenty",
@@ -214,7 +216,9 @@
     "IceWhaleTech/CasaOS",
     "getumbrel/umbrel",
     "runtipi/runtipi",
-    "SelfhostedPro/Yacht"
+    "SelfhostedPro/Yacht",
+    "mountain-loop/yaak",
+    "Kong/insomnia"
   ],
   "young_min_age_days": 90,
   "young_min_reactions": 5,
@@ -657,6 +661,24 @@
     },
     {
       "repo": "go-vikunja/vikunja",
+      "query_extra": "",
+      "min_upvotes": 5,
+      "min_age_days": 90
+    },
+    {
+      "repo": "IceWhaleTech/CasaOS",
+      "query_extra": "category:Ideas",
+      "min_upvotes": 5,
+      "min_age_days": 90
+    },
+    {
+      "repo": "runtipi/runtipi",
+      "query_extra": "category:Ideas",
+      "min_upvotes": 5,
+      "min_age_days": 90
+    },
+    {
+      "repo": "mountain-loop/yaak",
       "query_extra": "",
       "min_upvotes": 5,
       "min_age_days": 90

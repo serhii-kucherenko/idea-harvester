@@ -17,10 +17,10 @@ Open Hoppscotch request since 2020 with 100+ reactions; draft PR #5797 (Jan 2026
 Solo SaaS/CLI: export/import + continuous sync of API collections (Hoppscotch/Postman/Insomnia formats) to a Git repo, with PR-friendly diffs and team invite. Start CLI + GitHub App; charge per seat for sync + conflict UI.
 
 ## Competition / workarounds
-Bruno (git-native), Postman cloud sync, manual JSON in git, Insomnia git sync (partial). Wedge is multi-client + clean diffs for teams not switching clients.
+Bruno (git-native; Pro ~$6/user/mo), Yaak (local files + Git; commercial license), Insomnia Git sync (paid tiers), Thunder Client Pro, Postman cloud. Paid seats prove WTP for sync/collab — but free git-native clients crowd a pure “git sync for one host” wedge. Still viable as multi-client bridge for teams stuck on Postman/Hoppscotch who will not migrate.
 
 ## Kill if
-Hoppscotch ships excellent native git sync AND multi-client users still will not pay; or <3 design partners after concierge.
+Hoppscotch ships excellent native git sync AND multi-client users still will not pay; or <3 design partners after concierge; or Bruno/Yaak absorb the non-migrating segment.
 
 ## Tick note
-Revalidated 2026-07-29: issue still OPEN; host-risk lowered (draft PR in flight). Score 8/10 — keep.
+Revalidated 2026-07-29h: #870 still OPEN (updated 2026-03-24); draft PR #5797 still open/unmerged. Design-partner check: buyers already pay Bruno/Insomnia/Postman for sync — outreach target = multi-client teams, not Bruno migrants. Score 8/10 — keep.

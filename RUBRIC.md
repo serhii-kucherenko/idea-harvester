@@ -26,6 +26,7 @@ workflow you can sell **without** the host's permission or marketplace.
 
 ## Rubric deltas
 
+- **2026-07-29h:** Idle 0 new → design-partner validation on live #1–#2, then Yaak/Insomnia expand. 15 judged: Insomnia 5/5 core-host UI; boards 10/10 core-host/packaging; Runtipi #768 backup/restore duplicates Coolify card (again). No new ≥8. Collection-sync WTP proven via Bruno/Insomnia paid sync, but free git-native clients crowd single-host sync. RLS: open host PR #42346 + OSS CLIs raise bar without kill yet.
 - **2026-07-29g:** Self-host PaaS peers (CasaOS/Umbrel/Runtipi/Yacht): 14 judged — Runtipi #2312 backup/restore UI duplicates live Coolify card (positive multi-host signal). Rest core-host/packaging. Revalidated Coolify #2389 still open.
 - **2026-07-29f:** Mail-stack expand (Postal/Mailu/Modoboa/Roundcube): 16 judged — Mailu #122 DMARC Analyzer is duplicate of live Mailcow DMARC card (positive multi-host signal). Rest core-host/packaging. Revalidated Mailcow #1341 still open.
 - **2026-07-29e:** First Discourse intake (n8n/Ghost/HA/Mattermost): 20/20 core-host, pairwise, device-driver, or packaging. Still prefer multi-host ops wedges over product-forum feature votes.

@@ -11,6 +11,8 @@ Solo-indie gate (RUBRIC.md). Revalidated each idle tick when intake is empty.
 
 **Pick order for validation:** collection sync → RLS → DMARC → Coolify backups.
 
+**Idle note (2026-07-29h):** Design-partner pass on #1–#2 (not more host-tracker spam). Collection sync: Bruno/Yaak/Insomnia already monetize sync — wedge is multi-client holdouts; #870 + draft PR #5797 still open. RLS: discussion #12269 open; Supabase PR #42346 Playground unmerged; free CLIs (SupaShield/rlsgrid) raise bar. Expanded Yaak/Insomnia peer intake → 15 kills (Insomnia UI/core + CasaOS/Runtipi boards). Runtipi discussion #768 backup/restore = another Coolify-card duplicate signal.
+
 **Idle note (2026-07-29g):** Revalidated Coolify backups #4 — #2389 and discussion #4597 still OPEN. Runtipi #2312 same backup/restore job (killed duplicate). Expanded CasaOS/Umbrel/Runtipi/Yacht peer intake.
 
 **Idle note (2026-07-29f):** Revalidated DMARC card #3 — Mailcow #1341 still OPEN. Mailu #122 DMARC Analyzer is the same job (killed duplicate; strengthens multi-host signal). Discourse expansion largely exhausted. Expanded Postal/Mailu/Modoboa/Roundcube intake.
