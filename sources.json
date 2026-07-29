@@ -103,7 +103,13 @@
     "vaultwarden/server",
     "unkey/unkey",
     "resend/resend",
-    "calcom/cal.com"
+    "calcom/cal.com",
+    "polar-sh/polar",
+    "better-auth/better-auth",
+    "garethgeorge/backrest",
+    "syncthing/syncthing",
+    "filebrowser/filebrowser",
+    "restic/restic"
   ],
   "young_repos": [
     "twentyhq/twenty",
@@ -155,7 +161,12 @@
     "ntfy-sh/ntfy",
     "unkey/unkey",
     "resend/resend",
-    "calcom/cal.com"
+    "calcom/cal.com",
+    "polar-sh/polar",
+    "better-auth/better-auth",
+    "garethgeorge/backrest",
+    "syncthing/syncthing",
+    "filebrowser/filebrowser"
   ],
   "young_min_age_days": 90,
   "young_min_reactions": 5,
@@ -427,6 +438,24 @@
       "query_extra": "",
       "min_upvotes": 10,
       "min_age_days": 180
+    },
+    {
+      "repo": "polar-sh/polar",
+      "query_extra": "",
+      "min_upvotes": 10,
+      "min_age_days": 90
+    },
+    {
+      "repo": "syncthing/syncthing",
+      "query_extra": "",
+      "min_upvotes": 15,
+      "min_age_days": 180
+    },
+    {
+      "repo": "garethgeorge/backrest",
+      "query_extra": "",
+      "min_upvotes": 5,
+      "min_age_days": 90
     }
   ]
 }

@@ -1,23 +1,27 @@
 {
   "schema_version": "1.0.0",
-  "updated_at": "2026-07-29T10:55:00Z",
+  "updated_at": "2026-07-29T11:40:00Z",
   "mode": "autonomous",
   "phase": "idle",
   "ask_human": false,
   "hard_stop": false,
   "hard_stop_reason": null,
   "live_cards": 4,
-  "killed_count": 455,
+  "killed_count": 476,
   "last_tick": {
-    "at": "2026-07-29T10:55:00Z",
-    "new_judged": 1,
+    "at": "2026-07-29T11:40:00Z",
+    "new_judged": 21,
     "cards_added": 0,
-    "kills_added": 1,
-    "idle_actions": [],
-    "highlight": "Killed Payload CMS #14230 (dev-server performance bug); 4 live cards unchanged"
+    "kills_added": 21,
+    "idle_actions": [
+      "expand_sources",
+      "reharvest_same_tick",
+      "rubric_delta"
+    ],
+    "highlight": "Idle expand: Polar, better-auth, Backrest, Syncthing, restic, filebrowser; 21 new all killed as core-host/packaging; 4 live cards unchanged"
   },
   "last_error": null,
-  "notes": "Tick 13: one new discussion was core-host DX/perf; still prefer validating SCORECARD #1.",
+  "notes": "Tick 14 idle: backup/sync/auth shortlists still core-host. Prefer validating SCORECARD #1; next idle should prefer public boards over more CLI backup hosts.",
   "defaults": {
     "always_commit": true,
     "always_push": true
@@ -28,7 +32,7 @@
     "purpose": "harvest",
     "chain": "harvest_score_gc_expand_commit",
     "do_not_rearm_if_alive": true,
-    "ticks_observed": 13,
+    "ticks_observed": 14,
     "pid": 16624
   },
   "idle_policy": {
