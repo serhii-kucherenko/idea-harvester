@@ -1,7 +1,35 @@
 # Design-partner outreach queue
 
 Execute from SCORECARD pick order. Do not spam issue threads with product pitches —
-prefer polite DMs / email after a useful comment, or reply offering a free concierge.
+prefer polite email / LinkedIn after a useful comment, or reply offering a free concierge.
+
+## Send today (priority)
+
+| # | Lead | Contact | Card | Status |
+|---|------|---------|------|--------|
+| 1 | @lauhon (Laurenz Honauer) | laurenz.honauer@gmail.com · [gh](https://github.com/lauhon) · [site](https://getnewfinance.com) | Collection sync | **ready** — public email |
+| 2 | @johnmaguire (John Maguire) | contact@johnmaguire.me · [gh](https://github.com/johnmaguire) · [site](https://www.johnmaguire.me/) | Coolify backups | **ready** — public email + bounty |
+| 3 | @borrelan (Andre B) | borrelan@gmail.com · [gh](https://github.com/borrelan) | DMARC | **ready** — public email |
+| 4 | @riemers (Erik-jan Riemers) | no public email · [gh](https://github.com/riemers) · [hashop.nl](https://hashop.nl) | Coolify backups | contact via site / gh |
+| 5 | @aaronksaunders | no public email · [gh](https://github.com/aaronksaunders) · [@aaronksaunders](https://twitter.com/aaronksaunders) · [linktree](https://linktr.ee/aaronksaunders) | RLS | Twitter / linktree |
+
+Do **not** auto-blast from the harvest bot. Send as yourself (Serhii) from a personal inbox so replies land correctly. Log sent/replied below.
+
+### Email drafts
+
+**To laurenz.honauer@gmail.com — subject: Hoppscotch git sync without switching clients**
+
+> Hi Laurenz — saw your note on Hoppscotch #870 about git sync being the blocker to pitch at work. I’m testing a tiny sidecar that keeps API collections in git without forcing a Bruno migration. Would you try it on one collection this week for free?
+
+**To contact@johnmaguire.me — subject: Coolify encrypted volume backups (free restore drill)**
+
+> Hi John — saw your bounty note on Coolify #2389 about encrypted backups. I’m running free restore drills for a few Coolify hosts this month (volumes + encrypt-at-rest). Want one on a non-prod box?
+
+**To borrelan@gmail.com — subject: Mailcow-friendly DMARC digest**
+
+> Hi Andre — saw your notes on Mailcow #1341 wanting something stitched to the platform rather than raw parsedmarc. I’m prototyping a cheap multi-domain DMARC digest aimed at self-hosted mail. Open to a free pilot on one domain?
+
+---
 
 ## 1) Collection sync (Hoppscotch #870)
 
@@ -14,8 +42,6 @@ prefer polite DMs / email after a useful comment, or reply offering a free conci
 
 Skip: @Bigua / Bruno converts (already solved via Bruno).
 
-**First message (DM):** “Saw your note on Hoppscotch #870 about git sync for work. I’m testing a tiny sidecar that keeps collections in git without switching clients — would you try it on one collection this week for free?”
-
 ## 2) RLS debugger (Supabase #12269)
 
 | Lead | Why | Angle |
@@ -24,9 +50,7 @@ Skip: @Bigua / Bruno converts (already solved via Bruno).
 | @munaf-khatri | Built rlsautotest; knows the pain | Partner/complement (UI on top of generators) — careful not to compete awkwardly |
 | Discussion voters (46↑) | Open since 2022 | Concierge policy review |
 
-**First message:** “Working on a small RLS allow/deny matrix (paste policies + JWT → green/red). Would you let me run it against a throwaway project copy this week?”
-
-Watch: Supabase PR #42346 (still unmerged).
+Watch: Supabase PR #42346 (still unmerged as of 2026-07-29).
 
 ## 3) DMARC (Mailcow #1341)
 
@@ -47,8 +71,12 @@ Skip pitching @dragoangel (already ships parsedmarc compose — competitor/worka
 | @wowtah / @gitekDev | Production blocker; SFTP backup | Managed restore confidence |
 | @Holo795 | Already built OSS workaround | Learn wedge; maybe not a buyer |
 
-**First message:** “Saw your Coolify #2389 note / bounty on volume+encrypted backups. I’m running free restore drills for 3 Coolify hosts this month — want one?”
-
 ---
 
-Updated: 2026-07-29 (tick 26). Prefer DMs over public spam. Log replies back into this file.
+## Sent log
+
+| When | Who | Channel | Result |
+|------|-----|---------|--------|
+| — | — | — | none sent yet (tick 27 prepared ready queue) |
+
+Updated: 2026-07-29 (tick 27).

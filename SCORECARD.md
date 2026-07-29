@@ -11,6 +11,8 @@ Solo-indie gate (RUBRIC.md). Revalidated each idle tick when intake is empty.
 
 **Pick order for validation:** collection sync → RLS → DMARC → Coolify backups.
 
+**Idle note (2026-07-29o):** 1 new (Next.js #43179) → core-host kill. Enriched [`OUTREACH.md`](OUTREACH.md) with public emails for @lauhon, @johnmaguire, @borrelan + copy-paste drafts. Host PRs still open. Prefer Serhii sends those 3 emails next; no more monitoring-host expands.
+
 **Idle note (2026-07-29n):** 0 new first pass; host PRs #5797/#42346 still unmerged. Expanded Gatus/Dockge/Dozzle/Beszel → 15/15 core-host. Prefer sending OUTREACH.md DMs over more monitoring-host expand.
 
 **Idle note (2026-07-29m):** 0 new. Built [`OUTREACH.md`](OUTREACH.md) with named leads + DM drafts from live threads (@lauhon/#870 employer pitch; Coolify #2389 bounty backers @riemers/@johnmaguire; RLS @aaronksaunders; DMARC @borrelan). Prior Duplicati/Borg/Kopia expand was 15/15 core-host — no more backup-CLI spam. Host PRs still open.
