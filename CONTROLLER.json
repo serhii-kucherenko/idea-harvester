@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "updated_at": "2026-07-29T22:05:00Z",
+  "updated_at": "2026-07-29T22:05:30Z",
   "mode": "autonomous",
   "phase": "idle",
   "ask_human": false,
@@ -21,7 +21,7 @@
     "highlight": "0 new; OUTREACH 4 ready emails (riemers info@hashop.nl); host PRs open; 4 live cards"
   },
   "last_error": null,
-  "notes": "Tick 29: harvest loop saturated on GitHub. Highest-value next step is Serhii sending OUTREACH.md emails #1-#4 from personal inbox. Do not expand more product trackers.",
+  "notes": "Tick 29 done. Harvest loop re-armed after unexpected stop (pid 31732). Next value: send OUTREACH.md emails #1-#4.",
   "defaults": {
     "always_commit": true,
     "always_push": true
@@ -33,7 +33,7 @@
     "chain": "harvest_score_gc_expand_commit",
     "do_not_rearm_if_alive": true,
     "ticks_observed": 29,
-    "pid": 29344
+    "pid": 31732
   },
   "idle_policy": {
     "when": "zero_new_or_zero_cards",
