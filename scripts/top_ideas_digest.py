@@ -8,6 +8,7 @@ Usage:
 from __future__ import annotations
 
 import json
+import re
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -22,26 +23,62 @@ def _parse_card(path: Path) -> dict:
     title = path.stem
     source = ""
     score = -1
-    one_liner = ""
-    for line in text.splitlines():
+    repo = ""
+    dimensions = ""
+    sections: dict[str, str] = {}
+    current_section = ""
+    section_lines: list[str] = []
+
+    def flush_section() -> None:
+        if current_section:
+            sections[current_section] = "\n".join(section_lines).strip()
+
+    for raw_line in text.splitlines():
+        line = raw_line.rstrip()
         if line.startswith("# "):
             title = line[2:].strip()
         elif line.startswith("source:"):
             source = line.split(":", 1)[1].strip()
+        elif line.startswith("repo:"):
+            repo = line.split(":", 1)[1].strip()
         elif line.startswith("score:"):
             raw = line.split(":", 1)[1].strip()
             score = int(raw.split("/", 1)[0].strip())
+        elif line.startswith("dimensions:"):
+            dimensions = line.split(":", 1)[1].strip()
+        elif line.startswith("## "):
+            flush_section()
+            current_section = line[3:].strip().lower()
+            section_lines = []
         elif line.startswith("## Product angle"):
-            one_liner = "Product angle available in card."
+            continue
+        elif current_section:
+            section_lines.append(line)
+
+    flush_section()
 
     if not source:
         return {}
+    decision = "PURSUE"
+    if score < 8:
+        decision = "HOLD"
+    if "host-risk=1" in dimensions:
+        decision = "PURSUE (time-boxed)"
+
     return {
         "title": title,
         "source": source,
         "score": score,
+        "repo": repo,
+        "dimensions": dimensions,
         "card_path": str(path.relative_to(ROOT)).replace("\\", "/"),
-        "summary": one_liner or "See card for details.",
+        "gap": sections.get("gap", "Not captured."),
+        "why_host_wont": sections.get("why host won't", "Not captured."),
+        "product_angle": sections.get("product angle", "Not captured."),
+        "competition": sections.get("competition / workarounds", "Not captured."),
+        "kill_if": sections.get("kill if", "Not captured."),
+        "tick_note": sections.get("tick note", ""),
+        "decision": decision,
     }
 
 
@@ -81,6 +118,58 @@ def compute_payload() -> dict:
     }
 
 
+def _dimensions_to_summary(dimensions: str) -> str:
+    if not dimensions:
+        return "No dimension breakdown."
+    pairs = re.findall(r"([a-z-]+)=(\d+)", dimensions)
+    if not pairs:
+        return dimensions
+    label_map = {
+        "standalone": "standalone",
+        "wtp": "willingness-to-pay",
+        "host-risk": "host-displacement risk",
+        "solo-ship": "solo-shippability",
+        "distribution": "distribution ease",
+    }
+    chunks = []
+    for key, value in pairs:
+        name = label_map.get(key, key)
+        chunks.append(f"{name}: {value}/2")
+    return ", ".join(chunks)
+
+
+def render_email_text(cards: list[dict], generated_at: str) -> str:
+    lines: list[str] = []
+    lines.append("Idea Harvester - Decision Brief")
+    lines.append("")
+    lines.append(
+        "This digest is designed to help you decide what to pursue, not just list ideas."
+    )
+    lines.append(f"Generated: {generated_at}")
+    lines.append("")
+    for idx, card in enumerate(cards, start=1):
+        lines.append(f"{idx}) {card['title']} ({card['score']}/10) - {card['decision']}")
+        lines.append(f"Repo signal: {card.get('repo') or 'n/a'}")
+        lines.append(f"Source: {card['source']}")
+        lines.append(f"What it is: {card['gap']}")
+        lines.append(f"Why this can exist now: {card['why_host_wont']}")
+        lines.append(f"How you'd build/sell first: {card['product_angle']}")
+        lines.append(f"Competition/workarounds: {card['competition']}")
+        lines.append(f"What would kill it: {card['kill_if']}")
+        lines.append(
+            f"Rubric breakdown: {_dimensions_to_summary(card.get('dimensions', ''))}"
+        )
+        if card.get("tick_note"):
+            lines.append(f"Latest revalidation note: {card['tick_note']}")
+        lines.append("")
+
+    lines.append("How to use this:")
+    lines.append("- Pick 1 idea only.")
+    lines.append("- Run 3 design-partner calls in 7 days.")
+    lines.append("- If fewer than 3 strong yeses, move to the next idea.")
+    return "\n".join(lines)
+
+
 def mark_current_top_sent() -> dict:
     payload = compute_payload()
     state = _load_state()
@@ -98,6 +187,12 @@ def main() -> None:
 
     if "--mark-current-sent" in sys.argv:
         result = mark_current_top_sent()
+    elif "--email-text" in sys.argv:
+        payload = compute_payload()
+        only_unsent = "--unsent-only" in sys.argv
+        cards = payload["unsent_top_cards"] if only_unsent else payload["top_cards"]
+        print(render_email_text(cards, payload["generated_at"]))
+        return
     else:
         result = compute_payload()
     print(json.dumps(result, indent=2))
