@@ -26,7 +26,7 @@ workflow you can sell **without** the host's permission or marketplace.
 
 ## Rubric deltas
 
-- **2026-07-29k:** Idle 0 new — design-partner outreach mapping for collection-sync card beat another host-tracker expand. Bruno migration friction (import/script bugs) is positive signal for multi-client holdouts, not a reason to kill. Yaak feedback shell reachable; still no scrapeable vote connector.
+- **2026-07-29k:** Idle 0 new — design-partner outreach mapping for collection-sync + Neon/Electric/libSQL expand (14/14 core-host; no RLS-debugger wedge). Host PRs #5797/#42346 still unmerged. Prefer #1 outreach over more DB/CI host trackers.
 - **2026-07-29j:** Idle 0 new — re-watched Hoppscotch #5797 + Supabase #42346 (both still unmerged). Expanded Woodpecker/Harbor/pgAdmin → 15/15 core-host or packaging kills. No new ≥8. Prefer live-card outreach over more CI/registry trackers next idle.
 - **2026-07-29i:** Idle 0 new — validated DMARC + Coolify. Free DMARC SaaS digests (Postmark etc.) weaken “cheap dashboard” WTP; keep only with Mailcow-native multi-domain angle. SimpleBackups $49+/mo strengthens Coolify backup WTP while Coolify still skips app volumes. Next expand: proxy/cert/secrets/remote-dev peers, not more mail/PaaS.
 - **2026-07-29h:** Idle 0 new → design-partner validation on live #1–#2, then Yaak/Insomnia expand. 15 judged: Insomnia 5/5 core-host UI; boards 10/10 core-host/packaging; Runtipi #768 backup/restore duplicates Coolify card (again). No new ≥8. Collection-sync WTP proven via Bruno/Insomnia paid sync, but free git-native clients crowd single-host sync. RLS: open host PR #42346 + OSS CLIs raise bar without kill yet.

@@ -11,7 +11,7 @@ Solo-indie gate (RUBRIC.md). Revalidated each idle tick when intake is empty.
 
 **Pick order for validation:** collection sync → RLS → DMARC → Coolify backups.
 
-**Idle note (2026-07-29k):** 0 new. Design-partner pass on #1 — Bruno migration guides + import bugs show a holdout segment (Postman/Hoppscotch users who won't fully migrate). Outreach: Hoppscotch #870, feedback.yaak.app (reachable), r/api / DEV threads on Postman→Bruno pain. Skipped more CI/registry GitHub expand. Still 4 live cards.
+**Idle note (2026-07-29k):** 0 new. Design-partner pass on #1 — Bruno migration guides + import bugs show a holdout segment (Postman/Hoppscotch users who won't fully migrate). Outreach: Hoppscotch #870, feedback.yaak.app, r/api / DEV threads on Postman→Bruno pain. Host PRs #5797/#42346 still open/unmerged. Expanded Neon/Electric/libSQL for multi-Postgres RLS peer signal (not more CI). Still 4 live cards.
 
 **Idle note (2026-07-29j):** Host PR watch on #1–#2 — Hoppscotch #5797 still draft/open; Supabase #42346 still open/unmerged. Expanded Woodpecker/Harbor/pgAdmin → 15 kills (core-host/packaging). Still 4 live cards; next idle prefer outreach, not more CI trackers.
 

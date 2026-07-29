@@ -143,7 +143,10 @@
     "coder/coder",
     "woodpecker-ci/woodpecker",
     "goharbor/harbor",
-    "pgadmin-org/pgadmin4"
+    "pgadmin-org/pgadmin4",
+    "neondatabase/neon",
+    "electric-sql/electric",
+    "tursodatabase/libsql"
   ],
   "young_repos": [
     "twentyhq/twenty",
@@ -230,7 +233,10 @@
     "bitwarden/server",
     "coder/coder",
     "woodpecker-ci/woodpecker",
-    "pgadmin-org/pgadmin4"
+    "pgadmin-org/pgadmin4",
+    "neondatabase/neon",
+    "electric-sql/electric",
+    "tursodatabase/libsql"
   ],
   "young_min_age_days": 90,
   "young_min_reactions": 5,

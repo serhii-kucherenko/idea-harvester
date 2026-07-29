@@ -1,27 +1,29 @@
 {
   "schema_version": "1.0.0",
-  "updated_at": "2026-07-29T20:08:00Z",
+  "updated_at": "2026-07-29T20:20:00Z",
   "mode": "autonomous",
   "phase": "idle",
   "ask_human": false,
   "hard_stop": false,
   "hard_stop_reason": null,
   "live_cards": 4,
-  "killed_count": 649,
+  "killed_count": 663,
   "last_tick": {
-    "at": "2026-07-29T20:08:00Z",
-    "new_judged": 0,
+    "at": "2026-07-29T20:20:00Z",
+    "new_judged": 14,
     "cards_added": 0,
-    "kills_added": 0,
+    "kills_added": 14,
     "idle_actions": [
-      "design_partner_outreach_map_collection_sync",
-      "probe_yaak_feedback_board",
+      "watch_hoppscotch_pr_5797",
+      "watch_supabase_pr_42346",
+      "expand_neon_electric_libsql",
+      "reharvest_same_tick",
       "rubric_delta"
     ],
-    "highlight": "0 new; mapped collection-sync outreach via Bruno migration friction + Yaak feedback shell; 4 live cards"
+    "highlight": "Host PRs #5797/#42346 still unmerged; Neon/Electric/libSQL: 14 core-host kills; 4 live cards; prefer #1 outreach"
   },
   "last_error": null,
-  "notes": "Tick 24: next idle continue design-partner outreach for SCORECARD #2-#4 (RLS/DMARC/Coolify). Avoid more GitHub CI/registry/proxy expands.",
+  "notes": "Tick 24 idle: DB peers also core-host. Prefer design-partner outreach on SCORECARD #1 over more host-tracker expansion. Watch Hoppscotch #5797 and Supabase #42346.",
   "defaults": {
     "always_commit": true,
     "always_push": true
@@ -33,7 +35,7 @@
     "chain": "harvest_score_gc_expand_commit",
     "do_not_rearm_if_alive": true,
     "ticks_observed": 24,
-    "pid": 29344
+    "pid": 19808
   },
   "idle_policy": {
     "when": "zero_new_or_zero_cards",
