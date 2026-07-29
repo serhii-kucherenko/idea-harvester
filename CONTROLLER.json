@@ -36,7 +36,8 @@
     "chain": "harvest_score_gc_expand_commit",
     "do_not_rearm_if_alive": true,
     "ticks_observed": 28,
-    "pid": 19808
+    "pid": 29344,
+    "note": "Re-bound after sentinel 19808 exit 4294967295; did not start a second loop"
   },
   "idle_policy": {
     "when": "zero_new_or_zero_cards",
