@@ -26,6 +26,7 @@ workflow you can sell **without** the host's permission or marketplace.
 
 ## Rubric deltas
 
+- **2026-07-29n:** Gatus/Dockge/Beszel intake: 15/15 core-host. Monitoring feature trackers still host UX. Prefer OUTREACH.md DMs over more monitoring-host expands.
 - **2026-07-29m:** Idle 0 new after Duplicati/Borg/Kopia 15/15 core-host. Executed outreach → OUTREACH.md named leads (Hoppscotch #870, Coolify #2389 bounty commenters, RLS/DMARC). Prefer sending DMs next over more backup-CLI expands.
 - **2026-07-29l:** Idle 0 new — design-partner outreach maps for RLS/DMARC/Coolify (skipped another host-tracker expand). New competition notes: rlsautotest + CoolifyBR/Vaultkeeper DIY; free/OSS workarounds raise the bar but don't kill multi-host managed wedges yet.
 - **2026-07-29k:** Idle 0 new — design-partner outreach mapping for collection-sync + Neon/Electric/libSQL expand (14/14 core-host; no RLS-debugger wedge). Host PRs #5797/#42346 still unmerged. Prefer #1 outreach over more DB/CI host trackers.
