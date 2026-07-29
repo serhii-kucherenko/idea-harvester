@@ -5,7 +5,7 @@ repo: supabase/supabase
 +1s: 46 | comments: 11 | opened: 2022-06-16
 score: 8/10
 dimensions: standalone=2 wtp=2 host-risk=1 solo-ship=2 distribution=1
-scored: 2026-07-26
+scored: 2026-07-29
 
 ## Gap
 Postgres/Supabase builders need a safe way to test and debug Row Level Security policies against example roles/JWTs without guessing in production.
@@ -19,5 +19,5 @@ Solo tool: paste policies + sample JWTs/roles → matrix of allow/deny with expl
 ## Competition / workarounds
 Manual SQL, ad-hoc scripts, eventual first-party Supabase UI. Wedge is better DX + multi-Postgres later.
 
-## Kill if
-Supabase ships excellent built-in RLS debugger and paid demand disappears.
+## Tick note
+Revalidated 2026-07-29: discussion still OPEN via GitHub API; solo bar still passes.

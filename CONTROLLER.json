@@ -1,23 +1,28 @@
 {
   "schema_version": "1.0.0",
-  "updated_at": "2026-07-29T13:03:00Z",
+  "updated_at": "2026-07-29T13:35:00Z",
   "mode": "autonomous",
   "phase": "idle",
   "ask_human": false,
   "hard_stop": false,
   "hard_stop_reason": null,
   "live_cards": 4,
-  "killed_count": 550,
+  "killed_count": 570,
   "last_tick": {
-    "at": "2026-07-29T13:03:00Z",
-    "new_judged": 1,
+    "at": "2026-07-29T13:35:00Z",
+    "new_judged": 20,
     "cards_added": 0,
-    "kills_added": 1,
-    "idle_actions": [],
-    "highlight": "Killed Immich #3896 album text/narratives (core-host); 4 live cards unchanged"
+    "kills_added": 20,
+    "idle_actions": [
+      "revalidate_scorecard_2_rls",
+      "add_discourse_harvester",
+      "reharvest_same_tick",
+      "rubric_delta"
+    ],
+    "highlight": "Added Discourse harvest (n8n/Ghost/HA/Mattermost); 20 new all killed; revalidated RLS still open; 4 live cards"
   },
   "last_error": null,
-  "notes": "Tick 17: one Immich discussion was core gallery UX. Prefer validating SCORECARD #1 collection sync; next idle Discourse/G2 if intake stays empty.",
+  "notes": "Tick 18 idle: Discourse feature forums also skew core-host. Prefer validating SCORECARD #1/#2 with design partners over more forum expansion.",
   "defaults": {
     "always_commit": true,
     "always_push": true
@@ -28,7 +33,7 @@
     "purpose": "harvest",
     "chain": "harvest_score_gc_expand_commit",
     "do_not_rearm_if_alive": true,
-    "ticks_observed": 17,
+    "ticks_observed": 18,
     "pid": 16624
   },
   "idle_policy": {

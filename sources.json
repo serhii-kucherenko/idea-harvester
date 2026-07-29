@@ -242,6 +242,43 @@
       "status": "not-found"
     }
   ],
+  "discourse_boards": [
+    {
+      "name": "n8n Feature Requests",
+      "base_url": "https://community.n8n.io",
+      "category_path": "c/feature-requests/5",
+      "min_likes": 15,
+      "min_age_days": 180
+    },
+    {
+      "name": "rclone Feature",
+      "base_url": "https://forum.rclone.org",
+      "category_path": "c/feature/9",
+      "min_likes": 5,
+      "min_age_days": 180
+    },
+    {
+      "name": "Ghost Ideas",
+      "base_url": "https://forum.ghost.org",
+      "category_path": "c/ideas/5",
+      "min_likes": 10,
+      "min_age_days": 180
+    },
+    {
+      "name": "Home Assistant Feature Requests",
+      "base_url": "https://community.home-assistant.io",
+      "category_path": "c/feature-requests/13",
+      "min_likes": 20,
+      "min_age_days": 180
+    },
+    {
+      "name": "Mattermost Feedback",
+      "base_url": "https://forum.mattermost.com",
+      "category_path": "c/feedback/8",
+      "min_likes": 10,
+      "min_age_days": 180
+    }
+  ],
   "discussion_boards": [
     {
       "repo": "vercel/next.js",
