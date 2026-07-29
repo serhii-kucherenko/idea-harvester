@@ -23,4 +23,4 @@ Manual `SET LOCAL ROLE` SQL, SupaShield CLI (supashield.app, ~100★), rlsgrid (
 Supabase merges/ships excellent RLS Playground and paid demand disappears; or free CLIs fully cover CI+matrix needs.
 
 ## Tick note
-Revalidated 2026-07-29h: discussion #12269 still OPEN (updated 2026-07-10, 46 upvotes). PR #42346 open/unmerged — host-risk stays 1, not host-shipped yet. Score 8/10 — keep; watch #42346.
+Revalidated 2026-07-29j: discussion #12269 still OPEN. PR #42346 still open/unmerged (updated 2026-02-17) — not host-shipped. Score 8/10 — keep; watch #42346.

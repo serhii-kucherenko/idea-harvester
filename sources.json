@@ -140,7 +140,10 @@
     "NginxProxyManager/nginx-proxy-manager",
     "caddyserver/caddy",
     "bitwarden/server",
-    "coder/coder"
+    "coder/coder",
+    "woodpecker-ci/woodpecker",
+    "goharbor/harbor",
+    "pgadmin-org/pgadmin4"
   ],
   "young_repos": [
     "twentyhq/twenty",
@@ -225,7 +228,9 @@
     "Kong/insomnia",
     "NginxProxyManager/nginx-proxy-manager",
     "bitwarden/server",
-    "coder/coder"
+    "coder/coder",
+    "woodpecker-ci/woodpecker",
+    "pgadmin-org/pgadmin4"
   ],
   "young_min_age_days": 90,
   "young_min_reactions": 5,

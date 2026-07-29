@@ -26,6 +26,7 @@ workflow you can sell **without** the host's permission or marketplace.
 
 ## Rubric deltas
 
+- **2026-07-29j:** Idle 0 new — re-watched Hoppscotch #5797 + Supabase #42346 (both still unmerged). Expanded Woodpecker/Harbor/pgAdmin → 15/15 core-host or packaging kills. No new ≥8. Prefer live-card outreach over more CI/registry trackers next idle.
 - **2026-07-29i:** Idle 0 new — validated DMARC + Coolify. Free DMARC SaaS digests (Postmark etc.) weaken “cheap dashboard” WTP; keep only with Mailcow-native multi-domain angle. SimpleBackups $49+/mo strengthens Coolify backup WTP while Coolify still skips app volumes. Next expand: proxy/cert/secrets/remote-dev peers, not more mail/PaaS.
 - **2026-07-29h:** Idle 0 new → design-partner validation on live #1–#2, then Yaak/Insomnia expand. 15 judged: Insomnia 5/5 core-host UI; boards 10/10 core-host/packaging; Runtipi #768 backup/restore duplicates Coolify card (again). No new ≥8. Collection-sync WTP proven via Bruno/Insomnia paid sync, but free git-native clients crowd single-host sync. RLS: open host PR #42346 + OSS CLIs raise bar without kill yet.
 - **2026-07-29g:** Self-host PaaS peers (CasaOS/Umbrel/Runtipi/Yacht): 14 judged — Runtipi #2312 backup/restore UI duplicates live Coolify card (positive multi-host signal). Rest core-host/packaging. Revalidated Coolify #2389 still open.

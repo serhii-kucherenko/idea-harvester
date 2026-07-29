@@ -23,4 +23,4 @@ Bruno (git-native; Pro ~$6/user/mo), Yaak (local files + Git; commercial license
 Hoppscotch ships excellent native git sync AND multi-client users still will not pay; or <3 design partners after concierge; or Bruno/Yaak absorb the non-migrating segment.
 
 ## Tick note
-Revalidated 2026-07-29h: #870 still OPEN (updated 2026-03-24); draft PR #5797 still open/unmerged. Design-partner check: buyers already pay Bruno/Insomnia/Postman for sync — outreach target = multi-client teams, not Bruno migrants. Score 8/10 — keep.
+Revalidated 2026-07-29j: #870 still OPEN; draft PR #5797 still open/unmerged (updated 2026-01-30). Outreach target unchanged: multi-client teams, not Bruno migrants. Score 8/10 — keep.
