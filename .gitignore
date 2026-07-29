@@ -4,3 +4,4 @@ __pycache__/
 harvest_err.txt
 candidates_boards.md
 boards_err.txt
+.email_digest_state.json
