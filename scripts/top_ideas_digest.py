@@ -581,6 +581,344 @@ def _generate_mvp_snippet_html(card: dict) -> str:
 """
 
 
+def _infer_demo_mode(card: dict) -> str:
+    title = (card.get("title") or "").lower()
+    if "git" in title and "sync" in title:
+        return "git_sync"
+    if "backup" in title or "restore" in title:
+        return "backup_restore"
+    if "dmarc" in title:
+        return "dmarc"
+    if "row level" in title or "rls" in title:
+        return "rls"
+    return "generic"
+
+
+def _mvp_module_html(mode: str) -> str:
+    if mode == "git_sync":
+        return """
+<section class="panel active" id="panel-demo">
+  <h2>Demo Lab: Multi-client collection sync</h2>
+  <p class="muted">Load two client exports, detect conflicts, generate merge output and PR summary.</p>
+  <div class="two">
+    <div>
+      <label>Client A export (JSON)</label>
+      <textarea id="aData">{ "endpoints": ["GET /users", "POST /login", "GET /orders"] }</textarea>
+    </div>
+    <div>
+      <label>Client B export (JSON)</label>
+      <textarea id="bData">{ "endpoints": ["GET /users", "POST /auth/login", "GET /orders", "DELETE /orders/:id"] }</textarea>
+    </div>
+  </div>
+  <div class="row">
+    <button onclick="runGitAnalysis()">Analyze diff</button>
+    <button onclick="acceptA()">Prefer A for conflicts</button>
+    <button onclick="acceptB()">Prefer B for conflicts</button>
+  </div>
+  <div class="result" id="gitResult"></div>
+</section>
+"""
+    if mode == "backup_restore":
+        return """
+<section class="panel active" id="panel-demo">
+  <h2>Demo Lab: Backup scheduler + restore drill</h2>
+  <p class="muted">Configure retention and run a restore drill with measured RTO.</p>
+  <div class="two">
+    <div>
+      <label>App</label>
+      <input id="appName" value="coolify-prod" />
+      <label>Target storage</label>
+      <input id="storage" value="s3://company-backups/coolify" />
+      <label>Retention days</label>
+      <input id="retention" type="number" value="14" />
+    </div>
+    <div>
+      <label>Schedule</label>
+      <input id="schedule" value="0 */6 * * *" />
+      <label>Encryption key ID</label>
+      <input id="kmsKey" value="kms-prod-01" />
+      <label>RTO target (minutes)</label>
+      <input id="rto" type="number" value="20" />
+    </div>
+  </div>
+  <div class="row">
+    <button onclick="planBackup()">Plan backup policy</button>
+    <button onclick="runDrill()">Run restore drill</button>
+  </div>
+  <div class="result" id="backupResult"></div>
+</section>
+"""
+    if mode == "dmarc":
+        return """
+<section class="panel active" id="panel-demo">
+  <h2>Demo Lab: DMARC report parser</h2>
+  <p class="muted">Paste aggregate XML and get pass/fail breakdown and risk signal.</p>
+  <label>Aggregate XML</label>
+  <textarea id="xmlData"><feedback><record><row><source_ip>1.2.3.4</source_ip><count>120</count><policy_evaluated><dkim>pass</dkim><spf>fail</spf></policy_evaluated></row></record><record><row><source_ip>5.6.7.8</source_ip><count>42</count><policy_evaluated><dkim>fail</dkim><spf>fail</spf></policy_evaluated></row></record></feedback></textarea>
+  <div class="row">
+    <button onclick="parseDmarc()">Parse report</button>
+  </div>
+  <div class="result" id="dmarcResult"></div>
+</section>
+"""
+    if mode == "rls":
+        return """
+<section class="panel active" id="panel-demo">
+  <h2>Demo Lab: RLS policy tester</h2>
+  <p class="muted">Test role/JWT scenarios and explain allow/deny decisions.</p>
+  <label>Policy rules (pseudo)</label>
+  <textarea id="policyData">allow select when role in [admin,manager]
+allow update when role=member and owner_id = jwt.sub
+deny delete when role=member</textarea>
+  <label>Test cases (JSON)</label>
+  <textarea id="casesData">[
+  {"action":"select","role":"member","owner_id":"u1","jwt_sub":"u1"},
+  {"action":"update","role":"member","owner_id":"u2","jwt_sub":"u1"},
+  {"action":"update","role":"member","owner_id":"u1","jwt_sub":"u1"},
+  {"action":"delete","role":"admin","owner_id":"u1","jwt_sub":"u1"}
+]</textarea>
+  <div class="row">
+    <button onclick="runRlsTests()">Run tests</button>
+  </div>
+  <div class="result" id="rlsResult"></div>
+</section>
+"""
+    return """
+<section class="panel active" id="panel-demo">
+  <h2>Demo Lab</h2>
+  <p class="muted">Generic MVP simulation for this idea.</p>
+  <textarea id="genericInput">Describe your input scenario...</textarea>
+  <div class="row"><button onclick="runGeneric()">Run</button></div>
+  <div class="result" id="genericResult"></div>
+</section>
+"""
+
+
+# Override with a richer, problem-specific MVP generator.
+def _generate_mvp_single_file_html(card: dict) -> str:
+    mode = _infer_demo_mode(card)
+    title = card.get("title") or "Idea"
+    source = card.get("source") or ""
+    gap = card.get("gap") or ""
+    why_host = card.get("why_host_wont") or ""
+    product_angle = card.get("product_angle") or ""
+    competition = card.get("competition") or ""
+    kill_if = card.get("kill_if") or ""
+    decision = card.get("decision") or "PURSUE"
+    score = card.get("score") or "?"
+    flow_steps = _generate_flow_steps(card)
+    flow_html = "".join(f"<li>{_escape_html(step)}</li>" for step in flow_steps)
+    module_html = _mvp_module_html(mode)
+
+    return f"""<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{_escape_html(title)} - MVP</title>
+  <style>
+    :root {{ --fg:#0f172a; --muted:#475569; --line:#e2e8f0; --bg:#f8fafc; --card:#ffffff; --accent:#2563eb; }}
+    * {{ box-sizing:border-box; }}
+    body {{ margin:0; font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial; color:var(--fg); background:var(--bg); }}
+    .wrap {{ max-width:1100px; margin:0 auto; padding:20px; }}
+    .hero {{ background:var(--card); border:1px solid var(--line); border-radius:14px; padding:16px; }}
+    .kpis {{ display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:10px; margin-top:12px; }}
+    .kpi {{ border:1px solid var(--line); border-radius:12px; padding:10px; background:#fff; }}
+    .kpi .label {{ color:var(--muted); font-size:12px; }}
+    .kpi .val {{ font-weight:700; margin-top:4px; }}
+    .layout {{ display:grid; grid-template-columns:2fr 1fr; gap:14px; margin-top:14px; }}
+    .card {{ background:#fff; border:1px solid var(--line); border-radius:14px; padding:14px; }}
+    .tabs {{ display:flex; gap:8px; margin-bottom:12px; flex-wrap:wrap; }}
+    button {{ border:1px solid var(--line); background:#fff; border-radius:10px; padding:9px 11px; cursor:pointer; }}
+    button.primary {{ border-color:#93c5fd; background:#eff6ff; color:#1d4ed8; }}
+    .muted {{ color:var(--muted); font-size:13px; }}
+    textarea, input {{ width:100%; border:1px solid var(--line); border-radius:10px; padding:10px; font:inherit; }}
+    textarea {{ min-height:110px; }}
+    .row {{ display:flex; gap:8px; margin-top:10px; flex-wrap:wrap; }}
+    .two {{ display:grid; grid-template-columns:1fr 1fr; gap:10px; }}
+    .result {{ margin-top:10px; border:1px solid var(--line); border-radius:10px; background:#f8fafc; padding:10px; white-space:pre-wrap; font-size:13px; }}
+    ul {{ margin:6px 0 0; padding-left:18px; }}
+    @media (max-width:900px) {{ .layout {{ grid-template-columns:1fr; }} .kpis {{ grid-template-columns:1fr 1fr; }} .two {{ grid-template-columns:1fr; }} }}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="hero">
+      <h1 style="margin:0 0 6px;">{_escape_html(title)}</h1>
+      <div class="muted">Source: <a href="{_escape_html(source)}" target="_blank" rel="noreferrer">{_escape_html(source)}</a></div>
+      <div class="kpis">
+        <div class="kpi"><div class="label">Decision</div><div class="val">{_escape_html(str(decision))}</div></div>
+        <div class="kpi"><div class="label">Score</div><div class="val">{_escape_html(str(score))}/10</div></div>
+        <div class="kpi"><div class="label">Primary wedge</div><div class="val">{_escape_html(gap[:56] + ("..." if len(gap) > 56 else ""))}</div></div>
+        <div class="kpi"><div class="label">First risk</div><div class="val">{_escape_html(kill_if[:56] + ("..." if len(kill_if) > 56 else ""))}</div></div>
+      </div>
+    </div>
+
+    <div class="layout">
+      <div class="card">
+        <div class="tabs">
+          <button class="primary" onclick="show('demo')">Demo Lab</button>
+          <button onclick="show('problem')">Problem</button>
+          <button onclick="show('solution')">Solution</button>
+          <button onclick="show('flows')">Flow(s)</button>
+        </div>
+
+        {module_html}
+
+        <section class="panel" id="panel-problem" style="display:none;">
+          <h2>Problem</h2>
+          <p>{_escape_html(gap)}</p>
+          <h3>Why now</h3>
+          <p>{_escape_html(why_host)}</p>
+        </section>
+
+        <section class="panel" id="panel-solution" style="display:none;">
+          <h2>Solution MVP</h2>
+          <p>{_escape_html(product_angle)}</p>
+          <h3>Competition/workarounds</h3>
+          <p>{_escape_html(competition)}</p>
+          <h3>Kill condition</h3>
+          <p>{_escape_html(kill_if)}</p>
+        </section>
+
+        <section class="panel" id="panel-flows" style="display:none;">
+          <h2>Flow(s)</h2>
+          <ul>{flow_html}</ul>
+        </section>
+      </div>
+
+      <div class="card">
+        <h2 style="margin-top:0;">Investor one-minute read</h2>
+        <p class="muted">What this demo proves:</p>
+        <ul>
+          <li>The user workflow is concrete, not just an idea statement.</li>
+          <li>The MVP has a clear first-user path and output artifact.</li>
+          <li>Main risk is explicit and measurable in early tests.</li>
+        </ul>
+        <h3>Pilot success criteria</h3>
+        <ul>
+          <li>3 design partners run the workflow end to end.</li>
+          <li>At least 1 team repeats weekly in the first 14 days.</li>
+          <li>At least 1 asks for a paid/hosted continuation.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function show(name) {{
+      for (const p of document.querySelectorAll('.panel')) p.style.display = 'none';
+      document.getElementById('panel-' + name).style.display = 'block';
+    }}
+
+    function runGitAnalysis() {{
+      try {{
+        const a = JSON.parse(document.getElementById('aData').value);
+        const b = JSON.parse(document.getElementById('bData').value);
+        const sa = new Set(a.endpoints || []);
+        const sb = new Set(b.endpoints || []);
+        const onlyA = [...sa].filter(x => !sb.has(x));
+        const onlyB = [...sb].filter(x => !sa.has(x));
+        const both = [...sa].filter(x => sb.has(x));
+        const out = [
+          'Shared endpoints: ' + both.length,
+          'Only in A: ' + (onlyA.join(', ') || 'none'),
+          'Only in B: ' + (onlyB.join(', ') || 'none'),
+          '',
+          'PR summary:',
+          '- add ' + onlyB.length + ' endpoint(s)',
+          '- keep ' + both.length + ' endpoint(s)',
+          '- review rename candidates from A to B'
+        ].join('\\n');
+        document.getElementById('gitResult').textContent = out;
+      }} catch (e) {{
+        document.getElementById('gitResult').textContent = 'Invalid JSON input.';
+      }}
+    }}
+    function acceptA() {{ document.getElementById('gitResult').textContent += '\\nResolution: preferred Client A names.'; }}
+    function acceptB() {{ document.getElementById('gitResult').textContent += '\\nResolution: preferred Client B names.'; }}
+
+    function planBackup() {{
+      const app = document.getElementById('appName').value;
+      const storage = document.getElementById('storage').value;
+      const schedule = document.getElementById('schedule').value;
+      const retention = document.getElementById('retention').value;
+      document.getElementById('backupResult').textContent =
+        'Policy created\\n' +
+        '- App: ' + app + '\\n' +
+        '- Storage: ' + storage + '\\n' +
+        '- Schedule: ' + schedule + '\\n' +
+        '- Retention: ' + retention + ' days';
+    }}
+    function runDrill() {{
+      const target = Number(document.getElementById('rto').value || '20');
+      const actual = Math.max(4, Math.round(target * (0.7 + Math.random() * 0.7)));
+      const pass = actual <= target;
+      document.getElementById('backupResult').textContent +=
+        '\\n\\nRestore drill result\\n- target RTO: ' + target + 'm\\n- actual RTO: ' + actual + 'm\\n- status: ' + (pass ? 'PASS' : 'FAIL');
+    }}
+
+    function parseDmarc() {{
+      const raw = document.getElementById('xmlData').value;
+      try {{
+        const doc = new DOMParser().parseFromString(raw, 'text/xml');
+        const rows = [...doc.getElementsByTagName('record')];
+        let total = 0, spfFail = 0, dkimFail = 0;
+        const lines = [];
+        for (const r of rows) {{
+          const count = Number(r.getElementsByTagName('count')[0]?.textContent || '0');
+          const ip = r.getElementsByTagName('source_ip')[0]?.textContent || 'n/a';
+          const spf = (r.getElementsByTagName('spf')[0]?.textContent || '').toLowerCase();
+          const dkim = (r.getElementsByTagName('dkim')[0]?.textContent || '').toLowerCase();
+          total += count;
+          if (spf === 'fail') spfFail += count;
+          if (dkim === 'fail') dkimFail += count;
+          lines.push(ip + ': count=' + count + ', spf=' + spf + ', dkim=' + dkim);
+        }}
+        const risk = (spfFail + dkimFail) / Math.max(total * 2, 1);
+        document.getElementById('dmarcResult').textContent =
+          'Records: ' + rows.length + '\\nTotal volume: ' + total +
+          '\\nSPF fail volume: ' + spfFail +
+          '\\nDKIM fail volume: ' + dkimFail +
+          '\\nRisk score: ' + risk.toFixed(2) +
+          '\\n\\nPer source:\\n' + lines.join('\\n');
+      }} catch (e) {{
+        document.getElementById('dmarcResult').textContent = 'Unable to parse XML.';
+      }}
+    }}
+
+    function runRlsTests() {{
+      const raw = document.getElementById('casesData').value;
+      try {{
+        const tests = JSON.parse(raw);
+        const lines = [];
+        let pass = 0;
+        for (const t of tests) {{
+          let allow = false;
+          if (t.action === 'select' && ['admin','manager'].includes(t.role)) allow = true;
+          if (t.action === 'update' && t.role === 'member' && t.owner_id === t.jwt_sub) allow = true;
+          if (t.action === 'delete' && t.role === 'member') allow = false;
+          const verdict = allow ? 'ALLOW' : 'DENY';
+          if (allow) pass += 1;
+          lines.push(t.action + ' as ' + t.role + ' -> ' + verdict);
+        }}
+        document.getElementById('rlsResult').textContent =
+          'Evaluated: ' + tests.length + '\\nAllowed: ' + pass + '\\nDenied: ' + (tests.length - pass) + '\\n\\n' + lines.join('\\n');
+      }} catch (e) {{
+        document.getElementById('rlsResult').textContent = 'Invalid test cases JSON.';
+      }}
+    }}
+
+    function runGeneric() {{
+      const input = document.getElementById('genericInput').value || '';
+      document.getElementById('genericResult').textContent =
+        'Input accepted.\\nGenerated a problem-solution-flow preview for: ' + input.slice(0, 120);
+    }}
+  </script>
+</body>
+</html>"""
+
+
 def generate_demo_files(cards: list[dict]) -> list[str]:
     generated: list[str] = []
     for card in cards:

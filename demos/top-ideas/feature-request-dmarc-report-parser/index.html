@@ -1,286 +1,218 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Feature Request: DMARC report parser - Demo MVP</title>
-    <style>
-      :root {
-        --bg: #0b1220;
-        --card: rgba(255,255,255,.06);
-        --text: rgba(255,255,255,.92);
-        --muted: rgba(255,255,255,.68);
-        --accent: #60a5fa;
-        --border: rgba(255,255,255,.12);
-      }
-      body {
-        margin: 0;
-        font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
-        background: linear-gradient(180deg, #0b1220, #070b14);
-        color: var(--text);
-      }
-      header {
-        padding: 28px 18px 18px;
-        max-width: 1000px;
-        margin: 0 auto;
-      }
-      .badge {
-        display: inline-flex;
-        gap: 8px;
-        align-items: center;
-        padding: 8px 12px;
-        border: 1px solid var(--border);
-        background: var(--card);
-        border-radius: 999px;
-        color: var(--muted);
-        font-size: 13px;
-      }
-      h1 {
-        margin: 14px 0 8px;
-        font-size: 28px;
-        line-height: 1.15;
-      }
-      .subtitle {
-        color: var(--muted);
-        max-width: 74ch;
-        font-size: 15px;
-      }
-      main {
-        max-width: 1000px;
-        margin: 0 auto;
-        padding: 14px 18px 36px;
-      }
-      .grid {
-        display: grid;
-        grid-template-columns: 1.1fr .9fr;
-        gap: 16px;
-      }
-      @media (max-width: 920px) { .grid { grid-template-columns: 1fr; } }
-      .card {
-        border: 1px solid var(--border);
-        background: var(--card);
-        border-radius: 16px;
-        padding: 16px;
-      }
-      .tabs {
-        display: flex;
-        gap: 8px;
-        flex-wrap: wrap;
-        margin-bottom: 12px;
-      }
-      button.tab {
-        appearance: none;
-        border: 1px solid var(--border);
-        background: transparent;
-        color: var(--muted);
-        padding: 10px 12px;
-        border-radius: 12px;
-        cursor: pointer;
-        font-weight: 600;
-        font-size: 13px;
-      }
-      button.tab[aria-selected="true"] {
-        border-color: rgba(96,165,250,.6);
-        color: var(--text);
-        background: rgba(96,165,250,.12);
-      }
-      .panel { display: none; }
-      .panel[aria-hidden="false"] { display: block; }
-      h2 {
-        margin: 0 0 10px;
-        font-size: 16px;
-        letter-spacing: .2px;
-      }
-      .muted { color: var(--muted); }
-      .list {
-        margin: 0;
-        padding: 0;
-        list-style: none;
-      }
-      .list li {
-        padding: 10px 0;
-        border-bottom: 1px dashed rgba(255,255,255,.14);
-      }
-      .list li:last-child { border-bottom: none; }
-      .step {
-        display: inline-block;
-        width: 28px;
-        color: var(--accent);
-        font-weight: 800;
-      }
-      .code {
-        font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-        font-size: 12.5px;
-        background: rgba(0,0,0,.25);
-        border: 1px solid rgba(255,255,255,.12);
-        border-radius: 12px;
-        padding: 12px;
-        overflow: auto;
-        white-space: pre;
-      }
-      .cta {
-        margin-top: 14px;
-        display: flex;
-        gap: 10px;
-        flex-wrap: wrap;
-      }
-      a.cta {
-        color: var(--text);
-        text-decoration: none;
-      }
-      .btn {
-        border: 1px solid rgba(96,165,250,.7);
-        background: rgba(96,165,250,.15);
-        padding: 10px 12px;
-        border-radius: 12px;
-        cursor: pointer;
-        font-weight: 700;
-        color: var(--text);
-        transition: transform .05s ease-in-out;
-      }
-      .btn:active { transform: translateY(1px); }
-      textarea {
-        width: 100%;
-        min-height: 120px;
-        background: rgba(0,0,0,.2);
-        border: 1px solid rgba(255,255,255,.12);
-        border-radius: 12px;
-        color: var(--text);
-        padding: 12px;
-        resize: vertical;
-      }
-      .result {
-        margin-top: 12px;
-        border: 1px solid rgba(255,255,255,.12);
-        border-radius: 12px;
-        padding: 12px;
-        background: rgba(0,0,0,.15);
-      }
-      .small { font-size: 12.5px; color: var(--muted); line-height: 1.45; }
-    </style>
-  </head>
-  <body>
-    <header>
-      <div class="badge">
-        <strong style="color: var(--text);">Demo MVP</strong>
-        <span>Score: <strong style="color: var(--text);">8/10</strong></span>
-        <span class="muted">Source: <a href="https://github.com/mailcow/mailcow-dockerized/issues/1341" target="_blank" rel="noreferrer" style="color: var(--accent);">https://github.com/mailcow/mailcow-dockerized/issues/1341</a></span>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Feature Request: DMARC report parser - MVP</title>
+  <style>
+    :root { --fg:#0f172a; --muted:#475569; --line:#e2e8f0; --bg:#f8fafc; --card:#ffffff; --accent:#2563eb; }
+    * { box-sizing:border-box; }
+    body { margin:0; font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial; color:var(--fg); background:var(--bg); }
+    .wrap { max-width:1100px; margin:0 auto; padding:20px; }
+    .hero { background:var(--card); border:1px solid var(--line); border-radius:14px; padding:16px; }
+    .kpis { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:10px; margin-top:12px; }
+    .kpi { border:1px solid var(--line); border-radius:12px; padding:10px; background:#fff; }
+    .kpi .label { color:var(--muted); font-size:12px; }
+    .kpi .val { font-weight:700; margin-top:4px; }
+    .layout { display:grid; grid-template-columns:2fr 1fr; gap:14px; margin-top:14px; }
+    .card { background:#fff; border:1px solid var(--line); border-radius:14px; padding:14px; }
+    .tabs { display:flex; gap:8px; margin-bottom:12px; flex-wrap:wrap; }
+    button { border:1px solid var(--line); background:#fff; border-radius:10px; padding:9px 11px; cursor:pointer; }
+    button.primary { border-color:#93c5fd; background:#eff6ff; color:#1d4ed8; }
+    .muted { color:var(--muted); font-size:13px; }
+    textarea, input { width:100%; border:1px solid var(--line); border-radius:10px; padding:10px; font:inherit; }
+    textarea { min-height:110px; }
+    .row { display:flex; gap:8px; margin-top:10px; flex-wrap:wrap; }
+    .two { display:grid; grid-template-columns:1fr 1fr; gap:10px; }
+    .result { margin-top:10px; border:1px solid var(--line); border-radius:10px; background:#f8fafc; padding:10px; white-space:pre-wrap; font-size:13px; }
+    ul { margin:6px 0 0; padding-left:18px; }
+    @media (max-width:900px) { .layout { grid-template-columns:1fr; } .kpis { grid-template-columns:1fr 1fr; } .two { grid-template-columns:1fr; } }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="hero">
+      <h1 style="margin:0 0 6px;">Feature Request: DMARC report parser</h1>
+      <div class="muted">Source: <a href="https://github.com/mailcow/mailcow-dockerized/issues/1341" target="_blank" rel="noreferrer">https://github.com/mailcow/mailcow-dockerized/issues/1341</a></div>
+      <div class="kpis">
+        <div class="kpi"><div class="label">Decision</div><div class="val">PURSUE</div></div>
+        <div class="kpi"><div class="label">Score</div><div class="val">8/10</div></div>
+        <div class="kpi"><div class="label">Primary wedge</div><div class="val">Self-hosted mail admins (Mailcow and peers) get raw DMAR...</div></div>
+        <div class="kpi"><div class="label">First risk</div><div class="val">Mailcow ships a good enough built-in parser, or &lt;3 payin...</div></div>
       </div>
-      <h1>Feature Request: DMARC report parser</h1>
-      <div class="subtitle">
-        A one-page investor demo showing the problem, the wedge, and the user flow.
-        This file is client-only (no backend) so it’s safe to open anywhere.
-      </div>
-    </header>
+    </div>
 
-    <main>
-      <div class="grid">
-        <section class="card">
-          <div class="tabs" role="tablist" aria-label="Demo tabs">
-            <button class="tab" role="tab" aria-selected="true" data-panel="landing">Landing</button>
-            <button class="tab" role="tab" aria-selected="false" data-panel="problem">Problem</button>
-            <button class="tab" role="tab" aria-selected="false" data-panel="solution">Solution</button>
-            <button class="tab" role="tab" aria-selected="false" data-panel="flow">Flow</button>
-          </div>
+    <div class="layout">
+      <div class="card">
+        <div class="tabs">
+          <button class="primary" onclick="show('demo')">Demo Lab</button>
+          <button onclick="show('problem')">Problem</button>
+          <button onclick="show('solution')">Solution</button>
+          <button onclick="show('flows')">Flow(s)</button>
+        </div>
 
-          <div class="panel" id="panel-landing" aria-hidden="false">
-            <h2>Why this matters</h2>
-            <div class="small">Self-hosted mail admins (Mailcow and peers) get raw DMARC aggregate reports and need readable pass/fail/fail-source dashboards without buying enterprise email security suites.</div>
-            <div class="cta">
-              <button class="btn" id="btnRunDemo">Run a quick demo</button>
-              <button class="btn" id="btnReset">Reset</button>
-            </div>
-            <div class="result" id="demoResult" style="display:none;">
-              <div style="font-weight:800; margin-bottom:6px;">Demo output (mock)</div>
-              <div class="small" id="demoOutput"></div>
-            </div>
-            <div class="small" style="margin-top:10px;">
-              Investor note: Revalidated 2026-07-26 harvest expand.
-            </div>
-          </div>
+        
+<section class="panel active" id="panel-demo">
+  <h2>Demo Lab: DMARC report parser</h2>
+  <p class="muted">Paste aggregate XML and get pass/fail breakdown and risk signal.</p>
+  <label>Aggregate XML</label>
+  <textarea id="xmlData"><feedback><record><row><source_ip>1.2.3.4</source_ip><count>120</count><policy_evaluated><dkim>pass</dkim><spf>fail</spf></policy_evaluated></row></record><record><row><source_ip>5.6.7.8</source_ip><count>42</count><policy_evaluated><dkim>fail</dkim><spf>fail</spf></policy_evaluated></row></record></feedback></textarea>
+  <div class="row">
+    <button onclick="parseDmarc()">Parse report</button>
+  </div>
+  <div class="result" id="dmarcResult"></div>
+</section>
 
-          <div class="panel" id="panel-problem" aria-hidden="true">
-            <h2>Problem statement</h2>
-            <div class="small"><strong>Gap:</strong> Self-hosted mail admins (Mailcow and peers) get raw DMARC aggregate reports and need readable pass/fail/fail-source dashboards without buying enterprise email security suites.</div>
-            <div class="small" style="margin-top:10px;"><strong>Why host won’t:</strong> Mailcow feature request for a DMARC report parser stays open; operators still forward XML to third parties or ignore reports.</div>
-          </div>
 
-          <div class="panel" id="panel-solution" aria-hidden="true">
-            <h2>Solution (MVP wedge)</h2>
-            <div class="small">Solo SaaS: drop a mailbox/API for DMARC rua reports → parse → weekly digest + simple domain dashboard. Start Mailcow-friendly docs, then any self-hosted MTA. Concierge: manually parse a customer&#39;s last 30 days of reports in week 1.</div>
-            <div class="small" style="margin-top:10px;"><strong>Competition / workarounds:</strong> dmarcian, Valimail, Postmark DMARC, DIY scripts. Wedge is cheap, self-host-mailer-friendly onboarding (not enterprise SOC).</div>
-            <div class="small" style="margin-top:10px;"><strong>Kill criteria:</strong> Mailcow ships a good enough built-in parser, or &lt;3 paying admins after concierge.</div>
-          </div>
-
-          <div class="panel" id="panel-flow" aria-hidden="true">
-            <h2>Flow(s)</h2>
-            <ul class="list">
-              <li><span class='step'>1.</span> Ingest: receive DMARC rua aggregate reports (mailbox/API import).</li>
-<li><span class='step'>2.</span> Parse: extract per-domain pass/fail and source metadata into normalized tables.</li>
-<li><span class='step'>3.</span> Dashboard: show trends and “top offenders” with plain-English explanations.</li>
-<li><span class='step'>4.</span> Export: provide a weekly summary for admins (and optionally per-domain drill-down).</li>
-            </ul>
-          </div>
+        <section class="panel" id="panel-problem" style="display:none;">
+          <h2>Problem</h2>
+          <p>Self-hosted mail admins (Mailcow and peers) get raw DMARC aggregate reports and need readable pass/fail/fail-source dashboards without buying enterprise email security suites.</p>
+          <h3>Why now</h3>
+          <p>Mailcow feature request for a DMARC report parser stays open; operators still forward XML to third parties or ignore reports.</p>
         </section>
 
-        <aside class="card">
-          <h2>Investor-friendly pitch snippet</h2>
-          <div class="small" style="white-space: pre-line;">
-            <strong>Wedge:</strong> Self-hosted mail admins (Mailcow and peers) get raw DMARC aggregate reports and need readable pass/fail/fail-source dashboards without buying enterprise email security suites.
+        <section class="panel" id="panel-solution" style="display:none;">
+          <h2>Solution MVP</h2>
+          <p>Solo SaaS: drop a mailbox/API for DMARC rua reports → parse → weekly digest + simple domain dashboard. Start Mailcow-friendly docs, then any self-hosted MTA. Concierge: manually parse a customer&#39;s last 30 days of reports in week 1.</p>
+          <h3>Competition/workarounds</h3>
+          <p>dmarcian, Valimail, Postmark DMARC, DIY scripts. Wedge is cheap, self-host-mailer-friendly onboarding (not enterprise SOC).</p>
+          <h3>Kill condition</h3>
+          <p>Mailcow ships a good enough built-in parser, or &lt;3 paying admins after concierge.</p>
+        </section>
 
-            <strong>Moat:</strong> We ship the workflow end-to-end: input -&gt; run -&gt; explain -&gt; iterate, with fast onboarding.
-
-            <strong>First customer demo:</strong> Start with manual concierge for 1 week, then productize the repeatable core loop.
-
-          </div>
-          <div style="height: 12px;"></div>
-          <h2>One-file HTML</h2>
-          <div class="small muted">
-            Open this file, then switch tabs to show: Landing → Problem → Solution → Flow.
-            You can also copy the flow list into a slide.
-          </div>
-          <div style="height: 12px;"></div>
-          <div class="code" aria-label="Copy/paste MVP">
-// This MVP is already running in your browser as a static demo.
-// Tip: take screenshots for an investor memo.
-// Next: replace the mock demo output with real client-side parsing.
-
-          </div>
-        </aside>
+        <section class="panel" id="panel-flows" style="display:none;">
+          <h2>Flow(s)</h2>
+          <ul><li>Ingest: receive DMARC rua aggregate reports (mailbox/API import).</li><li>Parse: extract per-domain pass/fail and source metadata into normalized tables.</li><li>Dashboard: show trends and “top offenders” with plain-English explanations.</li><li>Export: provide a weekly summary for admins (and optionally per-domain drill-down).</li></ul>
+        </section>
       </div>
-    </main>
 
-    <script>
-      const panels = Array.from(document.querySelectorAll('.panel'));
-      const tabs = Array.from(document.querySelectorAll('button.tab'));
-      function setPanel(id) {
-        for (const p of panels) {
-          const visible = p.id === 'panel-' + id;
-          p.setAttribute('aria-hidden', visible ? 'false' : 'true');
-        }
-        for (const t of tabs) {
-          const selected = t.getAttribute('data-panel') === id;
-          t.setAttribute('aria-selected', selected ? 'true' : 'false');
-        }
+      <div class="card">
+        <h2 style="margin-top:0;">Investor one-minute read</h2>
+        <p class="muted">What this demo proves:</p>
+        <ul>
+          <li>The user workflow is concrete, not just an idea statement.</li>
+          <li>The MVP has a clear first-user path and output artifact.</li>
+          <li>Main risk is explicit and measurable in early tests.</li>
+        </ul>
+        <h3>Pilot success criteria</h3>
+        <ul>
+          <li>3 design partners run the workflow end to end.</li>
+          <li>At least 1 team repeats weekly in the first 14 days.</li>
+          <li>At least 1 asks for a paid/hosted continuation.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function show(name) {
+      for (const p of document.querySelectorAll('.panel')) p.style.display = 'none';
+      document.getElementById('panel-' + name).style.display = 'block';
+    }
+
+    function runGitAnalysis() {
+      try {
+        const a = JSON.parse(document.getElementById('aData').value);
+        const b = JSON.parse(document.getElementById('bData').value);
+        const sa = new Set(a.endpoints || []);
+        const sb = new Set(b.endpoints || []);
+        const onlyA = [...sa].filter(x => !sb.has(x));
+        const onlyB = [...sb].filter(x => !sa.has(x));
+        const both = [...sa].filter(x => sb.has(x));
+        const out = [
+          'Shared endpoints: ' + both.length,
+          'Only in A: ' + (onlyA.join(', ') || 'none'),
+          'Only in B: ' + (onlyB.join(', ') || 'none'),
+          '',
+          'PR summary:',
+          '- add ' + onlyB.length + ' endpoint(s)',
+          '- keep ' + both.length + ' endpoint(s)',
+          '- review rename candidates from A to B'
+        ].join('\n');
+        document.getElementById('gitResult').textContent = out;
+      } catch (e) {
+        document.getElementById('gitResult').textContent = 'Invalid JSON input.';
       }
-      for (const tab of tabs) {
-        tab.addEventListener('click', () => setPanel(tab.dataset.panel));
+    }
+    function acceptA() { document.getElementById('gitResult').textContent += '\nResolution: preferred Client A names.'; }
+    function acceptB() { document.getElementById('gitResult').textContent += '\nResolution: preferred Client B names.'; }
+
+    function planBackup() {
+      const app = document.getElementById('appName').value;
+      const storage = document.getElementById('storage').value;
+      const schedule = document.getElementById('schedule').value;
+      const retention = document.getElementById('retention').value;
+      document.getElementById('backupResult').textContent =
+        'Policy created\n' +
+        '- App: ' + app + '\n' +
+        '- Storage: ' + storage + '\n' +
+        '- Schedule: ' + schedule + '\n' +
+        '- Retention: ' + retention + ' days';
+    }
+    function runDrill() {
+      const target = Number(document.getElementById('rto').value || '20');
+      const actual = Math.max(4, Math.round(target * (0.7 + Math.random() * 0.7)));
+      const pass = actual <= target;
+      document.getElementById('backupResult').textContent +=
+        '\n\nRestore drill result\n- target RTO: ' + target + 'm\n- actual RTO: ' + actual + 'm\n- status: ' + (pass ? 'PASS' : 'FAIL');
+    }
+
+    function parseDmarc() {
+      const raw = document.getElementById('xmlData').value;
+      try {
+        const doc = new DOMParser().parseFromString(raw, 'text/xml');
+        const rows = [...doc.getElementsByTagName('record')];
+        let total = 0, spfFail = 0, dkimFail = 0;
+        const lines = [];
+        for (const r of rows) {
+          const count = Number(r.getElementsByTagName('count')[0]?.textContent || '0');
+          const ip = r.getElementsByTagName('source_ip')[0]?.textContent || 'n/a';
+          const spf = (r.getElementsByTagName('spf')[0]?.textContent || '').toLowerCase();
+          const dkim = (r.getElementsByTagName('dkim')[0]?.textContent || '').toLowerCase();
+          total += count;
+          if (spf === 'fail') spfFail += count;
+          if (dkim === 'fail') dkimFail += count;
+          lines.push(ip + ': count=' + count + ', spf=' + spf + ', dkim=' + dkim);
+        }
+        const risk = (spfFail + dkimFail) / Math.max(total * 2, 1);
+        document.getElementById('dmarcResult').textContent =
+          'Records: ' + rows.length + '\nTotal volume: ' + total +
+          '\nSPF fail volume: ' + spfFail +
+          '\nDKIM fail volume: ' + dkimFail +
+          '\nRisk score: ' + risk.toFixed(2) +
+          '\n\nPer source:\n' + lines.join('\n');
+      } catch (e) {
+        document.getElementById('dmarcResult').textContent = 'Unable to parse XML.';
       }
-      // Tiny "run demo" interaction (mock). Keeps investors engaged without backend.
-      const btn = document.getElementById('btnRunDemo');
-      const reset = document.getElementById('btnReset');
-      const result = document.getElementById('demoResult');
-      const output = document.getElementById('demoOutput');
-      btn.addEventListener('click', () => {
-        result.style.display = 'block';
-        output.textContent =
-          "Demo created: user inputs setup data → the MVP shows an explanation-ready output (mock) → the user can iterate quickly.\n" +
-          "What investors want to see: the workflow is real, not just a feature list.";
-      });
-      reset.addEventListener('click', () => {
-        result.style.display = 'none';
-        output.textContent = '';
-      });
-    </script>
-  </body>
+    }
+
+    function runRlsTests() {
+      const raw = document.getElementById('casesData').value;
+      try {
+        const tests = JSON.parse(raw);
+        const lines = [];
+        let pass = 0;
+        for (const t of tests) {
+          let allow = false;
+          if (t.action === 'select' && ['admin','manager'].includes(t.role)) allow = true;
+          if (t.action === 'update' && t.role === 'member' && t.owner_id === t.jwt_sub) allow = true;
+          if (t.action === 'delete' && t.role === 'member') allow = false;
+          const verdict = allow ? 'ALLOW' : 'DENY';
+          if (allow) pass += 1;
+          lines.push(t.action + ' as ' + t.role + ' -> ' + verdict);
+        }
+        document.getElementById('rlsResult').textContent =
+          'Evaluated: ' + tests.length + '\nAllowed: ' + pass + '\nDenied: ' + (tests.length - pass) + '\n\n' + lines.join('\n');
+      } catch (e) {
+        document.getElementById('rlsResult').textContent = 'Invalid test cases JSON.';
+      }
+    }
+
+    function runGeneric() {
+      const input = document.getElementById('genericInput').value || '';
+      document.getElementById('genericResult').textContent =
+        'Input accepted.\nGenerated a problem-solution-flow preview for: ' + input.slice(0, 120);
+    }
+  </script>
+</body>
 </html>
