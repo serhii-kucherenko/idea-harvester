@@ -26,6 +26,7 @@ workflow you can sell **without** the host's permission or marketplace.
 
 ## Rubric deltas
 
+- **2026-07-29f:** Mail-stack expand (Postal/Mailu/Modoboa/Roundcube): 16 judged — Mailu #122 DMARC Analyzer is duplicate of live Mailcow DMARC card (positive multi-host signal). Rest core-host/packaging. Revalidated Mailcow #1341 still open.
 - **2026-07-29e:** First Discourse intake (n8n/Ghost/HA/Mattermost): 20/20 core-host, pairwise, device-driver, or packaging. Still prefer multi-host ops wedges over product-forum feature votes.
 - **2026-07-29d:** Idle with 0 new: probed public Canny/Featurebase boards — Canny subdomains mostly `company.notFound`, Featurebase often private/401. Revalidated collection-sync card (draft Hoppscotch PR #5797 → host-risk↓, still ≥8). Bruno/cloudflared/Authelia/Vikunja/Meilisearch/Typesense intake: 36/36 core-host/packaging.
 - **2026-07-29c:** Observability/session-replay/forms intake (Inngest, SigNoz, OpenObserve, OpenReplay, Highlight, HeyForm, Ghost, Fider, Sentry boards): 37/37 core-host, pairwise, or packaging. Git-sync dashboards inside OpenObserve still host UI, not a new solo wedge. Next idle: public Canny/Featurebase-style boards or vertical ops pain outside host trackers.

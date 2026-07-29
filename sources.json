@@ -126,7 +126,11 @@
     "authelia/authelia",
     "go-vikunja/vikunja",
     "meilisearch/meilisearch",
-    "typesense/typesense"
+    "typesense/typesense",
+    "postalserver/postal",
+    "Mailu/Mailu",
+    "modoboa/modoboa",
+    "roundcube/roundcubemail"
   ],
   "young_repos": [
     "twentyhq/twenty",
@@ -199,7 +203,10 @@
     "authelia/authelia",
     "go-vikunja/vikunja",
     "meilisearch/meilisearch",
-    "typesense/typesense"
+    "typesense/typesense",
+    "postalserver/postal",
+    "Mailu/Mailu",
+    "modoboa/modoboa"
   ],
   "young_min_age_days": 90,
   "young_min_reactions": 5,
