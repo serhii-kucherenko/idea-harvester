@@ -119,7 +119,14 @@
     "highlight/highlight",
     "glitchtip/glitchtip",
     "TryGhost/Ghost",
-    "getfider/fider"
+    "getfider/fider",
+    "usebruno/bruno",
+    "Kong/kong",
+    "cloudflare/cloudflared",
+    "authelia/authelia",
+    "go-vikunja/vikunja",
+    "meilisearch/meilisearch",
+    "typesense/typesense"
   ],
   "young_repos": [
     "twentyhq/twenty",
@@ -186,14 +193,55 @@
     "highlight/highlight",
     "glitchtip/glitchtip",
     "TryGhost/Ghost",
-    "getfider/fider"
+    "getfider/fider",
+    "usebruno/bruno",
+    "cloudflare/cloudflared",
+    "authelia/authelia",
+    "go-vikunja/vikunja",
+    "meilisearch/meilisearch",
+    "typesense/typesense"
   ],
   "young_min_age_days": 90,
   "young_min_reactions": 5,
   "boards": {
     "name": "GitHub Discussions via harvest_boards.py",
-    "note": "Canny/Featurebase still need connector; discussions cover Ideas boards without API keys."
+    "note": "Canny/Featurebase still need connector; most probed *.canny.io subdomains return company.notFound; Featurebase boards often private (401 without auth)."
   },
+  "public_vote_boards": [
+    {
+      "url": "https://n8n.featurebase.app",
+      "vendor": "featurebase",
+      "status": "private-or-auth",
+      "note": "SSR has org metadata only; posts API 401"
+    },
+    {
+      "url": "https://dub.featurebase.app",
+      "vendor": "featurebase",
+      "status": "reachable",
+      "note": "Public shell loads; need authenticated/client API for posts"
+    },
+    {
+      "url": "https://feedback.hoppscotch.io",
+      "vendor": "unknown",
+      "status": "reachable",
+      "note": "Marketing/feedback shell; no scrapeable vote list yet"
+    },
+    {
+      "url": "https://hoppscotch.canny.io",
+      "vendor": "canny",
+      "status": "not-found"
+    },
+    {
+      "url": "https://coolify.canny.io",
+      "vendor": "canny",
+      "status": "not-found"
+    },
+    {
+      "url": "https://supabase.canny.io",
+      "vendor": "canny",
+      "status": "not-found"
+    }
+  ],
   "discussion_boards": [
     {
       "repo": "vercel/next.js",
@@ -539,6 +587,24 @@
     },
     {
       "repo": "heyform/heyform",
+      "query_extra": "",
+      "min_upvotes": 5,
+      "min_age_days": 90
+    },
+    {
+      "repo": "usebruno/bruno",
+      "query_extra": "",
+      "min_upvotes": 10,
+      "min_age_days": 90
+    },
+    {
+      "repo": "meilisearch/meilisearch",
+      "query_extra": "",
+      "min_upvotes": 10,
+      "min_age_days": 180
+    },
+    {
+      "repo": "go-vikunja/vikunja",
       "query_extra": "",
       "min_upvotes": 5,
       "min_age_days": 90
