@@ -1,29 +1,23 @@
 {
   "schema_version": "1.0.0",
-  "updated_at": "2026-07-29T12:45:00Z",
+  "updated_at": "2026-07-29T13:03:00Z",
   "mode": "autonomous",
   "phase": "idle",
   "ask_human": false,
   "hard_stop": false,
   "hard_stop_reason": null,
   "live_cards": 4,
-  "killed_count": 549,
+  "killed_count": 550,
   "last_tick": {
-    "at": "2026-07-29T12:45:00Z",
-    "new_judged": 36,
+    "at": "2026-07-29T13:03:00Z",
+    "new_judged": 1,
     "cards_added": 0,
-    "kills_added": 36,
-    "idle_actions": [
-      "revalidate_scorecard_1",
-      "probe_public_vote_boards",
-      "expand_sources",
-      "reharvest_same_tick",
-      "rubric_delta"
-    ],
-    "highlight": "Revalidated collection sync (8/10; draft Hoppscotch PR #5797). Canny/Featurebase connectors still blocked. Bruno/auth/search intake: 36 kills; 4 live cards"
+    "kills_added": 1,
+    "idle_actions": [],
+    "highlight": "Killed Immich #3896 album text/narratives (core-host); 4 live cards unchanged"
   },
   "last_error": null,
-  "notes": "Tick 16 idle: public vote boards not scrapeable without auth. Prefer validating collection sync with design partners; next idle try Discourse communities or G2 reviews, not more host feature trackers.",
+  "notes": "Tick 17: one Immich discussion was core gallery UX. Prefer validating SCORECARD #1 collection sync; next idle Discourse/G2 if intake stays empty.",
   "defaults": {
     "always_commit": true,
     "always_push": true
@@ -34,7 +28,7 @@
     "purpose": "harvest",
     "chain": "harvest_score_gc_expand_commit",
     "do_not_rearm_if_alive": true,
-    "ticks_observed": 16,
+    "ticks_observed": 17,
     "pid": 16624
   },
   "idle_policy": {
