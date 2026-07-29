@@ -1,0 +1,12 @@
+{
+  "enabled": true,
+  "interval_seconds": 7200,
+  "to": [
+    "kucherenko.web@gmail.com"
+  ],
+  "from": "Serhii Ideas Bot <onboarding@resend.dev>",
+  "dedupe": {
+    "strategy": "source-url-once",
+    "state_file": ".email_digest_state.json"
+  }
+}
