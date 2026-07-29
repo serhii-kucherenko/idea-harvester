@@ -1,29 +1,29 @@
 {
   "schema_version": "1.0.0",
-  "updated_at": "2026-07-29T18:22:00Z",
+  "updated_at": "2026-07-29T18:25:00Z",
   "mode": "autonomous",
   "phase": "idle",
   "ask_human": false,
   "hard_stop": false,
   "hard_stop_reason": null,
   "live_cards": 4,
-  "killed_count": 615,
+  "killed_count": 619,
   "last_tick": {
-    "at": "2026-07-29T18:22:00Z",
-    "new_judged": 15,
+    "at": "2026-07-29T18:25:00Z",
+    "new_judged": 5,
     "cards_added": 0,
-    "kills_added": 15,
+    "kills_added": 5,
     "idle_actions": [
-      "design_partner_validate_collection_sync",
-      "design_partner_validate_rls",
+      "design_partner_validate_1_2",
       "expand_yaak_insomnia_peers",
+      "add_casaos_runtipi_yaak_boards",
       "reharvest_same_tick",
       "rubric_delta"
     ],
-    "highlight": "Validated #1-#2 WTP/competition; Yaak/Insomnia expand → 15 kills (Runtipi #768 backup duplicate); 4 live cards; watch Supabase PR #42346"
+    "highlight": "Design-partner pass on collection sync + RLS; Yaak/Insomnia peer expand; 5 Insomnia UX kills; 4 live cards unchanged"
   },
   "last_error": null,
-  "notes": "Tick 21: prefer design-partner outreach for SCORECARD #1 (multi-client sync holdouts) and watch RLS host PR #42346. Avoid more CasaOS/Runtipi/mail peer spam next idle.",
+  "notes": "Tick 21 idle: host trackers saturated. Prefer design-partner outreach on SCORECARD #1-#4; watch Supabase PR #42346 and Hoppscotch PR #5797.",
   "defaults": {
     "always_commit": true,
     "always_push": true
@@ -35,7 +35,7 @@
     "chain": "harvest_score_gc_expand_commit",
     "do_not_rearm_if_alive": true,
     "ticks_observed": 21,
-    "pid": 29344
+    "pid": 16624
   },
   "idle_policy": {
     "when": "zero_new_or_zero_cards",
