@@ -1,27 +1,30 @@
 {
   "schema_version": "1.0.0",
-  "updated_at": "2026-07-29T21:40:00Z",
+  "updated_at": "2026-07-29T21:50:00Z",
   "mode": "autonomous",
   "phase": "idle",
   "ask_human": false,
   "hard_stop": false,
   "hard_stop_reason": null,
   "live_cards": 4,
-  "killed_count": 694,
+  "killed_count": 710,
   "last_tick": {
-    "at": "2026-07-29T21:40:00Z",
-    "new_judged": 1,
+    "at": "2026-07-29T21:50:00Z",
+    "new_judged": 16,
     "cards_added": 0,
-    "kills_added": 1,
+    "kills_added": 16,
     "idle_actions": [
-      "resolve_public_emails_outreach",
-      "enrich_outreach_md",
+      "watch_hoppscotch_pr_5797",
+      "watch_supabase_pr_42346",
+      "revalidate_live_host_issues",
+      "expand_lago_matomo_teable_lightdash",
+      "reharvest_same_tick",
       "rubric_delta"
     ],
-    "highlight": "1 Next.js core-host kill; OUTREACH ready emails for lauhon/johnmaguire/borrelan; 4 live cards"
+    "highlight": "0 intake new; Lago/Matomo/Teable/Lightdash 16 core-host kills; host PRs still open; prefer OUTREACH sends"
   },
   "last_error": null,
-  "notes": "Tick 27: next action is Serhii sending the 3 ready emails in OUTREACH.md (not bot-blast). Avoid more host-tracker expands.",
+  "notes": "Tick 28 idle: billing/BI expands also core-host saturated. Next human action: send 3 ready emails in OUTREACH.md. Watch Hoppscotch #5797 and Supabase #42346.",
   "defaults": {
     "always_commit": true,
     "always_push": true
@@ -32,8 +35,8 @@
     "purpose": "harvest",
     "chain": "harvest_score_gc_expand_commit",
     "do_not_rearm_if_alive": true,
-    "ticks_observed": 27,
-    "pid": 29344
+    "ticks_observed": 28,
+    "pid": 19808
   },
   "idle_policy": {
     "when": "zero_new_or_zero_cards",

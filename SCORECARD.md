@@ -11,6 +11,8 @@ Solo-indie gate (RUBRIC.md). Revalidated each idle tick when intake is empty.
 
 **Pick order for validation:** collection sync → RLS → DMARC → Coolify backups.
 
+**Idle note (2026-07-29p):** 0 new first pass. Host PRs #5797/#42346 still open/unmerged; live issues #870/#1341/#2389 + discussion #12269 still open. Expanded Lago/OpenMeter/Convoy/Unleash/Matomo/Budibase/Teable/Lightdash → 16/16 core-host/packaging/pairwise/driver kills. Billing+BI trackers also host-feature saturated. Prefer Serhii sending the 3 ready OUTREACH.md emails next.
+
 **Idle note (2026-07-29o):** 1 new (Next.js #43179) → core-host kill. Enriched [`OUTREACH.md`](OUTREACH.md) with public emails for @lauhon, @johnmaguire, @borrelan + copy-paste drafts. Host PRs still open. Prefer Serhii sends those 3 emails next; no more monitoring-host expands.
 
 **Idle note (2026-07-29n):** 0 new first pass; host PRs #5797/#42346 still unmerged. Expanded Gatus/Dockge/Dozzle/Beszel → 15/15 core-host. Prefer sending OUTREACH.md DMs over more monitoring-host expand.

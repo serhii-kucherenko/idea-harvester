@@ -77,6 +77,6 @@ Skip pitching @dragoangel (already ships parsedmarc compose — competitor/worka
 
 | When | Who | Channel | Result |
 |------|-----|---------|--------|
-| — | — | — | none sent yet (tick 27 prepared ready queue) |
+| — | — | — | none sent yet (tick 28 still waiting on Serhii personal inbox) |
 
-Updated: 2026-07-29 (tick 27).
+Updated: 2026-07-29 (tick 28).

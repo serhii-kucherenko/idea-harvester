@@ -26,6 +26,7 @@ workflow you can sell **without** the host's permission or marketplace.
 
 ## Rubric deltas
 
+- **2026-07-29p:** Lago/Matomo/Teable/Lightdash expand: 16/16 core-host, packaging, pairwise, or driver. Billing/BI/Airtable-clone trackers look like the same core-host trap as PaaS/monitoring. Prefer OUTREACH.md human sends over more product-tracker expands.
 - **2026-07-29o:** Idle mostly empty — 1 Next.js discussion kill (core-host). OUTREACH.md now has public emails + drafts for lauhon/johnmaguire/borrelan. Prefer human send from personal inbox; do not bot-blast.
 - **2026-07-29n:** Gatus/Dockge/Beszel intake: 15/15 core-host. Monitoring feature trackers still host UX. Prefer OUTREACH.md DMs over more monitoring-host expands.
 - **2026-07-29m:** Idle 0 new after Duplicati/Borg/Kopia 15/15 core-host. Executed outreach → OUTREACH.md named leads (Hoppscotch #870, Coolify #2389 bounty commenters, RLS/DMARC). Prefer sending DMs next over more backup-CLI expands.

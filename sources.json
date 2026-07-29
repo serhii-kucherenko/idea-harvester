@@ -153,7 +153,15 @@
     "TwiN/gatus",
     "louislam/dockge",
     "amir20/dozzle",
-    "henrygd/beszel"
+    "henrygd/beszel",
+    "getlago/lago",
+    "openmeterio/openmeter",
+    "frain-dev/convoy",
+    "Unleash/unleash",
+    "matomo-org/matomo",
+    "budibase/budibase",
+    "teableio/teable",
+    "lightdash/lightdash"
   ],
   "young_repos": [
     "twentyhq/twenty",
@@ -249,7 +257,13 @@
     "TwiN/gatus",
     "louislam/dockge",
     "amir20/dozzle",
-    "henrygd/beszel"
+    "henrygd/beszel",
+    "getlago/lago",
+    "openmeterio/openmeter",
+    "frain-dev/convoy",
+    "Unleash/unleash",
+    "teableio/teable",
+    "lightdash/lightdash"
   ],
   "young_min_age_days": 90,
   "young_min_reactions": 5,
