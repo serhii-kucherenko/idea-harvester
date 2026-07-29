@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "updated_at": "2026-07-29T21:50:00Z",
+  "updated_at": "2026-07-29T22:05:00Z",
   "mode": "autonomous",
   "phase": "idle",
   "ask_human": false,
@@ -9,22 +9,19 @@
   "live_cards": 4,
   "killed_count": 710,
   "last_tick": {
-    "at": "2026-07-29T21:50:00Z",
-    "new_judged": 16,
+    "at": "2026-07-29T22:05:00Z",
+    "new_judged": 0,
     "cards_added": 0,
-    "kills_added": 16,
+    "kills_added": 0,
     "idle_actions": [
-      "watch_hoppscotch_pr_5797",
-      "watch_supabase_pr_42346",
-      "revalidate_live_host_issues",
-      "expand_lago_matomo_teable_lightdash",
-      "reharvest_same_tick",
+      "enrich_riemers_email",
+      "watch_host_prs",
       "rubric_delta"
     ],
-    "highlight": "0 intake new; Lago/Matomo/Teable/Lightdash 16 core-host kills; host PRs still open; prefer OUTREACH sends"
+    "highlight": "0 new; OUTREACH 4 ready emails (riemers info@hashop.nl); host PRs open; 4 live cards"
   },
   "last_error": null,
-  "notes": "Tick 28 idle: billing/BI expands also core-host saturated. Next human action: send 3 ready emails in OUTREACH.md. Watch Hoppscotch #5797 and Supabase #42346.",
+  "notes": "Tick 29: harvest loop saturated on GitHub. Highest-value next step is Serhii sending OUTREACH.md emails #1-#4 from personal inbox. Do not expand more product trackers.",
   "defaults": {
     "always_commit": true,
     "always_push": true
@@ -35,9 +32,8 @@
     "purpose": "harvest",
     "chain": "harvest_score_gc_expand_commit",
     "do_not_rearm_if_alive": true,
-    "ticks_observed": 28,
-    "pid": 22016,
-    "note": "Re-armed after 19808 exit 4294967295; replaced unmonitored 29344 with monitored sentinel"
+    "ticks_observed": 29,
+    "pid": 29344
   },
   "idle_policy": {
     "when": "zero_new_or_zero_cards",

@@ -10,7 +10,7 @@ prefer polite email / LinkedIn after a useful comment, or reply offering a free 
 | 1 | @lauhon (Laurenz Honauer) | laurenz.honauer@gmail.com · [gh](https://github.com/lauhon) · [site](https://getnewfinance.com) | Collection sync | **ready** — public email |
 | 2 | @johnmaguire (John Maguire) | contact@johnmaguire.me · [gh](https://github.com/johnmaguire) · [site](https://www.johnmaguire.me/) | Coolify backups | **ready** — public email + bounty |
 | 3 | @borrelan (Andre B) | borrelan@gmail.com · [gh](https://github.com/borrelan) | DMARC | **ready** — public email |
-| 4 | @riemers (Erik-jan Riemers) | no public email · [gh](https://github.com/riemers) · [hashop.nl](https://hashop.nl) | Coolify backups | contact via site / gh |
+| 4 | @riemers (Erik-jan Riemers) | info@hashop.nl · [gh](https://github.com/riemers) · [hashop.nl](https://hashop.nl) | Coolify backups | **ready** — site mailto + $150 bounty |
 | 5 | @aaronksaunders | no public email · [gh](https://github.com/aaronksaunders) · [@aaronksaunders](https://twitter.com/aaronksaunders) · [linktree](https://linktr.ee/aaronksaunders) | RLS | Twitter / linktree |
 
 Do **not** auto-blast from the harvest bot. Send as yourself (Serhii) from a personal inbox so replies land correctly. Log sent/replied below.
@@ -28,6 +28,10 @@ Do **not** auto-blast from the harvest bot. Send as yourself (Serhii) from a per
 **To borrelan@gmail.com — subject: Mailcow-friendly DMARC digest**
 
 > Hi Andre — saw your notes on Mailcow #1341 wanting something stitched to the platform rather than raw parsedmarc. I’m prototyping a cheap multi-domain DMARC digest aimed at self-hosted mail. Open to a free pilot on one domain?
+
+**To info@hashop.nl (Erik-jan / @riemers) — subject: Coolify WordPress volume backups**
+
+> Hi Erik-jan — saw your $150 bounty on Coolify #2389 for easy WordPress volume backup/restore. I’m offering free restore drills on a non-prod Coolify host this month. Want one, or should I aim the pilot at the bounty scope directly?
 
 ---
 
@@ -77,6 +81,6 @@ Skip pitching @dragoangel (already ships parsedmarc compose — competitor/worka
 
 | When | Who | Channel | Result |
 |------|-----|---------|--------|
-| — | — | — | none sent yet (tick 28 still waiting on Serhii personal inbox) |
+| — | — | — | none sent yet (tick 29: 4 ready emails incl. info@hashop.nl; await personal send) |
 
-Updated: 2026-07-29 (tick 28).
+Updated: 2026-07-29 (tick 29).
