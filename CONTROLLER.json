@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "updated_at": "2026-07-29T19:25:00Z",
+  "updated_at": "2026-07-29T19:25:30Z",
   "mode": "autonomous",
   "phase": "idle",
   "ask_human": false,
@@ -22,7 +22,7 @@
     "highlight": "Validated DMARC+Coolify vs free SaaS/SimpleBackups; NPM #168 backup UI killed as Coolify duplicate; NPM/Caddy/Bitwarden/Coder: 15 kills; 4 live cards"
   },
   "last_error": null,
-  "notes": "Tick 22 idle: all four live cards design-partner validated this cycle. Prefer outreach on SCORECARD #1-#4; watch Hoppscotch #5797 and Supabase #42346.",
+  "notes": "Harvest sentinel re-armed again after stop (pid 19808). Email loop still alive.",
   "defaults": {
     "always_commit": true,
     "always_push": true
@@ -34,7 +34,7 @@
     "chain": "harvest_score_gc_expand_commit",
     "do_not_rearm_if_alive": true,
     "ticks_observed": 22,
-    "pid": 29344
+    "pid": 19808
   },
   "idle_policy": {
     "when": "zero_new_or_zero_cards",
