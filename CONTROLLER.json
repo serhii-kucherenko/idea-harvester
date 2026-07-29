@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "updated_at": "2026-07-29T22:40:00Z",
+  "updated_at": "2026-07-29T22:45:00Z",
   "mode": "autonomous",
   "phase": "idle",
   "ask_human": false,
@@ -9,22 +9,20 @@
   "live_cards": 4,
   "killed_count": 725,
   "last_tick": {
-    "at": "2026-07-29T22:40:00Z",
-    "new_judged": 15,
+    "at": "2026-07-29T22:45:00Z",
+    "new_judged": 0,
     "cards_added": 0,
-    "kills_added": 15,
+    "kills_added": 0,
     "idle_actions": [
-      "watch_hoppscotch_pr_5797",
-      "watch_supabase_pr_42346",
-      "expand_yaak_scalar_httpie_postman",
-      "reharvest_same_tick",
-      "dedupe_harvest_sentinels",
+      "revalidate_all_live_cards",
+      "watch_host_prs",
+      "enrich_aaron_linkedin",
       "rubric_delta"
     ],
-    "highlight": "1 HA Discourse kill + 14 API-client kills; HTTPie sync reinforces collection-sync; host PRs open; prefer OUTREACH #1-4"
+    "highlight": "0 new this pass; all 4 live cards + host PRs still open; OUTREACH awaits personal send; loop healthy (pid 31732)"
   },
   "last_error": null,
-  "notes": "Tick 30: API-client trackers saturated like hosts. Next human action: send OUTREACH.md emails #1-4. Single harvest sentinel pid 22016.",
+  "notes": "Tick 30: do not expand trackers. Send OUTREACH.md emails #1-#4 from personal inbox. Loop pid 31732.",
   "defaults": {
     "always_commit": true,
     "always_push": true
@@ -36,7 +34,7 @@
     "chain": "harvest_score_gc_expand_commit",
     "do_not_rearm_if_alive": true,
     "ticks_observed": 30,
-    "pid": 22016
+    "pid": 31732
   },
   "idle_policy": {
     "when": "zero_new_or_zero_cards",

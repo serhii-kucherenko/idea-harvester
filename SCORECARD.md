@@ -11,7 +11,7 @@ Solo-indie gate (RUBRIC.md). Revalidated each idle tick when intake is empty.
 
 **Pick order for validation:** collection sync → RLS → DMARC → Coolify backups.
 
-**Idle note (2026-07-29r):** 1 Discourse new (HA Color Picker) → kill. Expanded Yaak/Scalar/HTTPie/Postman/Fern/Speakeasy → 14/14 core-host. HTTPie #222 team git-sync ask is multi-host signal for live collection-sync card (still kill as host feature). Host PRs open. Prefer Serhii sending OUTREACH.md emails #1–#4.
+**Idle note (2026-07-29r):** Parallel idle work this cycle: (1) revalidated all 4 live cards + host PRs #5797/#42346 — still OPEN; (2) Yaak/Scalar/HTTPie peer expand → 14 core-host kills (HTTPie #222 git-sync is multi-host signal for live card #1, still kill as host feature). OUTREACH still awaits personal inbox send (#1–#4). No more API-client expands.
 
 **Idle note (2026-07-29q):** 0 new. No host expand. Added @riemers `info@hashop.nl` — now **4 ready emails** in OUTREACH.md. Host PRs still open. Blocker is personal inbox send, not more GitHub scanning.
 

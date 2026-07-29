@@ -11,7 +11,7 @@ prefer polite email / LinkedIn after a useful comment, or reply offering a free 
 | 2 | @johnmaguire (John Maguire) | contact@johnmaguire.me · [gh](https://github.com/johnmaguire) · [site](https://www.johnmaguire.me/) | Coolify backups | **ready** — public email + bounty |
 | 3 | @borrelan (Andre B) | borrelan@gmail.com · [gh](https://github.com/borrelan) | DMARC | **ready** — public email |
 | 4 | @riemers (Erik-jan Riemers) | info@hashop.nl · [gh](https://github.com/riemers) · [hashop.nl](https://hashop.nl) | Coolify backups | **ready** — site mailto + $150 bounty |
-| 5 | @aaronksaunders | no public email · [gh](https://github.com/aaronksaunders) · [@aaronksaunders](https://twitter.com/aaronksaunders) · [linktree](https://linktr.ee/aaronksaunders) | RLS | Twitter / linktree |
+| 5 | @aaronksaunders | no public email · [gh](https://github.com/aaronksaunders) · [LinkedIn](https://www.linkedin.com/in/aaronksaunders/) · [X](https://x.com/aaronksaunders) · [linktree](https://linktr.ee/aaronksaunders) | RLS | LinkedIn / X |
 
 Do **not** auto-blast from the harvest bot. Send as yourself (Serhii) from a personal inbox so replies land correctly. Log sent/replied below.
 
