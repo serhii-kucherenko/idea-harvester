@@ -1,30 +1,23 @@
 {
   "schema_version": "1.0.0",
-  "updated_at": "2026-07-29T08:38:42Z",
+  "updated_at": "2026-07-29T10:55:00Z",
   "mode": "autonomous",
   "phase": "idle",
   "ask_human": false,
   "hard_stop": false,
   "hard_stop_reason": null,
   "live_cards": 4,
-  "killed_count": 454,
+  "killed_count": 455,
   "last_tick": {
-    "at": "2026-07-29T08:38:42Z",
-    "new_judged": 61,
+    "at": "2026-07-29T10:55:00Z",
+    "new_judged": 1,
     "cards_added": 0,
-    "kills_added": 61,
-    "idle_actions": [
-      "drop_forgejo_422",
-      "expand_ops_media_repos",
-      "expand_discussion_boards",
-      "rubric_delta_core_host_cluster",
-      "reharvest_same_tick",
-      "scorecard_idle_note"
-    ],
-    "highlight": "61 hard-fail kills (Uptime-Kuma/Gitea/Nextcloud/Immich/rclone/Jellyfin); 4 live cards unchanged; validate collection sync next"
+    "kills_added": 1,
+    "idle_actions": [],
+    "highlight": "Killed Payload CMS #14230 (dev-server performance bug); 4 live cards unchanged"
   },
   "last_error": null,
-  "notes": "Tick 12: GitHub trackers still host-feature heavy after ops expansion. Prefer validating SCORECARD #1 over more GitHub churn.",
+  "notes": "Tick 13: one new discussion was core-host DX/perf; still prefer validating SCORECARD #1.",
   "defaults": {
     "always_commit": true,
     "always_push": true
@@ -35,7 +28,7 @@
     "purpose": "harvest",
     "chain": "harvest_score_gc_expand_commit",
     "do_not_rearm_if_alive": true,
-    "ticks_observed": 12,
+    "ticks_observed": 13,
     "pid": 16624
   },
   "idle_policy": {
