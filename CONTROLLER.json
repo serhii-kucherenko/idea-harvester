@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "updated_at": "2026-07-29T20:20:00Z",
+  "updated_at": "2026-07-29T20:38:00Z",
   "mode": "autonomous",
   "phase": "idle",
   "ask_human": false,
@@ -9,21 +9,20 @@
   "live_cards": 4,
   "killed_count": 663,
   "last_tick": {
-    "at": "2026-07-29T20:20:00Z",
-    "new_judged": 14,
+    "at": "2026-07-29T20:38:00Z",
+    "new_judged": 0,
     "cards_added": 0,
-    "kills_added": 14,
+    "kills_added": 0,
     "idle_actions": [
-      "watch_hoppscotch_pr_5797",
-      "watch_supabase_pr_42346",
-      "expand_neon_electric_libsql",
-      "reharvest_same_tick",
+      "design_partner_outreach_map_rls",
+      "design_partner_outreach_map_dmarc",
+      "design_partner_outreach_map_coolify",
       "rubric_delta"
     ],
-    "highlight": "Host PRs #5797/#42346 still unmerged; Neon/Electric/libSQL: 14 core-host kills; 4 live cards; prefer #1 outreach"
+    "highlight": "0 new; mapped outreach for RLS/DMARC/Coolify; host PRs still open; 4 live cards"
   },
   "last_error": null,
-  "notes": "Tick 24 idle: DB peers also core-host. Prefer design-partner outreach on SCORECARD #1 over more host-tracker expansion. Watch Hoppscotch #5797 and Supabase #42346.",
+  "notes": "Tick 25: all four live cards have outreach maps. Prefer actual concierge contact over more GitHub expands next idle. Watch Hoppscotch #5797 and Supabase #42346.",
   "defaults": {
     "always_commit": true,
     "always_push": true
@@ -34,8 +33,8 @@
     "purpose": "harvest",
     "chain": "harvest_score_gc_expand_commit",
     "do_not_rearm_if_alive": true,
-    "ticks_observed": 24,
-    "pid": 19808
+    "ticks_observed": 25,
+    "pid": 29344
   },
   "idle_policy": {
     "when": "zero_new_or_zero_cards",

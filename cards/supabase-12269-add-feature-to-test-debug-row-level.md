@@ -17,10 +17,10 @@ Supabase Feature Request discussion open with strong votes for an RLS test/debug
 Solo tool: paste policies + sample JWTs/roles → matrix of allow/deny with explanations. Works against local Postgres or Supabase project. Concierge: manually review 5 customers’ policies in week 1.
 
 ## Competition / workarounds
-Manual `SET LOCAL ROLE` SQL, SupaShield CLI (supashield.app, ~100★), rlsgrid (cross-tenant fuzzer), rlsmon, Studio SQL impersonation docs. Supabase open PR #42346 “RLS Policy Playground UI” (unmerged as of 2026-02). Wedge is CI-grade multi-Postgres + clearer UX than CLI-only tools — host shipping Studio playground would shrink host-risk fast.
+Manual `SET LOCAL ROLE` SQL, SupaShield CLI, rlsgrid, rlsmon, rlsautotest (pgTAP generator), official Supabase pgTAP docs. Supabase open PR #42346 “RLS Policy Playground UI” (unmerged). Free CLIs/docs crowd “basic test harness” — wedge is interactive allow/deny matrix + multi-Postgres CI for builders who bounce off pgTAP.
 
 ## Kill if
 Supabase merges/ships excellent RLS Playground and paid demand disappears; or free CLIs fully cover CI+matrix needs.
 
 ## Tick note
-Revalidated 2026-07-29j: discussion #12269 still OPEN. PR #42346 still open/unmerged (updated 2026-02-17) — not host-shipped. Score 8/10 — keep; watch #42346.
+Revalidated 2026-07-29l: #12269 open; PR #42346 still unmerged. Outreach: authors of RLS-testing DEV posts, Supabase Discord #help builders hitting silent RLS fails, discussion #12269 commenters — pitch UI matrix vs writing pgTAP. Score 8/10 — keep.

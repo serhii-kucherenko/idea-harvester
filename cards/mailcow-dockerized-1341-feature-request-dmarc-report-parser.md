@@ -23,7 +23,7 @@ Postmark DMARC (free digests), dmarcian/EasyDMARC free tiers + ~$8–25/mo paid,
 Mailcow ships a good enough built-in parser; free SaaS digests absorb the Mailcow segment; or <3 paying admins after concierge.
 
 ## Tick note
-Revalidated 2026-07-29i: #1341 still OPEN (updated 2026-02-21). Design-partner note: start outreach with multi-domain self-hosters who already tried Postmark/parsedmarc and still want a Mailcow-native flow. Score 8/10 — keep.
+Revalidated 2026-07-29l: #1341 still OPEN. Outreach: Mailcow Discord/#1341 commenters, Mailu #122 watchers, self-host mail Reddit — pitch Mailcow-native multi-domain digest for people who bounced off Postmark free digests. Score 8/10 — keep.
 
 ## Related signal
 Mailu [DMARC Analyzer](https://github.com/Mailu/Mailu/issues/122) asks for the same job — killed as duplicate; strengthens multi-host DMARC wedge.

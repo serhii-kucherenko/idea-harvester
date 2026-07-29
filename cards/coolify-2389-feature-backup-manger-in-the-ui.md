@@ -17,13 +17,13 @@ Coolify issue open with sustained votes asking for a Backup Manager in the UI; m
 Solo SaaS: connect Coolify (then CapRover/Dokploy/raw Docker) → scheduled encrypted backups to the customer's S3/R2 → one-click restore drills + alerts. Concierge week 1 as manual restore runbooks; automate after.
 
 ## Competition / workarounds
-SimpleBackups ($49–299/mo — proves WTP for Docker/server backups), DIY restic/cron, Coolify’s own instance/S3 backup (docs: does **not** cover app volume data). Wedge is Coolify/Dokploy-native volume+app restore drills cheaper/simpler than SimpleBackups for indie hosters.
+SimpleBackups ($49–299/mo), Vaultkeeper (pay-once DIY), CoolifyBR / community restore scripts, Coolify instance/S3 backup (docs: **not** app volumes). DIY scripts prove pain; wedge is managed Coolify/Dokploy volume+app restore drills without $49/mo or bash archaeology.
 
 ## Kill if
 Coolify ships excellent native app-volume backup+restore that removes willingness to pay, or <3 paying design partners after concierge.
 
 ## Tick note
-Revalidated 2026-07-29i: #2389 still OPEN (updated 2026-06-25); discussion #4597 still OPEN (68↑, updated 2026-07-15). Design-partner note: pitch restore confidence vs SimpleBackups price floor. Score 8/10 — keep.
+Revalidated 2026-07-29l: #2389 + #4597 still OPEN; Hoppscotch/Supabase host PRs also still unmerged this tick. Outreach: #2389/#4597 commenters, Coolify Discord, authors of CoolifyBR/DEV restore guides — pitch restore confidence vs scripts/SimpleBackups. Score 8/10 — keep.
 
 ## Related signal
 Also see Coolify discussion [Backup Docker Volumes](https://github.com/coollabsio/coolify/discussions/4597) (68 upvotes) - same backup/restore job.
