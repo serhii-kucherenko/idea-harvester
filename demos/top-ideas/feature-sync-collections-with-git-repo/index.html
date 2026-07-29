@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>[feature]: Sync Collections with Git repo - Demo MVP</title>
+    <style>
+      :root {
+        --bg: #0b1220;
+        --card: rgba(255,255,255,.06);
+        --text: rgba(255,255,255,.92);
+        --muted: rgba(255,255,255,.68);
+        --accent: #60a5fa;
+        --border: rgba(255,255,255,.12);
+      }
+      body {
+        margin: 0;
+        font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+        background: linear-gradient(180deg, #0b1220, #070b14);
+        color: var(--text);
+      }
+      header {
+        padding: 28px 18px 18px;
+        max-width: 1000px;
+        margin: 0 auto;
+      }
+      .badge {
+        display: inline-flex;
+        gap: 8px;
+        align-items: center;
+        padding: 8px 12px;
+        border: 1px solid var(--border);
+        background: var(--card);
+        border-radius: 999px;
+        color: var(--muted);
+        font-size: 13px;
+      }
+      h1 {
+        margin: 14px 0 8px;
+        font-size: 28px;
+        line-height: 1.15;
+      }
+      .subtitle {
+        color: var(--muted);
+        max-width: 74ch;
+        font-size: 15px;
+      }
+      main {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 14px 18px 36px;
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: 1.1fr .9fr;
+        gap: 16px;
+      }
+      @media (max-width: 920px) { .grid { grid-template-columns: 1fr; } }
+      .card {
+        border: 1px solid var(--border);
+        background: var(--card);
+        border-radius: 16px;
+        padding: 16px;
+      }
+      .tabs {
+        display: flex;
+        gap: 8px;
+        flex-wrap: wrap;
+        margin-bottom: 12px;
+      }
+      button.tab {
+        appearance: none;
+        border: 1px solid var(--border);
+        background: transparent;
+        color: var(--muted);
+        padding: 10px 12px;
+        border-radius: 12px;
+        cursor: pointer;
+        font-weight: 600;
+        font-size: 13px;
+      }
+      button.tab[aria-selected="true"] {
+        border-color: rgba(96,165,250,.6);
+        color: var(--text);
+        background: rgba(96,165,250,.12);
+      }
+      .panel { display: none; }
+      .panel[aria-hidden="false"] { display: block; }
+      h2 {
+        margin: 0 0 10px;
+        font-size: 16px;
+        letter-spacing: .2px;
+      }
+      .muted { color: var(--muted); }
+      .list {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+      .list li {
+        padding: 10px 0;
+        border-bottom: 1px dashed rgba(255,255,255,.14);
+      }
+      .list li:last-child { border-bottom: none; }
+      .step {
+        display: inline-block;
+        width: 28px;
+        color: var(--accent);
+        font-weight: 800;
+      }
+      .code {
+        font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+        font-size: 12.5px;
+        background: rgba(0,0,0,.25);
+        border: 1px solid rgba(255,255,255,.12);
+        border-radius: 12px;
+        padding: 12px;
+        overflow: auto;
+        white-space: pre;
+      }
+      .cta {
+        margin-top: 14px;
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+      }
+      a.cta {
+        color: var(--text);
+        text-decoration: none;
+      }
+      .btn {
+        border: 1px solid rgba(96,165,250,.7);
+        background: rgba(96,165,250,.15);
+        padding: 10px 12px;
+        border-radius: 12px;
+        cursor: pointer;
+        font-weight: 700;
+        color: var(--text);
+        transition: transform .05s ease-in-out;
+      }
+      .btn:active { transform: translateY(1px); }
+      textarea {
+        width: 100%;
+        min-height: 120px;
+        background: rgba(0,0,0,.2);
+        border: 1px solid rgba(255,255,255,.12);
+        border-radius: 12px;
+        color: var(--text);
+        padding: 12px;
+        resize: vertical;
+      }
+      .result {
+        margin-top: 12px;
+        border: 1px solid rgba(255,255,255,.12);
+        border-radius: 12px;
+        padding: 12px;
+        background: rgba(0,0,0,.15);
+      }
+      .small { font-size: 12.5px; color: var(--muted); line-height: 1.45; }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="badge">
+        <strong style="color: var(--text);">Demo MVP</strong>
+        <span>Score: <strong style="color: var(--text);">9/10</strong></span>
+        <span class="muted">Source: <a href="https://github.com/hoppscotch/hoppscotch/issues/870" target="_blank" rel="noreferrer" style="color: var(--accent);">https://github.com/hoppscotch/hoppscotch/issues/870</a></span>
+      </div>
+      <h1>[feature]: Sync Collections with Git repo</h1>
+      <div class="subtitle">
+        A one-page investor demo showing the problem, the wedge, and the user flow.
+        This file is client-only (no backend) so it’s safe to open anywhere.
+      </div>
+    </header>
+
+    <main>
+      <div class="grid">
+        <section class="card">
+          <div class="tabs" role="tablist" aria-label="Demo tabs">
+            <button class="tab" role="tab" aria-selected="true" data-panel="landing">Landing</button>
+            <button class="tab" role="tab" aria-selected="false" data-panel="problem">Problem</button>
+            <button class="tab" role="tab" aria-selected="false" data-panel="solution">Solution</button>
+            <button class="tab" role="tab" aria-selected="false" data-panel="flow">Flow</button>
+          </div>
+
+          <div class="panel" id="panel-landing" aria-hidden="false">
+            <h2>Why this matters</h2>
+            <div class="small">API teams want collections versioned in Git and shared across machines/clients without vendor lock-in to one client UI.</div>
+            <div class="cta">
+              <button class="btn" id="btnRunDemo">Run a quick demo</button>
+              <button class="btn" id="btnReset">Reset</button>
+            </div>
+            <div class="result" id="demoResult" style="display:none;">
+              <div style="font-weight:800; margin-bottom:6px;">Demo output (mock)</div>
+              <div class="small" id="demoOutput"></div>
+            </div>
+            <div class="small" style="margin-top:10px;">
+              Investor note: Revalidated 2026-07-26: still open gap; solo bar still passes.
+            </div>
+          </div>
+
+          <div class="panel" id="panel-problem" aria-hidden="true">
+            <h2>Problem statement</h2>
+            <div class="small"><strong>Gap:</strong> API teams want collections versioned in Git and shared across machines/clients without vendor lock-in to one client UI.</div>
+            <div class="small" style="margin-top:10px;"><strong>Why host won’t:</strong> Open Hoppscotch request since 2021 with 100+ reactions; still unmet as a first-class sync product. Same pain exists for Postman/Insomnia users who outgrow vendor sync.</div>
+          </div>
+
+          <div class="panel" id="panel-solution" aria-hidden="true">
+            <h2>Solution (MVP wedge)</h2>
+            <div class="small">Solo SaaS/CLI: export/import + continuous sync of API collections (Hoppscotch/Postman/Insomnia formats) to a Git repo, with PR-friendly diffs and team invite. Start CLI + GitHub App; charge per seat for sync + conflict UI.</div>
+            <div class="small" style="margin-top:10px;"><strong>Competition / workarounds:</strong> Postman cloud sync (vendor lock), manual JSON in git, Insomnia git sync (partial). Wedge is multi-client + clean diffs.</div>
+            <div class="small" style="margin-top:10px;"><strong>Kill criteria:</strong> Hoppscotch ships excellent native git sync AND multi-client users still will not pay; or &lt;3 design partners after concierge.</div>
+          </div>
+
+          <div class="panel" id="panel-flow" aria-hidden="true">
+            <h2>Flow(s)</h2>
+            <ul class="list">
+              <li><span class='step'>1.</span> Connect: authenticate to your Git provider and choose collections format(s).</li>
+<li><span class='step'>2.</span> Export: read collections from your API client(s) and write them into Git as files.</li>
+<li><span class='step'>3.</span> Sync: watch for local changes, detect diffs, and push/pull with conflict-aware merge hints.</li>
+<li><span class='step'>4.</span> Deploy: optionally open a PR or run a post-sync hook to update environments.</li>
+            </ul>
+          </div>
+        </section>
+
+        <aside class="card">
+          <h2>Investor-friendly pitch snippet</h2>
+          <div class="small" style="white-space: pre-line;">
+            <strong>Wedge:</strong> API teams want collections versioned in Git and shared across machines/clients without vendor lock-in to one client UI.
+
+            <strong>Moat:</strong> We ship the workflow end-to-end: input -&gt; run -&gt; explain -&gt; iterate, with fast onboarding.
+
+            <strong>First customer demo:</strong> Start with manual concierge for 1 week, then productize the repeatable core loop.
+
+          </div>
+          <div style="height: 12px;"></div>
+          <h2>One-file HTML</h2>
+          <div class="small muted">
+            Open this file, then switch tabs to show: Landing → Problem → Solution → Flow.
+            You can also copy the flow list into a slide.
+          </div>
+          <div style="height: 12px;"></div>
+          <div class="code" aria-label="Copy/paste MVP">
+// This MVP is already running in your browser as a static demo.
+// Tip: take screenshots for an investor memo.
+// Next: replace the mock demo output with real client-side parsing.
+
+          </div>
+        </aside>
+      </div>
+    </main>
+
+    <script>
+      const panels = Array.from(document.querySelectorAll('.panel'));
+      const tabs = Array.from(document.querySelectorAll('button.tab'));
+      function setPanel(id) {
+        for (const p of panels) {
+          const visible = p.id === 'panel-' + id;
+          p.setAttribute('aria-hidden', visible ? 'false' : 'true');
+        }
+        for (const t of tabs) {
+          const selected = t.getAttribute('data-panel') === id;
+          t.setAttribute('aria-selected', selected ? 'true' : 'false');
+        }
+      }
+      for (const tab of tabs) {
+        tab.addEventListener('click', () => setPanel(tab.dataset.panel));
+      }
+      // Tiny "run demo" interaction (mock). Keeps investors engaged without backend.
+      const btn = document.getElementById('btnRunDemo');
+      const reset = document.getElementById('btnReset');
+      const result = document.getElementById('demoResult');
+      const output = document.getElementById('demoOutput');
+      btn.addEventListener('click', () => {
+        result.style.display = 'block';
+        output.textContent =
+          "Demo created: user inputs setup data → the MVP shows an explanation-ready output (mock) → the user can iterate quickly.\n" +
+          "What investors want to see: the workflow is real, not just a feature list.";
+      });
+      reset.addEventListener('click', () => {
+        result.style.display = 'none';
+        output.textContent = '';
+      });
+    </script>
+  </body>
+</html>
