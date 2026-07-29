@@ -1,28 +1,29 @@
 {
   "schema_version": "1.0.0",
-  "updated_at": "2026-07-29T20:38:00Z",
+  "updated_at": "2026-07-29T20:48:00Z",
   "mode": "autonomous",
   "phase": "idle",
   "ask_human": false,
   "hard_stop": false,
   "hard_stop_reason": null,
   "live_cards": 4,
-  "killed_count": 663,
+  "killed_count": 678,
   "last_tick": {
-    "at": "2026-07-29T20:38:00Z",
-    "new_judged": 0,
+    "at": "2026-07-29T20:48:00Z",
+    "new_judged": 15,
     "cards_added": 0,
-    "kills_added": 0,
+    "kills_added": 15,
     "idle_actions": [
-      "design_partner_outreach_map_rls",
-      "design_partner_outreach_map_dmarc",
-      "design_partner_outreach_map_coolify",
+      "watch_hoppscotch_pr_5797",
+      "watch_supabase_pr_42346",
+      "expand_duplicati_borg_kopia",
+      "reharvest_same_tick",
       "rubric_delta"
     ],
-    "highlight": "0 new; mapped outreach for RLS/DMARC/Coolify; host PRs still open; 4 live cards"
+    "highlight": "Host PRs still unmerged; Duplicati/Borg/Kopia: 15 core-host kills; Coolify backup card unchanged; prefer outreach maps"
   },
   "last_error": null,
-  "notes": "Tick 25: all four live cards have outreach maps. Prefer actual concierge contact over more GitHub expands next idle. Watch Hoppscotch #5797 and Supabase #42346.",
+  "notes": "Tick 25 idle: backup CLI hosts also core-host. Prefer executing SCORECARD #1-#4 outreach maps over more host-tracker expansion. Watch Hoppscotch #5797 and Supabase #42346.",
   "defaults": {
     "always_commit": true,
     "always_push": true
@@ -34,7 +35,7 @@
     "chain": "harvest_score_gc_expand_commit",
     "do_not_rearm_if_alive": true,
     "ticks_observed": 25,
-    "pid": 29344
+    "pid": 19808
   },
   "idle_policy": {
     "when": "zero_new_or_zero_cards",
