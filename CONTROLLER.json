@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "updated_at": "2026-07-29T18:25:00Z",
+  "updated_at": "2026-07-29T18:25:30Z",
   "mode": "autonomous",
   "phase": "idle",
   "ask_human": false,
@@ -23,7 +23,7 @@
     "highlight": "Design-partner pass on collection sync + RLS; Yaak/Insomnia peer expand; 5 Insomnia UX kills; 4 live cards unchanged"
   },
   "last_error": null,
-  "notes": "Tick 21 idle: host trackers saturated. Prefer design-partner outreach on SCORECARD #1-#4; watch Supabase PR #42346 and Hoppscotch PR #5797.",
+  "notes": "Tick 21 done earlier; harvest sentinel re-armed after unexpected stop (pid 24584). Email loop still alive.",
   "defaults": {
     "always_commit": true,
     "always_push": true
@@ -35,7 +35,7 @@
     "chain": "harvest_score_gc_expand_commit",
     "do_not_rearm_if_alive": true,
     "ticks_observed": 21,
-    "pid": 16624
+    "pid": 24584
   },
   "idle_policy": {
     "when": "zero_new_or_zero_cards",
