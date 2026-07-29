@@ -136,7 +136,11 @@
     "runtipi/runtipi",
     "SelfhostedPro/Yacht",
     "mountain-loop/yaak",
-    "Kong/insomnia"
+    "Kong/insomnia",
+    "NginxProxyManager/nginx-proxy-manager",
+    "caddyserver/caddy",
+    "bitwarden/server",
+    "coder/coder"
   ],
   "young_repos": [
     "twentyhq/twenty",
@@ -218,7 +222,10 @@
     "runtipi/runtipi",
     "SelfhostedPro/Yacht",
     "mountain-loop/yaak",
-    "Kong/insomnia"
+    "Kong/insomnia",
+    "NginxProxyManager/nginx-proxy-manager",
+    "bitwarden/server",
+    "coder/coder"
   ],
   "young_min_age_days": 90,
   "young_min_reactions": 5,
