@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "updated_at": "2026-07-29T22:45:00Z",
+  "updated_at": "2026-07-29T22:45:30Z",
   "mode": "autonomous",
   "phase": "idle",
   "ask_human": false,
@@ -22,7 +22,7 @@
     "highlight": "0 new this pass; all 4 live cards + host PRs still open; OUTREACH awaits personal send; loop healthy (pid 31732)"
   },
   "last_error": null,
-  "notes": "Tick 30: do not expand trackers. Send OUTREACH.md emails #1-#4 from personal inbox. Loop pid 31732.",
+  "notes": "Tick 30 done. Harvest loop re-armed after unexpected stop (pid 17468). Next value: send OUTREACH.md emails #1-#4.",
   "defaults": {
     "always_commit": true,
     "always_push": true
@@ -34,7 +34,7 @@
     "chain": "harvest_score_gc_expand_commit",
     "do_not_rearm_if_alive": true,
     "ticks_observed": 30,
-    "pid": 31732
+    "pid": 17468
   },
   "idle_policy": {
     "when": "zero_new_or_zero_cards",
