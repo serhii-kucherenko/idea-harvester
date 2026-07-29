@@ -23,4 +23,4 @@ Bruno (git-native; Pro ~$6/user/mo), Yaak (local files + Git; commercial license
 Hoppscotch ships excellent native git sync AND multi-client users still will not pay; or <3 design partners after concierge; or Bruno/Yaak absorb the non-migrating segment.
 
 ## Tick note
-Revalidated 2026-07-29j: #870 still OPEN; draft PR #5797 still open/unmerged (updated 2026-01-30). Outreach target unchanged: multi-client teams, not Bruno migrants. Score 8/10 — keep.
+Revalidated 2026-07-29k: #870 + draft PR #5797 unchanged. Outreach map: target Postman/Hoppscotch teams blocked by Bruno migration friction (script translator gaps, folder-import bugs like #7821) — not Bruno converts. Channels: Hoppscotch #870 thread, Yaak feedback (https://feedback.yaak.app reachable), r/api, Bruno Discussions migrants who bounced. Score 8/10 — keep.

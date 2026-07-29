@@ -258,6 +258,12 @@
       "note": "Marketing/feedback shell; no scrapeable vote list yet"
     },
     {
+      "url": "https://feedback.yaak.app",
+      "vendor": "unknown",
+      "status": "reachable",
+      "note": "Public feedback shell loads (200); no scrapeable vote API yet — outreach surface for collection-sync design partners"
+    },
+    {
       "url": "https://hoppscotch.canny.io",
       "vendor": "canny",
       "status": "not-found"

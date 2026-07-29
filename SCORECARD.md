@@ -11,6 +11,8 @@ Solo-indie gate (RUBRIC.md). Revalidated each idle tick when intake is empty.
 
 **Pick order for validation:** collection sync → RLS → DMARC → Coolify backups.
 
+**Idle note (2026-07-29k):** 0 new. Design-partner pass on #1 — Bruno migration guides + import bugs show a holdout segment (Postman/Hoppscotch users who won't fully migrate). Outreach: Hoppscotch #870, feedback.yaak.app (reachable), r/api / DEV threads on Postman→Bruno pain. Skipped more CI/registry GitHub expand. Still 4 live cards.
+
 **Idle note (2026-07-29j):** Host PR watch on #1–#2 — Hoppscotch #5797 still draft/open; Supabase #42346 still open/unmerged. Expanded Woodpecker/Harbor/pgAdmin → 15 kills (core-host/packaging). Still 4 live cards; next idle prefer outreach, not more CI trackers.
 
 **Idle note (2026-07-29i):** Design-partner pass on #3–#4. DMARC #1341 open — free Postmark/dmarcian tiers crowd basic dashboards; keep for Mailcow-native multi-domain wedge. Coolify #2389 + #4597 open — SimpleBackups $49+/mo proves WTP; Coolify docs still skip app volumes. Expanded NPM/Caddy/Bitwarden/Coder (not more mail/PaaS peers).
