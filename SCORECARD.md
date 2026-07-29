@@ -11,6 +11,8 @@ Solo-indie gate (RUBRIC.md). Revalidated each idle tick when intake is empty.
 
 **Pick order for validation:** collection sync → RLS → DMARC → Coolify backups.
 
+**Idle note (2026-07-29g):** Revalidated Coolify backups #4 — #2389 and discussion #4597 still OPEN. Runtipi #2312 same backup/restore job (killed duplicate). Expanded CasaOS/Umbrel/Runtipi/Yacht peer intake.
+
 **Idle note (2026-07-29f):** Revalidated DMARC card #3 — Mailcow #1341 still OPEN. Mailu #122 DMARC Analyzer is the same job (killed duplicate; strengthens multi-host signal). Discourse expansion largely exhausted. Expanded Postal/Mailu/Modoboa/Roundcube intake.
 
 **Idle note (2026-07-29e):** Added Discourse intake (`harvest_discourse.py`: n8n, rclone, Ghost, Home Assistant, Mattermost). Judged 20 topics — all core-host/pairwise/driver kills. Revalidated RLS card #2 — still OPEN, keep 8/10. Public Canny/Featurebase still blocked.

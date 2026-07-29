@@ -130,7 +130,11 @@
     "postalserver/postal",
     "Mailu/Mailu",
     "modoboa/modoboa",
-    "roundcube/roundcubemail"
+    "roundcube/roundcubemail",
+    "IceWhaleTech/CasaOS",
+    "getumbrel/umbrel",
+    "runtipi/runtipi",
+    "SelfhostedPro/Yacht"
   ],
   "young_repos": [
     "twentyhq/twenty",
@@ -206,7 +210,11 @@
     "typesense/typesense",
     "postalserver/postal",
     "Mailu/Mailu",
-    "modoboa/modoboa"
+    "modoboa/modoboa",
+    "IceWhaleTech/CasaOS",
+    "getumbrel/umbrel",
+    "runtipi/runtipi",
+    "SelfhostedPro/Yacht"
   ],
   "young_min_age_days": 90,
   "young_min_reactions": 5,
