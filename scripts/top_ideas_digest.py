@@ -647,70 +647,42 @@ def render_email_html(cards: list[dict], generated_at: str) -> str:
         decision = _escape_html(card.get("decision", ""))
         score = _escape_html(str(card.get("score", "")))
 
-        mvp_html = _generate_mvp_snippet_html(card)
-        mvp_html_escaped = _escape_html(mvp_html)
-
-        tick_note = card.get("tick_note", "").strip()
-        tick_note_html = (
-            f"<div style='margin-top:8px;'><strong>Latest revalidation note:</strong> {_escape_html(tick_note)}</div>"
-            if tick_note
-            else ""
-        )
-
         return f"""
-<div style="border:1px solid rgba(0,0,0,.12); background: #f7f7f7; border-radius:16px; padding:16px; margin:16px 0;">
-  <div style="font-weight:900; font-size:16px;">
-    {idx}) {title} ({score}/10) - {decision}
+<div style="border:1px solid #e5e7eb; border-radius:12px; padding:12px; margin:10px 0;">
+  <div style="font-weight:700; font-size:28px;">
+    {idx}) {title}
   </div>
-  <div style="color: rgba(0,0,0,.55); margin-top:6px; font-size:13px;">
+  <div style="font-size:13px; color:#374151; margin-top:4px;">
+    Score: {score}/10 · {decision}
+  </div>
+  <div style="font-size:13px; color:#6b7280; margin-top:4px;">
     Repo signal: {repo}
   </div>
-  <div style="margin-top:8px; font-size:13px;">
+  <div style="font-size:13px; color:#6b7280; margin-top:4px;">
     Source: <a href="{source}" target="_blank" rel="noreferrer">{source}</a>
   </div>
-  <div style="margin-top:8px; font-size:13px;">
-    Demo:
+  <div style="margin-top:8px;">
     <a href="{_escape_html(card.get('stackblitz_url', ''))}" target="_blank" rel="noreferrer">Open in StackBlitz</a>
-    ·
+    <span style="color:#9ca3af;"> · </span>
     <a href="{_escape_html(card.get('github_demo_url', ''))}" target="_blank" rel="noreferrer">View HTML on GitHub</a>
   </div>
-
-  <div style="margin-top:12px; font-size:13.5px; color: #111;">
-    <div><strong>What it is:</strong> {_escape_html(card.get("gap", ""))}</div>
-    <div style="margin-top:8px;"><strong>Why this can exist now:</strong> {_escape_html(card.get("why_host_wont", ""))}</div>
-    <div style="margin-top:8px;"><strong>How you'd build/sell first:</strong> {_escape_html(card.get("product_angle", ""))}</div>
-    <div style="margin-top:8px;"><strong>Competition/workarounds:</strong> {_escape_html(card.get("competition", ""))}</div>
-    <div style="margin-top:8px;"><strong>What would kill it:</strong> {_escape_html(card.get("kill_if", ""))}</div>
-    {tick_note_html}
-  </div>
-
-  <details style="margin-top:12px;">
-    <summary style="cursor:pointer; font-weight:800;">Investor demo: single-file HTML (copy/paste)</summary>
-    <div style="margin-top:10px; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace; font-size:12.5px; background: #111; color:#fff; border-radius:12px; padding:12px; white-space: pre; overflow:auto;">
-{mvp_html_escaped}
-    </div>
-  </details>
-
-  <div style="margin-top:10px; color: rgba(0,0,0,.55); font-size:12.5px;">
-    StackBlitz direct open links require a shared template repo (I can add real links after you approve creating it).
+  <div style="margin-top:10px; font-size:13px; color:#111827;">
+    <div><strong>Idea:</strong> {_escape_html(card.get("gap", ""))}</div>
+    <div style="margin-top:6px;"><strong>Why now:</strong> {_escape_html(card.get("why_host_wont", ""))}</div>
+    <div style="margin-top:6px;"><strong>MVP:</strong> {_escape_html(card.get("product_angle", ""))}</div>
+    <div style="margin-top:6px;"><strong>Risk:</strong> {_escape_html(card.get("kill_if", ""))}</div>
+    <div style="margin-top:6px;"><strong>Flow:</strong> {_escape_html(" | ".join(_generate_flow_steps(card)))}</div>
   </div>
 </div>
 """
 
     parts: list[str] = []
-    parts.append("<div style='font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial; color: #111;'>")
-    parts.append("<h2 style='margin:0 0 8px;'>Idea Harvester - Decision Brief (with Investor MVP HTML)</h2>")
-    parts.append(f"<div style='color:#444; font-size:14px; margin-bottom:16px;'>Generated: {_escape_html(generated_at)}</div>")
-    parts.append("<div style='color:#444; font-size:14px; margin-bottom:10px;'>Each idea includes a one-file HTML investor demo (landing, problem, solution, flow).</div>")
+    parts.append("<div style='font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial; color:#111;'>")
+    parts.append("<h2 style='margin:0 0 8px;'>Idea Harvester: Demo MVPs for each top idea</h2>")
+    parts.append(f"<div style='color:#4b5563; font-size:13px; margin-bottom:12px;'>Generated: {_escape_html(generated_at)}</div>")
+    parts.append("<div style='color:#374151; margin-bottom:14px;'>Each idea includes <strong>Landing</strong>, <strong>Problem</strong>, <strong>Solution</strong>, and <strong>Flow</strong> plus decision context.</div>")
     for idx, card in enumerate(cards, start=1):
         parts.append(card_block(card, idx))
-
-    parts.append("<h3 style='margin:18px 0 6px;'>Decision path</h3>")
-    parts.append("<ol style='margin:0; padding-left:18px; color:#333;'>")
-    parts.append("<li>Pick 1 idea only.</li>")
-    parts.append("<li>Run 3 design-partner calls in 7 days.</li>")
-    parts.append("<li>If fewer than 3 strong yeses, move to the next idea.</li>")
-    parts.append("</ol>")
     parts.append("</div>")
     return "\n".join(parts)
 
