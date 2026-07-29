@@ -19,5 +19,8 @@ Solo tool: paste policies + sample JWTs/roles → matrix of allow/deny with expl
 ## Competition / workarounds
 Manual SQL, ad-hoc scripts, eventual first-party Supabase UI. Wedge is better DX + multi-Postgres later.
 
+## Kill if
+Supabase ships excellent built-in RLS debugger and paid demand disappears.
+
 ## Tick note
 Revalidated 2026-07-29: discussion still OPEN via GitHub API; solo bar still passes.
