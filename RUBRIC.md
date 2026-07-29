@@ -26,7 +26,7 @@ workflow you can sell **without** the host's permission or marketplace.
 
 ## Rubric deltas
 
-- **2026-07-29m:** Duplicati/Borg/Kopia intake: 15/15 core-host or packaging. Multi-repo/UI backup asks stay inside backup engines — do not re-card Coolify PaaS backup wedge. Prefer outreach maps already written.
+- **2026-07-29m:** Idle 0 new after Duplicati/Borg/Kopia 15/15 core-host. Executed outreach → OUTREACH.md named leads (Hoppscotch #870, Coolify #2389 bounty commenters, RLS/DMARC). Prefer sending DMs next over more backup-CLI expands.
 - **2026-07-29l:** Idle 0 new — design-partner outreach maps for RLS/DMARC/Coolify (skipped another host-tracker expand). New competition notes: rlsautotest + CoolifyBR/Vaultkeeper DIY; free/OSS workarounds raise the bar but don't kill multi-host managed wedges yet.
 - **2026-07-29k:** Idle 0 new — design-partner outreach mapping for collection-sync + Neon/Electric/libSQL expand (14/14 core-host; no RLS-debugger wedge). Host PRs #5797/#42346 still unmerged. Prefer #1 outreach over more DB/CI host trackers.
 - **2026-07-29j:** Idle 0 new — re-watched Hoppscotch #5797 + Supabase #42346 (both still unmerged). Expanded Woodpecker/Harbor/pgAdmin → 15/15 core-host or packaging kills. No new ≥8. Prefer live-card outreach over more CI/registry trackers next idle.

@@ -11,7 +11,7 @@ Solo-indie gate (RUBRIC.md). Revalidated each idle tick when intake is empty.
 
 **Pick order for validation:** collection sync → RLS → DMARC → Coolify backups.
 
-**Idle note (2026-07-29m):** 0 new first pass; host PRs #5797/#42346 still unmerged. Expanded Duplicati/Borg/Kopia → 15/15 core-host/packaging (backup engines, not PaaS restore SaaS). Coolify card unchanged. Prefer executing SCORECARD outreach maps over more backup-CLI expand.
+**Idle note (2026-07-29m):** 0 new. Built [`OUTREACH.md`](OUTREACH.md) with named leads + DM drafts from live threads (@lauhon/#870 employer pitch; Coolify #2389 bounty backers @riemers/@johnmaguire; RLS @aaronksaunders; DMARC @borrelan). Prior Duplicati/Borg/Kopia expand was 15/15 core-host — no more backup-CLI spam. Host PRs still open.
 
 **Idle note (2026-07-29l):** 0 new. Design-partner maps for #2–#4 — RLS: DEV/pgTAP authors + Supabase Discord (UI vs pgTAP); DMARC: Mailcow/#1341 + Mailu watchers; Coolify: #2389/#4597 + CoolifyBR/DEV restore authors. Host PRs still unmerged. No GitHub expand this tick. Still 4 live cards.
 
