@@ -26,6 +26,7 @@ workflow you can sell **without** the host's permission or marketplace.
 
 ## Rubric deltas
 
+- **2026-07-29r:** API-client expand (Scalar/HTTPie/Postman): 14/14 core-host. HTTPie #222 sync request strengthens multi-client collection-sync demand without being a new card. Prefer OUTREACH sends over more client-tracker expands.
 - **2026-07-29q:** Idle 0 new — no expand. OUTREACH now 4 ready emails (added hashop.nl for Coolify bounty lead). Machine work is saturated; value is human send.
 - **2026-07-29p:** Lago/Matomo/Teable/Lightdash expand: 16/16 core-host, packaging, pairwise, or driver. Billing/BI/Airtable-clone trackers look like the same core-host trap as PaaS/monitoring. Prefer OUTREACH.md human sends over more product-tracker expands.
 - **2026-07-29o:** Idle mostly empty — 1 Next.js discussion kill (core-host). OUTREACH.md now has public emails + drafts for lauhon/johnmaguire/borrelan. Prefer human send from personal inbox; do not bot-blast.

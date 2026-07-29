@@ -81,6 +81,6 @@ Skip pitching @dragoangel (already ships parsedmarc compose — competitor/worka
 
 | When | Who | Channel | Result |
 |------|-----|---------|--------|
-| — | — | — | none sent yet (tick 29: 4 ready emails incl. info@hashop.nl; await personal send) |
+| — | — | — | none sent yet (tick 30: still waiting on Serhii personal inbox for #1–#4) |
 
-Updated: 2026-07-29 (tick 29).
+Updated: 2026-07-29 (tick 30).

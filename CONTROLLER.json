@@ -1,27 +1,30 @@
 {
   "schema_version": "1.0.0",
-  "updated_at": "2026-07-29T22:05:30Z",
+  "updated_at": "2026-07-29T22:40:00Z",
   "mode": "autonomous",
   "phase": "idle",
   "ask_human": false,
   "hard_stop": false,
   "hard_stop_reason": null,
   "live_cards": 4,
-  "killed_count": 710,
+  "killed_count": 725,
   "last_tick": {
-    "at": "2026-07-29T22:05:00Z",
-    "new_judged": 0,
+    "at": "2026-07-29T22:40:00Z",
+    "new_judged": 15,
     "cards_added": 0,
-    "kills_added": 0,
+    "kills_added": 15,
     "idle_actions": [
-      "enrich_riemers_email",
-      "watch_host_prs",
+      "watch_hoppscotch_pr_5797",
+      "watch_supabase_pr_42346",
+      "expand_yaak_scalar_httpie_postman",
+      "reharvest_same_tick",
+      "dedupe_harvest_sentinels",
       "rubric_delta"
     ],
-    "highlight": "0 new; OUTREACH 4 ready emails (riemers info@hashop.nl); host PRs open; 4 live cards"
+    "highlight": "1 HA Discourse kill + 14 API-client kills; HTTPie sync reinforces collection-sync; host PRs open; prefer OUTREACH #1-4"
   },
   "last_error": null,
-  "notes": "Tick 29 done. Harvest loop re-armed after unexpected stop (pid 31732). Next value: send OUTREACH.md emails #1-#4.",
+  "notes": "Tick 30: API-client trackers saturated like hosts. Next human action: send OUTREACH.md emails #1-4. Single harvest sentinel pid 22016.",
   "defaults": {
     "always_commit": true,
     "always_push": true
@@ -32,8 +35,8 @@
     "purpose": "harvest",
     "chain": "harvest_score_gc_expand_commit",
     "do_not_rearm_if_alive": true,
-    "ticks_observed": 29,
-    "pid": 31732
+    "ticks_observed": 30,
+    "pid": 22016
   },
   "idle_policy": {
     "when": "zero_new_or_zero_cards",

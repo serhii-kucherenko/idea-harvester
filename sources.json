@@ -161,7 +161,13 @@
     "matomo-org/matomo",
     "budibase/budibase",
     "teableio/teable",
-    "lightdash/lightdash"
+    "lightdash/lightdash",
+    "YaakApp/yaak",
+    "scalar/scalar",
+    "httpie/desktop",
+    "postmanlabs/postman-app-support",
+    "fern-api/fern",
+    "speakeasy-api/speakeasy"
   ],
   "young_repos": [
     "twentyhq/twenty",
@@ -263,7 +269,12 @@
     "frain-dev/convoy",
     "Unleash/unleash",
     "teableio/teable",
-    "lightdash/lightdash"
+    "lightdash/lightdash",
+    "YaakApp/yaak",
+    "scalar/scalar",
+    "httpie/desktop",
+    "fern-api/fern",
+    "speakeasy-api/speakeasy"
   ],
   "young_min_age_days": 90,
   "young_min_reactions": 5,
