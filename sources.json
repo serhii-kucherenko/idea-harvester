@@ -88,11 +88,22 @@
     "solidusio/solidus",
     "louislam/uptime-kuma",
     "go-gitea/gitea",
-    "forgejo/forgejo",
     "minio/minio",
     "mattermost/mattermost",
     "nextcloud/server",
-    "rocketchat/Rocket.Chat"
+    "rocketchat/Rocket.Chat",
+    "immich-app/immich",
+    "paperless-ngx/paperless-ngx",
+    "healthchecks/healthchecks",
+    "ntfy-sh/ntfy",
+    "gotify/server",
+    "rclone/rclone",
+    "photoprism/photoprism",
+    "jellyfin/jellyfin",
+    "vaultwarden/server",
+    "unkey/unkey",
+    "resend/resend",
+    "calcom/cal.com"
   ],
   "young_repos": [
     "twentyhq/twenty",
@@ -138,7 +149,13 @@
     "lissy93/dashy",
     "glanceapp/glance",
     "homarr-labs/homarr",
-    "refinedev/refine"
+    "refinedev/refine",
+    "immich-app/immich",
+    "paperless-ngx/paperless-ngx",
+    "ntfy-sh/ntfy",
+    "unkey/unkey",
+    "resend/resend",
+    "calcom/cal.com"
   ],
   "young_min_age_days": 90,
   "young_min_reactions": 5,
@@ -377,6 +394,36 @@
     },
     {
       "repo": "knadh/listmonk",
+      "query_extra": "",
+      "min_upvotes": 10,
+      "min_age_days": 180
+    },
+    {
+      "repo": "immich-app/immich",
+      "query_extra": "",
+      "min_upvotes": 10,
+      "min_age_days": 180
+    },
+    {
+      "repo": "paperless-ngx/paperless-ngx",
+      "query_extra": "",
+      "min_upvotes": 10,
+      "min_age_days": 180
+    },
+    {
+      "repo": "healthchecks/healthchecks",
+      "query_extra": "",
+      "min_upvotes": 10,
+      "min_age_days": 180
+    },
+    {
+      "repo": "jellyfin/jellyfin",
+      "query_extra": "",
+      "min_upvotes": 15,
+      "min_age_days": 180
+    },
+    {
+      "repo": "calcom/cal.com",
       "query_extra": "",
       "min_upvotes": 10,
       "min_age_days": 180

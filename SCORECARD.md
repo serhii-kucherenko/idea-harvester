@@ -11,4 +11,4 @@ Solo-indie gate (RUBRIC.md). Revalidated each idle tick when intake is empty.
 
 **Pick order for validation:** collection sync → RLS → DMARC → Coolify backups.
 
-**Idle note (2026-07-26):** Killed LLM docs pack - free `llms.txt` / `llms-full.txt` generators crowded the wedge.
+**Idle note (2026-07-29):** Judged 61 news (chat/git/photo/media hosts) — all core-host kills. Expanded Immich/Paperless/rclone/Jellyfin/ntfy intake; still no new ≥8 card. Next: validate collection sync, or seek non-GitHub boards.
