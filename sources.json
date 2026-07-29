@@ -149,7 +149,11 @@
     "tursodatabase/libsql",
     "duplicati/duplicati",
     "borgbackup/borg",
-    "kopia/kopia"
+    "kopia/kopia",
+    "TwiN/gatus",
+    "louislam/dockge",
+    "amir20/dozzle",
+    "henrygd/beszel"
   ],
   "young_repos": [
     "twentyhq/twenty",
@@ -241,7 +245,11 @@
     "electric-sql/electric",
     "tursodatabase/libsql",
     "duplicati/duplicati",
-    "kopia/kopia"
+    "kopia/kopia",
+    "TwiN/gatus",
+    "louislam/dockge",
+    "amir20/dozzle",
+    "henrygd/beszel"
   ],
   "young_min_age_days": 90,
   "young_min_reactions": 5,

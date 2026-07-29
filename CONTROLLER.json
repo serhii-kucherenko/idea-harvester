@@ -1,27 +1,29 @@
 {
   "schema_version": "1.0.0",
-  "updated_at": "2026-07-29T21:10:00Z",
+  "updated_at": "2026-07-29T21:20:00Z",
   "mode": "autonomous",
   "phase": "idle",
   "ask_human": false,
   "hard_stop": false,
   "hard_stop_reason": null,
   "live_cards": 4,
-  "killed_count": 678,
+  "killed_count": 693,
   "last_tick": {
-    "at": "2026-07-29T21:10:00Z",
-    "new_judged": 0,
+    "at": "2026-07-29T21:20:00Z",
+    "new_judged": 15,
     "cards_added": 0,
-    "kills_added": 0,
+    "kills_added": 15,
     "idle_actions": [
-      "mine_live_card_threads",
-      "write_outreach_md",
+      "watch_hoppscotch_pr_5797",
+      "watch_supabase_pr_42346",
+      "expand_gatus_dockge_dozzle_beszel",
+      "reharvest_same_tick",
       "rubric_delta"
     ],
-    "highlight": "0 new; OUTREACH.md with named leads from #870/#2389/#1341/#12269; Coolify bounty backers; 4 live cards"
+    "highlight": "Host PRs still unmerged; Gatus/Dockge/Beszel: 15 core-host kills; 4 live cards; prefer outreach lists"
   },
   "last_error": null,
-  "notes": "Tick 26: human/agent next action = send DMs from OUTREACH.md (start with Coolify @riemers/@johnmaguire bounties and Hoppscotch @lauhon). Do not expand more backup CLI hosts.",
+  "notes": "Tick 26 idle: monitoring hosts also core-host. Prefer executing SCORECARD outreach contact lists over more host-tracker expansion. Watch Hoppscotch #5797 and Supabase #42346.",
   "defaults": {
     "always_commit": true,
     "always_push": true
@@ -33,7 +35,7 @@
     "chain": "harvest_score_gc_expand_commit",
     "do_not_rearm_if_alive": true,
     "ticks_observed": 26,
-    "pid": 29344
+    "pid": 19808
   },
   "idle_policy": {
     "when": "zero_new_or_zero_cards",
