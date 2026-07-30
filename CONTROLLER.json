@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "updated_at": "2026-07-30T12:46:00Z",
+  "updated_at": "2026-07-30T13:40:00Z",
   "mode": "autonomous",
   "phase": "idle",
   "ask_human": false,
@@ -9,20 +9,21 @@
   "live_cards": 4,
   "killed_count": 754,
   "last_tick": {
-    "at": "2026-07-30T12:46:00Z",
+    "at": "2026-07-30T13:40:00Z",
     "new_judged": 0,
     "cards_added": 0,
     "kills_added": 0,
     "idle_actions": [
+      "watch_hoppscotch_pr_5797",
+      "watch_supabase_pr_42346",
+      "skip_expand_per_outreach_preference",
       "dedupe_harvest_sentinels",
-      "outreach_reminder_email",
-      "handoff_loop_doc",
-      "glass_automation_opened"
+      "rubric_delta"
     ],
-    "highlight": "Emailed Serhii OUTREACH drafts reminder; digests already sent; armed single 30m loop pid 23044; handoff doc written"
+    "highlight": "0 new; skipped expand; host PRs open; OUTREACH still awaits personal send"
   },
   "last_error": null,
-  "notes": "Tick 49: context bloating â€” use docs/HANDOFF_LOOP.md in a fresh chat. Harvest sentinel re-bound to monitored pid 19768 (stopped duplicate 23044). Lead emails still need personal Gmail.",
+  "notes": "Tick 50: no new cards. Stopped duplicate 21268; keep monitored pid 19768. Prefer fresh chat via docs/HANDOFF_LOOP.md. Human: OUTREACH.md checklist #1-5.",
   "defaults": {
     "always_commit": true,
     "always_push": true
@@ -33,9 +34,8 @@
     "purpose": "harvest",
     "chain": "harvest_score_gc_expand_commit",
     "do_not_rearm_if_alive": true,
-    "ticks_observed": 49,
-    "pid": 21268,
-    "note": "Re-armed after 31440 exit; replaced unmonitored 23044"
+    "ticks_observed": 50,
+    "pid": 19768
   },
   "idle_policy": {
     "when": "zero_new_or_zero_cards",
