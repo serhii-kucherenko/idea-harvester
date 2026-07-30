@@ -11,6 +11,8 @@ Solo-indie gate (RUBRIC.md). Revalidated each idle tick when intake is empty.
 
 **Pick order for validation:** collection sync → RLS → DMARC → Coolify backups.
 
+**Idle note (2026-07-30r):** 0 new. Skipped expand. Host PRs still open. Deduped harvest sentinels to pid 31440. Still blocked on OUTREACH personal sends.
+
 **Idle note (2026-07-30q):** 0 new. Skipped expand. Host PRs still open. Eternal promotions already marked. Still blocked on OUTREACH personal sends.
 
 **Idle note (2026-07-30p):** 0 new. Skipped expand. Revalidated all 4 live sources + PRs #5797/#42346 — still open. Promoted all 4 cards into eternal/ideas and marked `promoted_eternal` on each card. Still blocked on OUTREACH personal sends.
