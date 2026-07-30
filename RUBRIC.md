@@ -26,6 +26,7 @@ workflow you can sell **without** the host's permission or marketplace.
 
 ## Rubric deltas
 
+- **2026-07-30v:** Idle 0 new — skipped expand; removed duplicate sentinel; PRs open; waiting on OUTREACH sends.
 - **2026-07-30u:** Idle 0 new — skipped expand; removed duplicate sentinel; PRs open; waiting on OUTREACH sends.
 - **2026-07-30t:** Idle 0 new — skipped expand; removed duplicate sentinel; PRs open; waiting on OUTREACH sends.
 - **2026-07-30s:** Idle 0 new — skipped expand; removed duplicate sentinel again; PRs open; waiting on OUTREACH sends.
