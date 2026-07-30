@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "updated_at": "2026-07-30T13:40:00Z",
+  "updated_at": "2026-07-30T13:38:00Z",
   "mode": "autonomous",
   "phase": "idle",
   "ask_human": false,
@@ -9,7 +9,7 @@
   "live_cards": 4,
   "killed_count": 754,
   "last_tick": {
-    "at": "2026-07-30T13:40:00Z",
+    "at": "2026-07-30T13:38:00Z",
     "new_judged": 0,
     "cards_added": 0,
     "kills_added": 0,
@@ -17,13 +17,13 @@
       "watch_hoppscotch_pr_5797",
       "watch_supabase_pr_42346",
       "skip_expand_per_outreach_preference",
-      "dedupe_harvest_sentinels",
+      "skip_outreach_reminder_already_sent",
       "rubric_delta"
     ],
-    "highlight": "0 new; skipped expand; host PRs open; OUTREACH still awaits personal send"
+    "highlight": "0 new; skipped expand; digests complete; OUTREACH reminder already sent; waiting on personal lead emails"
   },
   "last_error": null,
-  "notes": "Tick 50: no new cards. Stopped duplicate 21268; keep monitored pid 19768. Prefer fresh chat via docs/HANDOFF_LOOP.md. Human: OUTREACH.md checklist #1-5.",
+  "notes": "Tick 50: no new cards. Sentinel pid 21268. Lead emails still need personal Gmail. Prefer fresh chat via docs/HANDOFF_LOOP.md when context bloated.",
   "defaults": {
     "always_commit": true,
     "always_push": true
@@ -35,7 +35,7 @@
     "chain": "harvest_score_gc_expand_commit",
     "do_not_rearm_if_alive": true,
     "ticks_observed": 50,
-    "pid": 19768
+    "pid": 21268
   },
   "idle_policy": {
     "when": "zero_new_or_zero_cards",
