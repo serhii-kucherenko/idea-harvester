@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "updated_at": "2026-07-30T16:26:00Z",
+  "updated_at": "2026-07-30T16:56:00Z",
   "mode": "autonomous",
   "phase": "idle",
   "ask_human": false,
@@ -9,7 +9,7 @@
   "live_cards": 4,
   "killed_count": 754,
   "last_tick": {
-    "at": "2026-07-30T16:26:00Z",
+    "at": "2026-07-30T16:56:00Z",
     "new_judged": 0,
     "cards_added": 0,
     "kills_added": 0,
@@ -23,7 +23,7 @@
     "highlight": "0 new; skipped expand; host PRs still open; OUTREACH still awaits personal send"
   },
   "last_error": null,
-  "notes": "Tick 56: no new cards. Stopped duplicate 7108; keep monitored pid 19768. Prefer fresh chat via docs/HANDOFF_LOOP.md. Human: OUTREACH.md checklist #1-5.",
+  "notes": "Tick 57: no new cards. Stopped duplicate 33112; keep monitored pid 19768. Prefer fresh chat via docs/HANDOFF_LOOP.md. Human: OUTREACH.md checklist #1-5.",
   "defaults": {
     "always_commit": true,
     "always_push": true
@@ -34,8 +34,8 @@
     "purpose": "harvest",
     "chain": "harvest_score_gc_expand_commit",
     "do_not_rearm_if_alive": true,
-    "ticks_observed": 56,
-    "pid": 33112
+    "ticks_observed": 57,
+    "pid": 19768
   },
   "idle_policy": {
     "when": "zero_new_or_zero_cards",
