@@ -26,6 +26,7 @@ workflow you can sell **without** the host's permission or marketplace.
 
 ## Rubric deltas
 
+- **2026-07-30q:** Idle 0 new - skipped expand; PRs open; waiting on OUTREACH sends.
 - **2026-07-30p:** Idle 0 new — promoted 4 live cards to eternal/ideas (first promotion path). Skipped expand; PRs open; waiting on OUTREACH sends.
 - **2026-07-30o:** Idle 0 new — skipped expand; PRs open; waiting on OUTREACH sends.
 - **2026-07-30n:** Immich .nomedia/.immichignore discussion → core-host kill. Skipped expand; waiting on OUTREACH sends.
