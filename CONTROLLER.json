@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "updated_at": "2026-07-30T06:10:00Z",
+  "updated_at": "2026-07-30T06:40:00Z",
   "mode": "autonomous",
   "phase": "idle",
   "ask_human": false,
@@ -9,7 +9,7 @@
   "live_cards": 4,
   "killed_count": 751,
   "last_tick": {
-    "at": "2026-07-30T06:10:00Z",
+    "at": "2026-07-30T06:40:00Z",
     "new_judged": 0,
     "cards_added": 0,
     "kills_added": 0,
@@ -17,13 +17,12 @@
       "watch_hoppscotch_pr_5797",
       "watch_supabase_pr_42346",
       "skip_expand_per_outreach_preference",
-      "probe_munaf_email",
       "rubric_delta"
     ],
     "highlight": "0 new; skipped expand; host PRs still open; OUTREACH still awaits personal send"
   },
   "last_error": null,
-  "notes": "Tick 35: harvest saturated. Human action: OUTREACH.md checklist #1-5. Sentinel pid 22016.",
+  "notes": "Tick 36: no new cards. Human action remains OUTREACH.md checklist #1-5. Sentinel pid 22016.",
   "defaults": {
     "always_commit": true,
     "always_push": true
@@ -34,7 +33,7 @@
     "purpose": "harvest",
     "chain": "harvest_score_gc_expand_commit",
     "do_not_rearm_if_alive": true,
-    "ticks_observed": 35,
+    "ticks_observed": 36,
     "pid": 22016
   },
   "idle_policy": {
