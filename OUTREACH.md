@@ -15,6 +15,15 @@ prefer polite email / LinkedIn after a useful comment, or reply offering a free 
 
 Do **not** auto-blast from the harvest bot. Send as yourself (Serhii) from a personal inbox so replies land correctly. Log sent/replied below.
 
+### Send checklist (personal inbox)
+
+1. Copy draft #1 → laurenz.honauer@gmail.com (collection sync)
+2. Copy draft #2 → contact@johnmaguire.me (Coolify encrypted backups)
+3. Copy draft #3 → borrelan@gmail.com (DMARC)
+4. Copy draft #4 → info@hashop.nl (Coolify WP bounty)
+5. Paste LinkedIn/X draft → @aaronksaunders (RLS)
+6. Mark each row in the Sent log when done
+
 ### Email drafts
 
 **To laurenz.honauer@gmail.com — subject: Hoppscotch git sync without switching clients**
@@ -85,6 +94,6 @@ Skip pitching @dragoangel (already ships parsedmarc compose — competitor/worka
 
 | When | Who | Channel | Result |
 |------|-----|---------|--------|
-| — | — | — | none sent yet (tick 33: LOOP now prefers outreach over more expands) |
+| — | — | — | none sent yet (tick 34: skipped expand; added send checklist; await personal send) |
 
-Updated: 2026-07-30 (tick 33).
+Updated: 2026-07-30 (tick 34).
