@@ -11,6 +11,8 @@ Solo-indie gate (RUBRIC.md). Revalidated each idle tick when intake is empty.
 
 **Pick order for validation:** collection sync → RLS → DMARC → Coolify backups.
 
+**Idle note (2026-07-30b):** 0 new intake. Host PRs still open. Expanded Memos/Joplin/Standard Notes → 5/5 packaging/core-host kills. No new public emails for secondary leads; noted @gitekDev site. Prefer personal OUTREACH sends (#1–#4 + Aaron).
+
 **Idle note (2026-07-30a):** 0 new intake. Host PRs #5797/#42346 + all 4 live sources still open. Expanded Daytona/Gitpod/vCluster/Ptah → 11/11 core-host/packaging/pairwise. Added Aaron LinkedIn/X draft in OUTREACH.md. Prefer personal sends over more remote-dev expands.
 
 **Idle note (2026-07-29r):** Parallel idle work this cycle: (1) revalidated all 4 live cards + host PRs #5797/#42346 — still OPEN; (2) Yaak/Scalar/HTTPie peer expand → 14 core-host kills (HTTPie #222 git-sync is multi-host signal for live card #1, still kill as host feature). OUTREACH still awaits personal inbox send (#1–#4). No more API-client expands.

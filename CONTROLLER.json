@@ -1,31 +1,30 @@
 {
   "schema_version": "1.0.0",
-  "updated_at": "2026-07-30T04:15:00Z",
+  "updated_at": "2026-07-30T04:45:00Z",
   "mode": "autonomous",
   "phase": "idle",
   "ask_human": false,
   "hard_stop": false,
   "hard_stop_reason": null,
   "live_cards": 4,
-  "killed_count": 736,
+  "killed_count": 741,
   "last_tick": {
-    "at": "2026-07-30T04:15:00Z",
-    "new_judged": 11,
+    "at": "2026-07-30T04:45:00Z",
+    "new_judged": 5,
     "cards_added": 0,
-    "kills_added": 11,
+    "kills_added": 5,
     "idle_actions": [
       "watch_hoppscotch_pr_5797",
       "watch_supabase_pr_42346",
-      "revalidate_live_host_issues",
-      "expand_daytona_gitpod_vcluster_ptah",
+      "probe_secondary_lead_emails",
+      "expand_memos_joplin_standardnotes",
       "reharvest_same_tick",
-      "enrich_aaron_linkedin_draft",
       "rubric_delta"
     ],
-    "highlight": "0 intake new; 11 remote-dev kills; live cards+PRs still open; OUTREACH 4 emails + Aaron draft ready"
+    "highlight": "0 intake new; 5 notes-app kills; host PRs open; OUTREACH still awaits personal send"
   },
   "last_error": null,
-  "notes": "Tick 31: remote-dev trackers saturated. Next human action: send OUTREACH.md #1-4 emails and Aaron LinkedIn/X. Harvest sentinel pid 22016.",
+  "notes": "Tick 32: notes-app trackers saturated. Next human action unchanged: send OUTREACH.md #1-4 + Aaron LinkedIn/X. Harvest sentinel pid 22016.",
   "defaults": {
     "always_commit": true,
     "always_push": true
@@ -36,7 +35,7 @@
     "purpose": "harvest",
     "chain": "harvest_score_gc_expand_commit",
     "do_not_rearm_if_alive": true,
-    "ticks_observed": 31,
+    "ticks_observed": 32,
     "pid": 22016
   },
   "idle_policy": {

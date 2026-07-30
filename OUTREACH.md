@@ -76,7 +76,7 @@ Skip pitching @dragoangel (already ships parsedmarc compose — competitor/worka
 |------|-----|-------|
 | @riemers | **$150 bounty** — WordPress volumes | Volume backup + easy restore |
 | @johnmaguire | Bounty — encrypted backups must-have | Encrypted S3 restore drills |
-| @wowtah / @gitekDev | Production blocker; SFTP backup | Managed restore confidence |
+| @wowtah / @gitekDev | Production blocker; SFTP backup | Managed restore confidence · @gitekDev site [xoose.de](https://www.xoose.de) (no public email found) |
 | @Holo795 | Already built OSS workaround | Learn wedge; maybe not a buyer |
 
 ---
@@ -85,6 +85,6 @@ Skip pitching @dragoangel (already ships parsedmarc compose — competitor/worka
 
 | When | Who | Channel | Result |
 |------|-----|---------|--------|
-| — | — | — | none sent yet (tick 31: 4 emails + Aaron LinkedIn draft ready; await personal send) |
+| — | — | — | none sent yet (tick 32: still waiting on personal inbox / LinkedIn) |
 
-Updated: 2026-07-30 (tick 31).
+Updated: 2026-07-30 (tick 32).
