@@ -11,6 +11,8 @@ Solo-indie gate (RUBRIC.md). Revalidated each idle tick when intake is empty.
 
 **Pick order for validation:** collection sync → RLS → DMARC → Coolify backups.
 
+**Idle note (2026-07-30k):** 0 new. Skipped expand. Host PRs still open. Still blocked on OUTREACH personal sends.
+
 **Idle note (2026-07-30j):** 1 board new (Immich WebDAV) → host-driver kill. Skipped expand. Host PRs still open. Still blocked on OUTREACH personal sends.
 
 **Idle note (2026-07-30i):** 0 new. Skipped expand. Host PRs still open. Still blocked on OUTREACH personal sends.
