@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "updated_at": "2026-07-30T09:10:00Z",
+  "updated_at": "2026-07-30T09:40:00Z",
   "mode": "autonomous",
   "phase": "idle",
   "ask_human": false,
@@ -9,7 +9,7 @@
   "live_cards": 4,
   "killed_count": 753,
   "last_tick": {
-    "at": "2026-07-30T09:10:00Z",
+    "at": "2026-07-30T09:40:00Z",
     "new_judged": 0,
     "cards_added": 0,
     "kills_added": 0,
@@ -22,7 +22,7 @@
     "highlight": "0 new; skipped expand; host PRs still open; OUTREACH still awaits personal send"
   },
   "last_error": null,
-  "notes": "Tick 41: no new cards. Email digest still 0 unsent. Human action remains OUTREACH.md checklist #1-5. Sentinel pid 22016.",
+  "notes": "Tick 42: no new cards. Email digest 0 unsent. Human action remains OUTREACH.md checklist #1-5. Sentinel pid 22016.",
   "defaults": {
     "always_commit": true,
     "always_push": true
@@ -33,7 +33,7 @@
     "purpose": "harvest",
     "chain": "harvest_score_gc_expand_commit",
     "do_not_rearm_if_alive": true,
-    "ticks_observed": 41,
+    "ticks_observed": 42,
     "pid": 22016
   },
   "idle_policy": {
