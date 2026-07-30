@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "updated_at": "2026-07-30T15:09:00Z",
+  "updated_at": "2026-07-30T15:30:00Z",
   "mode": "autonomous",
   "phase": "idle",
   "ask_human": false,
@@ -9,28 +9,33 @@
   "live_cards": 4,
   "killed_count": 754,
   "last_tick": {
-    "at": "2026-07-30T15:09:00Z",
+    "at": "2026-07-30T15:30:00Z",
     "new_judged": 0,
     "cards_added": 0,
     "kills_added": 0,
     "idle_actions": [
+      "watch_hoppscotch_pr_5797",
+      "watch_supabase_pr_42346",
       "skip_expand_per_outreach_preference",
-      "skip_reminder_within_6h",
+      "dedupe_harvest_sentinels",
       "rubric_delta"
     ],
-    "highlight": "0 new after missed-tick harvest; digests clear; OUTREACH still needs personal Gmail"
+    "highlight": "0 new; skipped expand; host PRs open; OUTREACH still awaits personal send"
   },
   "last_error": null,
-  "notes": "Tick 52: catch-up harvest 0 new. Sentinel pid 31516. Prefer docs/HANDOFF_LOOP.md fresh chat.",
-  "defaults": { "always_commit": true, "always_push": true },
+  "notes": "Tick 54: no new cards. Stopped duplicate 31516; keep monitored pid 19768. Prefer fresh chat via docs/HANDOFF_LOOP.md. Human: OUTREACH.md checklist #1-5.",
+  "defaults": {
+    "always_commit": true,
+    "always_push": true
+  },
   "loop": {
     "interval": "30m",
     "sentinel": "AGENT_LOOP_TICK_harvest",
     "purpose": "harvest",
     "chain": "harvest_score_gc_expand_commit",
     "do_not_rearm_if_alive": true,
-    "ticks_observed": 52,
-    "pid": 31516
+    "ticks_observed": 54,
+    "pid": 14232
   },
   "idle_policy": {
     "when": "zero_new_or_zero_cards",
