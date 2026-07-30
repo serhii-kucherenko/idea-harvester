@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "updated_at": "2026-07-30T12:40:00Z",
+  "updated_at": "2026-07-30T12:46:00Z",
   "mode": "autonomous",
   "phase": "idle",
   "ask_human": false,
@@ -9,21 +9,20 @@
   "live_cards": 4,
   "killed_count": 754,
   "last_tick": {
-    "at": "2026-07-30T12:40:00Z",
+    "at": "2026-07-30T12:46:00Z",
     "new_judged": 0,
     "cards_added": 0,
     "kills_added": 0,
     "idle_actions": [
-      "watch_hoppscotch_pr_5797",
-      "watch_supabase_pr_42346",
-      "skip_expand_per_outreach_preference",
       "dedupe_harvest_sentinels",
-      "rubric_delta"
+      "outreach_reminder_email",
+      "handoff_loop_doc",
+      "glass_automation_opened"
     ],
-    "highlight": "0 new; skipped expand; host PRs open; OUTREACH still awaits personal send"
+    "highlight": "Emailed Serhii OUTREACH drafts reminder; digests already sent; armed single 30m loop pid 23044; handoff doc written"
   },
   "last_error": null,
-  "notes": "Tick 48: no new cards. Stopped duplicate sentinel 33004; keep monitored pid 31440. Human action remains OUTREACH.md checklist #1-5.",
+  "notes": "Tick 49: context bloating — use docs/HANDOFF_LOOP.md in a fresh chat. Sentinel pid 23044. Lead emails still need personal Gmail.",
   "defaults": {
     "always_commit": true,
     "always_push": true
@@ -34,8 +33,8 @@
     "purpose": "harvest",
     "chain": "harvest_score_gc_expand_commit",
     "do_not_rearm_if_alive": true,
-    "ticks_observed": 48,
-    "pid": 26160
+    "ticks_observed": 49,
+    "pid": 23044
   },
   "idle_policy": {
     "when": "zero_new_or_zero_cards",
@@ -43,7 +42,9 @@
       "expand_sources",
       "rubric_delta_if_new_fail_pattern",
       "reharvest_same_tick",
-      "prefer_outreach_after_three_all_kill_expands"
+      "prefer_outreach_after_three_all_kill_expands",
+      "promote_worth_pursuing_to_eternal",
+      "outreach_reminder_if_unsent"
     ],
     "consecutive_all_kill_expands": 4
   }
