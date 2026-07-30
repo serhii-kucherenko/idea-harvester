@@ -1,28 +1,31 @@
 {
   "schema_version": "1.0.0",
-  "updated_at": "2026-07-29T22:45:30Z",
+  "updated_at": "2026-07-30T04:15:00Z",
   "mode": "autonomous",
   "phase": "idle",
   "ask_human": false,
   "hard_stop": false,
   "hard_stop_reason": null,
   "live_cards": 4,
-  "killed_count": 725,
+  "killed_count": 736,
   "last_tick": {
-    "at": "2026-07-29T22:45:00Z",
-    "new_judged": 0,
+    "at": "2026-07-30T04:15:00Z",
+    "new_judged": 11,
     "cards_added": 0,
-    "kills_added": 0,
+    "kills_added": 11,
     "idle_actions": [
-      "revalidate_all_live_cards",
-      "watch_host_prs",
-      "enrich_aaron_linkedin",
+      "watch_hoppscotch_pr_5797",
+      "watch_supabase_pr_42346",
+      "revalidate_live_host_issues",
+      "expand_daytona_gitpod_vcluster_ptah",
+      "reharvest_same_tick",
+      "enrich_aaron_linkedin_draft",
       "rubric_delta"
     ],
-    "highlight": "0 new this pass; all 4 live cards + host PRs still open; OUTREACH awaits personal send; loop healthy (pid 31732)"
+    "highlight": "0 intake new; 11 remote-dev kills; live cards+PRs still open; OUTREACH 4 emails + Aaron draft ready"
   },
   "last_error": null,
-  "notes": "Tick 30 done. Harvest loop re-armed after unexpected stop (pid 17468). Next value: send OUTREACH.md emails #1-#4.",
+  "notes": "Tick 31: remote-dev trackers saturated. Next human action: send OUTREACH.md #1-4 emails and Aaron LinkedIn/X. Harvest sentinel pid 22016.",
   "defaults": {
     "always_commit": true,
     "always_push": true
@@ -33,8 +36,8 @@
     "purpose": "harvest",
     "chain": "harvest_score_gc_expand_commit",
     "do_not_rearm_if_alive": true,
-    "ticks_observed": 30,
-    "pid": 17468
+    "ticks_observed": 31,
+    "pid": 22016
   },
   "idle_policy": {
     "when": "zero_new_or_zero_cards",

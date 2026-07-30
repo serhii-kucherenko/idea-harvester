@@ -167,7 +167,11 @@
     "httpie/desktop",
     "postmanlabs/postman-app-support",
     "fern-api/fern",
-    "speakeasy-api/speakeasy"
+    "speakeasy-api/speakeasy",
+    "daytonaio/daytona",
+    "gitpod-io/gitpod",
+    "loft-sh/vcluster",
+    "ptah-sh/ptah-server"
   ],
   "young_repos": [
     "twentyhq/twenty",
@@ -274,7 +278,9 @@
     "scalar/scalar",
     "httpie/desktop",
     "fern-api/fern",
-    "speakeasy-api/speakeasy"
+    "speakeasy-api/speakeasy",
+    "daytonaio/daytona",
+    "ptah-sh/ptah-server"
   ],
   "young_min_age_days": 90,
   "young_min_reactions": 5,

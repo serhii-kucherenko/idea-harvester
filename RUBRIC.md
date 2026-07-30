@@ -26,6 +26,7 @@ workflow you can sell **without** the host's permission or marketplace.
 
 ## Rubric deltas
 
+- **2026-07-30a:** Daytona/Gitpod/vCluster expand: 11/11 core-host, packaging, or pairwise. Remote-dev trackers same trap. Prefer OUTREACH personal sends (4 emails + Aaron LinkedIn draft).
 - **2026-07-29r:** Idle revalidation (all 4 live + host PRs still open) plus Scalar/HTTPie/Postman expand 14/14 core-host. HTTPie #222 strengthens collection-sync demand; still not a new card. Prefer OUTREACH human send over more client-tracker expands.
 - **2026-07-29q:** Idle 0 new — no expand. OUTREACH now 4 ready emails (added hashop.nl for Coolify bounty lead). Machine work is saturated; value is human send.
 - **2026-07-29p:** Lago/Matomo/Teable/Lightdash expand: 16/16 core-host, packaging, pairwise, or driver. Billing/BI/Airtable-clone trackers look like the same core-host trap as PaaS/monitoring. Prefer OUTREACH.md human sends over more product-tracker expands.

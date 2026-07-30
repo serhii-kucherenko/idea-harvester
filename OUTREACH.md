@@ -33,6 +33,10 @@ Do **not** auto-blast from the harvest bot. Send as yourself (Serhii) from a per
 
 > Hi Erik-jan — saw your $150 bounty on Coolify #2389 for easy WordPress volume backup/restore. I’m offering free restore drills on a non-prod Coolify host this month. Want one, or should I aim the pilot at the bounty scope directly?
 
+**LinkedIn / X to @aaronksaunders — RLS allow/deny matrix**
+
+> Hi Aaron — saw your ask on the Supabase RLS debug thread for a UI to test policies against roles/JWTs. I’m prototyping an allow/deny matrix (paste policies + sample JWTs) that works against local Postgres or a Supabase project. Open to a free policy review on one project this week?
+
 ---
 
 ## 1) Collection sync (Hoppscotch #870)
@@ -81,6 +85,6 @@ Skip pitching @dragoangel (already ships parsedmarc compose — competitor/worka
 
 | When | Who | Channel | Result |
 |------|-----|---------|--------|
-| — | — | — | none sent yet (tick 30: still waiting on Serhii personal inbox for #1–#4) |
+| — | — | — | none sent yet (tick 31: 4 emails + Aaron LinkedIn draft ready; await personal send) |
 
-Updated: 2026-07-29 (tick 30).
+Updated: 2026-07-30 (tick 31).
