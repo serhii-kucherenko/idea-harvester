@@ -85,6 +85,6 @@ Skip pitching @dragoangel (already ships parsedmarc compose — competitor/worka
 
 | When | Who | Channel | Result |
 |------|-----|---------|--------|
-| — | — | — | none sent yet (tick 32: still waiting on personal inbox / LinkedIn) |
+| — | — | — | none sent yet (tick 33: LOOP now prefers outreach over more expands) |
 
-Updated: 2026-07-30 (tick 32).
+Updated: 2026-07-30 (tick 33).

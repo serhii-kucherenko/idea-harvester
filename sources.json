@@ -174,7 +174,10 @@
     "ptah-sh/ptah-server",
     "usememos/memos",
     "laurent22/joplin",
-    "standardnotes/app"
+    "standardnotes/app",
+    "Stirling-Tools/Stirling-PDF",
+    "jgraph/drawio",
+    "mermaid-js/mermaid"
   ],
   "young_repos": [
     "twentyhq/twenty",
@@ -285,7 +288,8 @@
     "daytonaio/daytona",
     "ptah-sh/ptah-server",
     "usememos/memos",
-    "standardnotes/app"
+    "standardnotes/app",
+    "Stirling-Tools/Stirling-PDF"
   ],
   "young_min_age_days": 90,
   "young_min_reactions": 5,

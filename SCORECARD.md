@@ -11,6 +11,8 @@ Solo-indie gate (RUBRIC.md). Revalidated each idle tick when intake is empty.
 
 **Pick order for validation:** collection sync → RLS → DMARC → Coolify backups.
 
+**Idle note (2026-07-30c):** 0 new. Host PRs still open. Expanded Stirling-PDF/drawio/Mermaid → 10/10 core-host/packaging. Updated LOOP idle rule: after 3+ all-kill expands with ready OUTREACH, prefer revalidate/outreach over more host trackers. Still awaiting personal sends.
+
 **Idle note (2026-07-30b):** 0 new intake. Host PRs still open. Expanded Memos/Joplin/Standard Notes → 5/5 packaging/core-host kills. No new public emails for secondary leads; noted @gitekDev site. Prefer personal OUTREACH sends (#1–#4 + Aaron).
 
 **Idle note (2026-07-30a):** 0 new intake. Host PRs #5797/#42346 + all 4 live sources still open. Expanded Daytona/Gitpod/vCluster/Ptah → 11/11 core-host/packaging/pairwise. Added Aaron LinkedIn/X draft in OUTREACH.md. Prefer personal sends over more remote-dev expands.
