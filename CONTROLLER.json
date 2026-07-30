@@ -22,7 +22,7 @@
     "highlight": "0 new; skipped expand; host PRs still open; OUTREACH still awaits personal send"
   },
   "last_error": null,
-  "notes": "Tick 45: no new cards. Human action remains OUTREACH.md checklist #1-5. Sentinel pid 22016.",
+  "notes": "Tick 45: no new cards. Harvest sentinel re-armed after exit 4294967295 (pid 31440). Human action remains OUTREACH.md checklist #1-5.",
   "defaults": {
     "always_commit": true,
     "always_push": true
@@ -34,7 +34,8 @@
     "chain": "harvest_score_gc_expand_commit",
     "do_not_rearm_if_alive": true,
     "ticks_observed": 45,
-    "pid": 22016
+    "pid": 31440,
+    "note": "Re-armed after 22016 exit 4294967295"
   },
   "idle_policy": {
     "when": "zero_new_or_zero_cards",
