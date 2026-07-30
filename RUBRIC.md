@@ -26,6 +26,7 @@ workflow you can sell **without** the host's permission or marketplace.
 
 ## Rubric deltas
 
+- **2026-07-30g:** Idle 0 new — skipped expand; PRs open; waiting on OUTREACH sends.
 - **2026-07-30f:** Idle 0 new — skipped expand; PRs open; no machine progress until OUTREACH sends land.
 - **2026-07-30e:** Idle 0 new — skipped expand; PRs still open; no new lead emails. Machine idle is correctly waiting on human OUTREACH sends.
 - **2026-07-30d:** Idle 0 new — skipped expand per LOOP (3+ all-kill streak). Revalidated live cards/PRs still open. OUTREACH send checklist added. Value is human send only.

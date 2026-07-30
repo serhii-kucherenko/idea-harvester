@@ -11,6 +11,8 @@ Solo-indie gate (RUBRIC.md). Revalidated each idle tick when intake is empty.
 
 **Pick order for validation:** collection sync → RLS → DMARC → Coolify backups.
 
+**Idle note (2026-07-30g):** 0 new. Skipped expand. Host PRs still open. Still blocked on OUTREACH personal sends.
+
 **Idle note (2026-07-30f):** 0 new. Skipped expand. Host PRs still open. OUTREACH checklist unchanged — still blocked on personal send.
 
 **Idle note (2026-07-30e):** 0 new. Skipped expand again. Host PRs #5797/#42346 still open/unmerged. No public email for @munaf-khatri. OUTREACH checklist unchanged — personal send still the only high-leverage move.
