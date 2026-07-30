@@ -6,6 +6,8 @@ repo: supabase/supabase
 score: 8/10
 dimensions: standalone=2 wtp=2 host-risk=1 solo-ship=2 distribution=1
 scored: 2026-07-29
+promoted_eternal: postgres-rls-debugger.md
+promoted: 2026-07-30
 
 ## Gap
 Postgres/Supabase builders need a safe way to test and debug Row Level Security policies against example roles/JWTs without guessing in production.
@@ -24,3 +26,6 @@ Supabase merges/ships excellent RLS Playground and paid demand disappears; or fr
 
 ## Tick note
 Revalidated 2026-07-29l: #12269 open; PR #42346 still unmerged. Outreach: authors of RLS-testing DEV posts, Supabase Discord #help builders hitting silent RLS fails, discussion #12269 commenters — pitch UI matrix vs writing pgTAP. Score 8/10 — keep.
+
+## Tick note
+Revalidated 2026-07-30p: source still OPEN; promoted to eternal/ideas. Score 8/10 - keep.

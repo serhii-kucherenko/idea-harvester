@@ -6,6 +6,8 @@ repo: mailcow/mailcow-dockerized
 score: 8/10
 dimensions: standalone=2 wtp=2 host-risk=2 solo-ship=2 distribution=1
 scored: 2026-07-29
+promoted_eternal: self-host-dmarc-digest.md
+promoted: 2026-07-30
 
 ## Gap
 Self-hosted mail admins (Mailcow and peers) get raw DMARC aggregate reports and need readable pass/fail/fail-source dashboards without buying enterprise email security suites.
@@ -27,3 +29,6 @@ Revalidated 2026-07-29l: #1341 still OPEN. Outreach: Mailcow Discord/#1341 comme
 
 ## Related signal
 Mailu [DMARC Analyzer](https://github.com/Mailu/Mailu/issues/122) asks for the same job — killed as duplicate; strengthens multi-host DMARC wedge.
+
+## Tick note
+Revalidated 2026-07-30p: source still OPEN; promoted to eternal/ideas. Score 8/10 - keep.

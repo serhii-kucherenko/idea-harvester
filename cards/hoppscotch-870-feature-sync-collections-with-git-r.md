@@ -6,6 +6,8 @@ repo: hoppscotch/hoppscotch
 score: 8/10
 dimensions: standalone=2 wtp=2 host-risk=1 solo-ship=2 distribution=1
 scored: 2026-07-29
+promoted_eternal: api-collection-git-sync.md
+promoted: 2026-07-30
 
 ## Gap
 API teams want collections versioned in Git and shared across machines/clients without vendor lock-in to one client UI.
@@ -24,3 +26,6 @@ Hoppscotch ships excellent native git sync AND multi-client users still will not
 
 ## Tick note
 Revalidated 2026-07-29k: #870 + draft PR #5797 unchanged. Outreach map: target Postman/Hoppscotch teams blocked by Bruno migration friction (script translator gaps, folder-import bugs like #7821) — not Bruno converts. Channels: Hoppscotch #870 thread, Yaak feedback (https://feedback.yaak.app reachable), r/api, Bruno Discussions migrants who bounced. Score 8/10 — keep.
+
+## Tick note
+Revalidated 2026-07-30p: source still OPEN; promoted to eternal/ideas. Score 8/10 - keep.

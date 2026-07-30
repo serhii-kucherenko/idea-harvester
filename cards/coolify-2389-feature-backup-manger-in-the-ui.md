@@ -6,6 +6,8 @@ repo: coollabsio/coolify
 score: 8/10
 dimensions: standalone=2 wtp=2 host-risk=1 solo-ship=2 distribution=1
 scored: 2026-07-29
+promoted_eternal: coolify-volume-backups.md
+promoted: 2026-07-30
 
 ## Gap
 Self-hosted PaaS users (Coolify and peers) want reliable, UI-simple backups and restores without wiring their own S3 cron scripts.
@@ -29,3 +31,6 @@ Revalidated 2026-07-29l: #2389 + #4597 still OPEN; Hoppscotch/Supabase host PRs 
 Also see Coolify discussion [Backup Docker Volumes](https://github.com/coollabsio/coolify/discussions/4597) (68 upvotes) - same backup/restore job.
 Runtipi [general backup/restore option in the UI](https://github.com/runtipi/runtipi/issues/2312) asks for the same job — killed as duplicate; strengthens multi-host PaaS backup wedge.
 Nginx Proxy Manager [Backup from WebGui](https://github.com/NginxProxyManager/nginx-proxy-manager/issues/168) asks for the same job — killed as duplicate; strengthens multi-host ops backup wedge.
+
+## Tick note
+Revalidated 2026-07-30p: source still OPEN; promoted to eternal/ideas. Score 8/10 - keep.
