@@ -11,6 +11,8 @@ Solo-indie gate (RUBRIC.md). Revalidated each idle tick when intake is empty.
 
 **Pick order for validation:** collection sync → RLS → DMARC → Coolify backups.
 
+**Idle note (2026-07-30e):** 0 new. Skipped expand again. Host PRs #5797/#42346 still open/unmerged. No public email for @munaf-khatri. OUTREACH checklist unchanged — personal send still the only high-leverage move.
+
 **Idle note (2026-07-30d):** 0 new. Skipped host expand (4 consecutive all-kill expands; LOOP outreach preference). Revalidated all 4 live sources + PRs #5797/#42346 — still open. Added OUTREACH send checklist. Human send remains the blocker.
 
 **Idle note (2026-07-30c):** 0 new. Host PRs still open. Expanded Stirling-PDF/drawio/Mermaid → 10/10 core-host/packaging. Updated LOOP idle rule: after 3+ all-kill expands with ready OUTREACH, prefer revalidate/outreach over more host trackers. Still awaiting personal sends.

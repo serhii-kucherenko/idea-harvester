@@ -94,6 +94,6 @@ Skip pitching @dragoangel (already ships parsedmarc compose — competitor/worka
 
 | When | Who | Channel | Result |
 |------|-----|---------|--------|
-| — | — | — | none sent yet (tick 34: skipped expand; added send checklist; await personal send) |
+| — | — | — | none sent yet (tick 35: still awaiting personal inbox / LinkedIn) |
 
-Updated: 2026-07-30 (tick 34).
+Updated: 2026-07-30 (tick 35).
