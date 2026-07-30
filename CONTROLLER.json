@@ -22,7 +22,7 @@
     "highlight": "Emailed Serhii OUTREACH drafts reminder; digests already sent; armed single 30m loop pid 23044; handoff doc written"
   },
   "last_error": null,
-  "notes": "Tick 49: context bloating — use docs/HANDOFF_LOOP.md in a fresh chat. Sentinel pid 23044. Lead emails still need personal Gmail.",
+  "notes": "Tick 49: context bloating — use docs/HANDOFF_LOOP.md in a fresh chat. Harvest sentinel re-bound to monitored pid 19768 (stopped duplicate 23044). Lead emails still need personal Gmail.",
   "defaults": {
     "always_commit": true,
     "always_push": true
@@ -34,7 +34,8 @@
     "chain": "harvest_score_gc_expand_commit",
     "do_not_rearm_if_alive": true,
     "ticks_observed": 49,
-    "pid": 23044
+    "pid": 19768,
+    "note": "Re-armed after 31440 exit; replaced unmonitored 23044"
   },
   "idle_policy": {
     "when": "zero_new_or_zero_cards",
