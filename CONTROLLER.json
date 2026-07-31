@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "updated_at": "2026-07-31T16:25:00Z",
+  "updated_at": "2026-07-31T16:30:00Z",
   "mode": "autonomous",
   "phase": "idle",
   "ask_human": false,
@@ -9,7 +9,7 @@
   "live_cards": 4,
   "killed_count": 763,
   "last_tick": {
-    "at": "2026-07-31T16:25:00Z",
+    "at": "2026-07-31T16:30:00Z",
     "new_judged": 0,
     "cards_added": 0,
     "kills_added": 0,
@@ -17,13 +17,12 @@
       "watch_hoppscotch_pr_5797",
       "watch_supabase_pr_42346",
       "skip_expand_per_outreach_preference",
-      "skip_reminder_within_6h",
-      "note_github_search_422_noise"
+      "skip_reminder_within_6h"
     ],
-    "highlight": "0 new across issues/boards/discourse; digests clear; GH search 422 noise on several repos; OUTREACH still awaits personal send"
+    "highlight": "0 new; skipped expand; host PRs still open; reminder skipped (<6h after b2c29685); OUTREACH still awaits personal send"
   },
   "last_error": null,
-  "notes": "Tick 78: idle zero-new. Harvest sentinel pid 9392. Prefer docs/HANDOFF_LOOP.md for fresh chat. Human: OUTREACH.md #1-5.",
+  "notes": "Tick 78: no new cards. Monitored harvest pid 34140; email 21524 alive. Prefer docs/HANDOFF_LOOP.md for fresh chat. Human: OUTREACH.md #1-5.",
   "defaults": {
     "always_commit": true,
     "always_push": true
@@ -35,7 +34,7 @@
     "chain": "harvest_score_gc_expand_commit",
     "do_not_rearm_if_alive": true,
     "ticks_observed": 78,
-    "pid": 9392
+    "pid": 34140
   },
   "idle_policy": {
     "when": "zero_new_or_zero_cards",

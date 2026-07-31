@@ -11,6 +11,8 @@ Solo-indie gate (RUBRIC.md). Revalidated each idle tick when intake is empty.
 
 **Pick order for validation:** collection sync → RLS → DMARC → Coolify backups.
 
+**Idle note (2026-07-31t):** 0 new. Skipped expand + reminder (<6h). Host PRs still open. Sentinel 34140. Still blocked on OUTREACH personal sends.
+
 **Idle note (2026-07-31s):** 1 board new (TanStack Router #2701 test server functions) → core-host kill. Skipped expand + reminder (<6h). Host PRs still open. Sentinel 34140. Still blocked on OUTREACH personal sends.
 
 **Idle note (2026-07-31r):** 1 board new (Plane #2648 n8n integration) → pairwise kill. Skipped expand + reminder (<6h). Host PRs still open. Deduped sentinel (kept 34140). Still blocked on OUTREACH personal sends.

@@ -12,6 +12,7 @@ Paste into a fresh Agent chat in `idea-harvester`:
 - OUTREACH: 4 emails + Aaron LinkedIn still unsent from personal inbox
 - Reminder emailed to Serhii: Resend id b2c29685-97b8-40c9-868e-7f0c3373852c (skip re-send until ~18:30 UTC)
 - Latest kill: TanStack Router #2701 test server functions (core-host); prior Plane #2648, Twenty #7296, Sentry #84596
-- Sentinel: pid 34140 in CONTROLLER.json (tick 77) — keep unless dead
+- Sentinel: pid 34140 in CONTROLLER.json (tick 78) — keep unless dead
 - Prefer skip host expand while consecutive_all_kill_expands >= 3 and OUTREACH ready
 - Why handoff: this chat context is bloated — paste the block above into a fresh Agent chat now
+- Reminder re-send eligible after ~18:30 UTC if OUTREACH still unsent
