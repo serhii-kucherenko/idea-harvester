@@ -26,6 +26,7 @@ workflow you can sell **without** the host's permission or marketplace.
 
 ## Rubric deltas
 
+- **2026-07-31a:** Open WebUI/Immich board news - 4/4 core-host or driver. Photo-library + chat-UI trackers still host-feature saturated.
 - **2026-07-30x:** Idle 0 new — skipped expand; removed duplicate sentinel; PRs open; waiting on OUTREACH sends.
 - **2026-07-30w:** Idle 0 new — skipped expand; removed duplicate sentinel; PRs open; waiting on OUTREACH sends.
 - **2026-07-30v:** Idle 0 new — skipped expand; removed duplicate sentinel; PRs open; waiting on OUTREACH sends.

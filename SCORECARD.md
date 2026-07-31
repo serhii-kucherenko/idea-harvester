@@ -17,6 +17,8 @@ Solo-indie gate (RUBRIC.md). Revalidated each idle tick when intake is empty.
 
 **Idle note (2026-07-30v):** 0 new. Skipped expand. Host PRs still open. Deduped sentinel (kept 19768, stopped 25344). Still blocked on OUTREACH personal sends.
 
+**Idle note (2026-07-31a):** Boards: 4 new (Open WebUI context bar + Immich offline/Hailo/upload-clean) - all core-host/driver kills. Issues harvest file-locked; digests clear. OUTREACH still awaiting personal sends.
+
 **Idle note (2026-07-30u):** 0 new. Skipped expand. Host PRs still open. Deduped sentinel (kept 19768, stopped 27124). Still blocked on OUTREACH personal sends.
 
 **Idle note (2026-07-30t):** 0 new. Skipped expand. Host PRs still open. Deduped sentinel (kept 19768, stopped 21268). Still blocked on OUTREACH personal sends.
