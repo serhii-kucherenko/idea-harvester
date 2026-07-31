@@ -1,51 +1,36 @@
 {
   "schema_version": "1.0.0",
-  "updated_at": "2026-07-31T11:31:00Z",
+  "updated_at": "2026-07-31T11:55:00Z",
   "mode": "autonomous",
   "phase": "idle",
   "ask_human": false,
   "hard_stop": false,
   "hard_stop_reason": null,
   "live_cards": 4,
-  "killed_count": 760,
+  "killed_count": 759,
   "last_tick": {
-    "at": "2026-07-31T11:31:00Z",
+    "at": "2026-07-31T11:55:00Z",
     "new_judged": 0,
     "cards_added": 0,
     "kills_added": 0,
-    "idle_actions": [
-      "watch_hoppscotch_pr_5797",
-      "watch_supabase_pr_42346",
-      "skip_expand_per_outreach_preference",
-      "skip_reminder_within_6h"
-    ],
-    "highlight": "0 new; skipped expand; host PRs still open; OUTREACH reminder skipped (<6h); personal sends still pending"
+    "idle_actions": ["skip_expand_per_outreach_preference", "skip_reminder_within_6h"],
+    "highlight": "0 new; digests clear; OUTREACH still needs personal Gmail"
   },
   "last_error": null,
-  "notes": "Tick 69: no new cards. Monitored harvest pid 34140; email 21524 alive. Prefer docs/HANDOFF_LOOP.md. Human: OUTREACH.md #1-5.",
-  "defaults": {
-    "always_commit": true,
-    "always_push": true
-  },
+  "notes": "Tick 65. Sentinel pid 34324. Prefer docs/HANDOFF_LOOP.md fresh chat.",
+  "defaults": { "always_commit": true, "always_push": true },
   "loop": {
     "interval": "30m",
     "sentinel": "AGENT_LOOP_TICK_harvest",
     "purpose": "harvest",
     "chain": "harvest_score_gc_expand_commit",
     "do_not_rearm_if_alive": true,
-    "ticks_observed": 69,
-    "pid": 34140
+    "ticks_observed": 65,
+    "pid": 34324
   },
   "idle_policy": {
     "when": "zero_new_or_zero_cards",
-    "actions": [
-      "expand_sources",
-      "rubric_delta_if_new_fail_pattern",
-      "reharvest_same_tick",
-      "prefer_outreach_after_three_all_kill_expands",
-      "promote_worth_pursuing_to_eternal",
-      "outreach_reminder_if_unsent"
-    ],
+    "actions": ["expand_sources", "rubric_delta_if_new_fail_pattern", "reharvest_same_tick", "prefer_outreach_after_three_all_kill_expands", "promote_worth_pursuing_to_eternal", "outreach_reminder_if_unsent"],
     "consecutive_all_kill_expands": 4
   }
 }
