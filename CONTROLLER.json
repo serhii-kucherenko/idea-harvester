@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "updated_at": "2026-07-31T17:01:00Z",
+  "updated_at": "2026-07-31T17:05:00Z",
   "mode": "autonomous",
   "phase": "idle",
   "ask_human": false,
@@ -9,21 +9,21 @@
   "live_cards": 4,
   "killed_count": 763,
   "last_tick": {
-    "at": "2026-07-31T17:01:00Z",
+    "at": "2026-07-31T17:05:00Z",
     "new_judged": 0,
     "cards_added": 0,
     "kills_added": 0,
     "idle_actions": [
+      "rearm_after_sentinel_exit_4294967295",
       "watch_hoppscotch_pr_5797",
       "watch_supabase_pr_42346",
       "skip_expand_per_outreach_preference",
-      "skip_reminder_within_6h",
-      "dedupe_competing_harvest_loop"
+      "skip_reminder_within_6h"
     ],
-    "highlight": "Tick 79 confirmed 0 new; killed competing sentinel 9392; digests clear; OUTREACH still personal-send"
+    "highlight": "Sentinel 9392 died (4294967295); stopped orphan 34140; rearmed single monitored loop pid 34256"
   },
   "last_error": null,
-  "notes": "Tick 79: idle zero-new. Harvest sentinel pid 34140. Prefer docs/HANDOFF_LOOP.md for fresh chat. Human: OUTREACH.md #1-5. Next outreach reminder after ~20:36 UTC (last 0daf9098).",
+  "notes": "Harvest sentinel pid 34256. Prefer docs/HANDOFF_LOOP.md for fresh chat. Human: OUTREACH.md #1-5. Next outreach reminder after ~20:36 UTC (last 0daf9098).",
   "defaults": {
     "always_commit": true,
     "always_push": true
@@ -35,7 +35,7 @@
     "chain": "harvest_score_gc_expand_commit",
     "do_not_rearm_if_alive": true,
     "ticks_observed": 79,
-    "pid": 34140
+    "pid": 34256
   },
   "idle_policy": {
     "when": "zero_new_or_zero_cards",
