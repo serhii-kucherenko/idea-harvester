@@ -26,7 +26,7 @@
     "chain": "harvest_score_gc_expand_commit",
     "do_not_rearm_if_alive": true,
     "ticks_observed": 72,
-    "pid": 19040
+    "pid": 9392
   },
   "idle_policy": {
     "when": "zero_new_or_zero_cards",
