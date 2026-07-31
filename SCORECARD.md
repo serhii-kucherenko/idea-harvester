@@ -11,6 +11,8 @@ Solo-indie gate (RUBRIC.md). Revalidated each idle tick when intake is empty.
 
 **Pick order for validation:** collection sync → RLS → DMARC → Coolify backups.
 
+**Idle note (2026-07-31d):** 0 new. Skipped expand + reminder (<6h). Host PRs #5797/#42346 still open. Sentinel 34140. Still blocked on OUTREACH personal sends.
+
 **Idle note (2026-07-31c):** 1 new (Sentry #84596 mobile replay bodies) → core-host kill. Skipped expand + reminder (<6h). Host PRs still open. Deduped sentinel (kept 34140). Still blocked on OUTREACH personal sends.
 
 **Idle note (2026-07-31b):** 0 new. Skipped expand. Host PRs #5797/#42346 still open. Deduped sentinel to pid 34140. Re-sent OUTREACH reminder (Resend 65669b9a). Still blocked on personal lead sends.
