@@ -26,6 +26,7 @@ workflow you can sell **without** the host's permission or marketplace.
 
 ## Rubric deltas
 
+- **2026-07-31i:** Twenty #7296 WhatsApp Business sync - pairwise integration kill. CRM↔messenger sync stays host marketplace work.
 - **2026-07-31b:** Sentry #84596 mobile replay network bodies - core-host kill. Session-replay host features stay host UI.
 - **2026-07-31a:** Open WebUI/Immich board news - 4/4 core-host or driver. Photo-library + chat-UI trackers still host-feature saturated.
 - **2026-07-30x:** Idle 0 new — skipped expand; removed duplicate sentinel; PRs open; waiting on OUTREACH sends.
