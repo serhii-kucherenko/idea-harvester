@@ -6,3 +6,5 @@ candidates_boards.md
 boards_err.txt
 candidates_discourse.md
 .email_digest_state.json
+.harvest_tick.log
+.harvest_sentinel.pid
