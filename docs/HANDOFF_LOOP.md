@@ -12,7 +12,7 @@ Paste into a fresh Agent chat in `idea-harvester`:
 - OUTREACH: 4 emails + Aaron LinkedIn still unsent from personal inbox
 - Reminder emailed to Serhii: Resend id 65669b9a-f686-4900-aab0-c44bfa33824e (skip re-send until ~12:47 UTC / ~6h after send)
 - Latest kill: Twenty #7296 WhatsApp Business sync (pairwise); prior Sentry #84596
-- Sentinel: pid 34140 in CONTROLLER.json (tick 69) — keep unless dead
+- Sentinel: pid 34140 in CONTROLLER.json (tick 70) — keep unless dead
 - Reminder re-send eligible after ~12:47 UTC if OUTREACH still unsent
 - Prefer skip host expand while consecutive_all_kill_expands >= 3 and OUTREACH ready
 - Why handoff: this chat context is bloating after repeated idle ticks
