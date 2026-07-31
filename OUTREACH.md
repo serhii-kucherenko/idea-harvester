@@ -94,6 +94,6 @@ Skip pitching @dragoangel (already ships parsedmarc compose — competitor/worka
 
 | When | Who | Channel | Result |
 |------|-----|---------|--------|
-| — | — | — | none sent yet (tick 71: still awaiting personal inbox / LinkedIn) |
+| — | — | — | none sent yet (still awaiting personal inbox / LinkedIn) |
 
-Updated: 2026-07-31 (tick 71). Bot reminder re-sent (Resend b2c29685); personal lead sends still pending.
+Updated: 2026-07-31 (tick 91). Bot reminder re-sent (Resend d3bb6868); personal lead sends still pending.
