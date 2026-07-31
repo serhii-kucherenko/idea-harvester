@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "updated_at": "2026-07-31T15:00:00Z",
+  "updated_at": "2026-07-31T14:32:00Z",
   "mode": "autonomous",
   "phase": "idle",
   "ask_human": false,
@@ -9,7 +9,7 @@
   "live_cards": 4,
   "killed_count": 760,
   "last_tick": {
-    "at": "2026-07-31T15:00:00Z",
+    "at": "2026-07-31T14:32:00Z",
     "new_judged": 0,
     "cards_added": 0,
     "kills_added": 0,
