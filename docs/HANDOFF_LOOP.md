@@ -10,6 +10,7 @@ Paste into a fresh Agent chat in `idea-harvester`:
 - Live cards: 4 (all promoted to eternal/ideas)
 - Digests: all 4 already sent to kucherenko.web@gmail.com
 - OUTREACH: 4 emails + Aaron LinkedIn still unsent from personal inbox
-- Reminder emailed to Serhii: Resend id 65669b9a-f686-4900-aab0-c44bfa33824e
-- Sentinel: pid in CONTROLLER.json (tick 60)
+- Reminder emailed to Serhii: Resend id 65669b9a-f686-4900-aab0-c44bfa33824e (skip re-send until 6h)
+- Latest kill: Sentry #84596 mobile replay network bodies (core-host)
+- Sentinel: pid in CONTROLLER.json (tick 61)
 - Prefer skip host expand while consecutive_all_kill_expands >= 3 and OUTREACH ready
