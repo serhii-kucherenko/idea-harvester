@@ -1,6 +1,6 @@
-{
+﻿{
   "schema_version": "1.0.0",
-  "updated_at": "2026-07-31T06:47:00Z",
+  "updated_at": "2026-07-31T06:48:30Z",
   "mode": "autonomous",
   "phase": "idle",
   "ask_human": false,
@@ -19,13 +19,12 @@
       "skip_expand_per_outreach_preference",
       "dedupe_harvest_sentinels",
       "outreach_reminder_email",
-      "rubric_delta",
-      "rearm_dead_harvest_sentinel"
+      "rubric_delta"
     ],
     "highlight": "0 new; skipped expand; host PRs still open; re-sent OUTREACH reminder (Resend 65669b9a); personal sends still pending"
   },
   "last_error": null,
-  "notes": "Tick 59 follow-up: prior sentinel 34684 died (exit 4294967295); rearmed monitored harvest pid 29176; email 21524 alive. Human: OUTREACH.md #1-5.",
+  "notes": "Tick 60: no new cards. Monitored harvest pid 34140; email 21524 alive. Prefer docs/HANDOFF_LOOP.md for fresh chat. Human: OUTREACH.md #1-5.",
   "defaults": {
     "always_commit": true,
     "always_push": true
@@ -37,7 +36,7 @@
     "chain": "harvest_score_gc_expand_commit",
     "do_not_rearm_if_alive": true,
     "ticks_observed": 60,
-    "pid": 29176
+    "pid": 34140
   },
   "idle_policy": {
     "when": "zero_new_or_zero_cards",
