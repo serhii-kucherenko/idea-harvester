@@ -10,7 +10,7 @@ Paste into a fresh Agent chat in `idea-harvester`:
 - Live cards: 4 (all promoted to eternal/ideas)
 - Digests: all 4 already sent to kucherenko.web@gmail.com
 - OUTREACH: 4 emails + Aaron LinkedIn still unsent from personal inbox
-- Sentinel: pid 34140 in CONTROLLER.json (tick 72) — keep unless dead
+- Sentinel: pid 34140 in CONTROLLER.json (tick 73) — keep unless dead
 - Reminder re-send eligible after ~18:30 UTC if OUTREACH still unsent
 - Prefer skip host expand while consecutive_all_kill_expands >= 3 and OUTREACH ready
 - Why handoff: this chat context is bloating after repeated idle ticks
