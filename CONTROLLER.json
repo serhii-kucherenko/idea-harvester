@@ -24,7 +24,7 @@
     "highlight": "0 new after overnight gap; host PRs still open; rearmed harvest sentinel; OUTREACH still awaits personal send"
   },
   "last_error": null,
-  "notes": "Tick 59: no new cards (prior overnight tick already killed 4 board items). Stopped duplicates 34764/29708; rearming harvest sentinel. Prefer fresh chat via docs/HANDOFF_LOOP.md. Human: OUTREACH.md checklist #1-5.",
+  "notes": "Tick 59: no new cards after overnight gap. Rearmed monitored harvest pid 34684; email 21524 alive. Prefer docs/HANDOFF_LOOP.md. Human: OUTREACH.md #1-5.",
   "defaults": {
     "always_commit": true,
     "always_push": true
@@ -36,7 +36,7 @@
     "chain": "harvest_score_gc_expand_commit",
     "do_not_rearm_if_alive": true,
     "ticks_observed": 59,
-    "pid": 31852
+    "pid": 34684
   },
   "idle_policy": {
     "when": "zero_new_or_zero_cards",
