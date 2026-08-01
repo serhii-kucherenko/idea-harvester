@@ -13,6 +13,6 @@ Paste into a fresh Agent chat in `idea-harvester`:
 - Latest outreach reminder: Resend `367ecfec-6599-45bf-be64-0dd52f78d12b` (~04:27 UTC Aug 1) — next after ~10:27 UTC Aug 1
 - Host PRs still open: Hoppscotch #5797, Supabase #42346
 - Latest kill: Mattermost #30126 Matterbridge support (pairwise)
-- Sentinel: pid **21768** (tick 108) — keep unless dead; kill any other `AGENT_LOOP_TICK_harvest` PowerShell
+- Sentinel: pid **16212** via `scripts/arm_harvest_sentinel.ps1` (tick 108) — keep unless dead; do not start a second PowerShell sleep loop; attach by watching `.harvest_tick.log`
 - Prefer skip host expand while consecutive_all_kill_expands >= 3 and OUTREACH ready
 - Context bloated: prefer fresh chat with the paste above; do not start a second loop
