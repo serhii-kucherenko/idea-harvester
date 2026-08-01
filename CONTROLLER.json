@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "updated_at": "2026-08-01T14:15:00Z",
+  "updated_at": "2026-08-01T14:45:00Z",
   "mode": "autonomous",
   "phase": "idle",
   "ask_human": false,
@@ -9,7 +9,7 @@
   "live_cards": 4,
   "killed_count": 765,
   "last_tick": {
-    "at": "2026-08-01T14:15:00Z",
+    "at": "2026-08-01T14:45:00Z",
     "new_judged": 0,
     "cards_added": 0,
     "kills_added": 0,
@@ -17,13 +17,12 @@
       "watch_hoppscotch_pr_5797",
       "watch_supabase_pr_42346",
       "skip_expand_per_outreach_preference",
-      "catchup_stacked_ticks",
       "rubric_delta"
     ],
-    "highlight": "Catch-up for 4 stacked harvest ticks + email; 0 new; skipped expand; OUTREACH still awaits personal send"
+    "highlight": "0 new; skipped expand; host PRs still open; OUTREACH still awaits personal send"
   },
   "last_error": null,
-  "notes": "Tick 122 catch-up (stacked occ 34-37): no new cards. Digest unsent=0. Durable harvest pid 16212; watcher 22700; email 21524. Prefer docs/HANDOFF_LOOP.md. Human: OUTREACH.md #1-5.",
+  "notes": "Tick 123: no new cards. Durable harvest pid 16212; watcher 22700; email 21524. Prefer docs/HANDOFF_LOOP.md. Human: OUTREACH.md #1-5.",
   "defaults": {
     "always_commit": true,
     "always_push": true
@@ -34,7 +33,7 @@
     "purpose": "harvest",
     "chain": "harvest_score_gc_expand_commit",
     "do_not_rearm_if_alive": true,
-    "ticks_observed": 122,
+    "ticks_observed": 123,
     "pid": 16212
   },
   "idle_policy": {
