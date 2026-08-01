@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "updated_at": "2026-08-01T07:36:30Z",
+  "updated_at": "2026-08-01T07:45:00Z",
   "mode": "autonomous",
   "phase": "idle",
   "ask_human": false,
@@ -9,20 +9,20 @@
   "live_cards": 4,
   "killed_count": 765,
   "last_tick": {
-    "at": "2026-08-01T07:32:00Z",
-    "new_judged": 1,
+    "at": "2026-08-01T07:45:00Z",
+    "new_judged": 0,
     "cards_added": 0,
-    "kills_added": 1,
+    "kills_added": 0,
     "idle_actions": [
-      "keep_durable_sentinel_16212",
-      "attach_log_watcher",
-      "killed_adhoc_duplicate",
-      "skip_reminder_within_6h"
+      "watch_hoppscotch_pr_5797",
+      "watch_supabase_pr_42346",
+      "skip_expand_per_outreach_preference",
+      "rubric_delta"
     ],
-    "highlight": "Ad-hoc loop died; kept durable scripts/arm_harvest_sentinel.ps1 pid 16212; watching .harvest_tick.log"
+    "highlight": "0 new after Matterbridge kill; skipped expand; host PRs still open; OUTREACH still awaits personal send"
   },
   "last_error": null,
-  "notes": "Tick 108 done. Durable harvest pid 16212 (arm_harvest_sentinel.ps1). Log watcher attached this chat. Reminder 367ecfec next after ~10:27 UTC. Human: OUTREACH.md #1-5.",
+  "notes": "Tick 109: no new cards. Durable harvest pid 16212; log watcher 22700; email 21524. Prefer docs/HANDOFF_LOOP.md. Human: OUTREACH.md #1-5.",
   "defaults": {
     "always_commit": true,
     "always_push": true
@@ -33,7 +33,7 @@
     "purpose": "harvest",
     "chain": "harvest_score_gc_expand_commit",
     "do_not_rearm_if_alive": true,
-    "ticks_observed": 108,
+    "ticks_observed": 109,
     "pid": 16212
   },
   "idle_policy": {
