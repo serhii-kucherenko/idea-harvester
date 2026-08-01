@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "updated_at": "2026-08-01T07:32:00Z",
+  "updated_at": "2026-08-01T07:35:00Z",
   "mode": "autonomous",
   "phase": "idle",
   "ask_human": false,
@@ -18,12 +18,13 @@
       "watch_hoppscotch_pr_5797",
       "watch_supabase_pr_42346",
       "skip_expand_per_outreach_preference",
-      "skip_reminder_within_6h"
+      "skip_reminder_within_6h",
+      "dedupe_harvest_sentinels"
     ],
     "highlight": "Loop aborted; re-armed pid 21768; killed Mattermost #30126 Matterbridge (pairwise); OUTREACH still personal-send"
   },
   "last_error": null,
-  "notes": "Tick 108: killed Mattermost #30126 pairwise. Harvest sentinel pid 21768. Reminder 367ecfec next after ~10:27 UTC Aug 1. Human: OUTREACH.md #1-5.",
+  "notes": "Tick 108: killed Mattermost #30126 pairwise (Matterbridge). Kept durable harvest pid 16212; stopped duplicate 21768; watcher 22700; email 21524. Prefer docs/HANDOFF_LOOP.md. Human: OUTREACH.md #1-5.",
   "defaults": {
     "always_commit": true,
     "always_push": true
@@ -35,7 +36,7 @@
     "chain": "harvest_score_gc_expand_commit",
     "do_not_rearm_if_alive": true,
     "ticks_observed": 108,
-    "pid": 21768
+    "pid": 16212
   },
   "idle_policy": {
     "when": "zero_new_or_zero_cards",
