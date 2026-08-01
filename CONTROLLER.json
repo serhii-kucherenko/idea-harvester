@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "updated_at": "2026-08-01T02:16:00Z",
+  "updated_at": "2026-08-01T02:38:00Z",
   "mode": "autonomous",
   "phase": "idle",
   "ask_human": false,
@@ -9,7 +9,7 @@
   "live_cards": 4,
   "killed_count": 758,
   "last_tick": {
-    "at": "2026-08-01T02:16:00Z",
+    "at": "2026-08-01T02:38:00Z",
     "new_judged": 0,
     "cards_added": 0,
     "kills_added": 0,
@@ -17,12 +17,12 @@
       "watch_hoppscotch_pr_5797",
       "watch_supabase_pr_42346",
       "skip_expand_per_outreach_preference",
-      "rubric_delta"
+      "skip_reminder_within_6h"
     ],
-    "highlight": "0 new; skipped expand; host PRs still open; OUTREACH still awaits personal send"
+    "highlight": "0 new across issues/boards/discourse; digests clear; OUTREACH still personal-send"
   },
   "last_error": null,
-  "notes": "Tick 98: no new cards. Durable harvest pid 16212; log watcher 22700; email 21524. Prefer docs/HANDOFF_LOOP.md. Human: OUTREACH.md #1-5.",
+  "notes": "Tick 99: idle zero-new. Harvest sentinel pid 10428. Reminder d3bb6868 next after ~04:27 UTC Aug 1. Human: OUTREACH.md #1-5.",
   "defaults": {
     "always_commit": true,
     "always_push": true
@@ -33,8 +33,8 @@
     "purpose": "harvest",
     "chain": "harvest_score_gc_expand_commit",
     "do_not_rearm_if_alive": true,
-    "ticks_observed": 98,
-    "pid": 16212
+    "ticks_observed": 99,
+    "pid": 10428
   },
   "idle_policy": {
     "when": "zero_new_or_zero_cards",
