@@ -26,6 +26,7 @@ workflow you can sell **without** the host's permission or marketplace.
 
 ## Rubric deltas
 
+- **2026-08-01a:** Mattermost #30126 Matterbridge support - pairwise kill. Chat-bridge A↔B stays host ecosystem work.
 - **2026-07-31t:** Immich #7262 Ultra HDR on Android - core-host kill. Photo-library mobile decode/display stays host UI.
 - **2026-07-31s:** TanStack Router #2701 test server functions - core-host kill. Framework DX/testing stays with the host.
 - **2026-07-31q:** Plane #2648 n8n/workflow integration - pairwise kill. Host↔automation-tool sync is not a solo wedge.
