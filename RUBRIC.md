@@ -26,6 +26,7 @@ workflow you can sell **without** the host's permission or marketplace.
 
 ## Rubric deltas
 
+- **2026-08-02a:** HA Airtouch 5 integration - pairwise device-driver kill. HVAC/host device integrations stay HA work.
 - **2026-08-01c:** Open WebUI #11884 forgot-password + HA Hydrawise sprinkler - core-host auth and pairwise device-driver kills. Chat-UI auth and HA device integrations stay host work.
 - **2026-08-01a:** Mattermost #30126 Matterbridge support - pairwise kill. Chat-bridge A↔B stays host ecosystem work.
 - **2026-07-31t:** Immich #7262 Ultra HDR on Android - core-host kill. Photo-library mobile decode/display stays host UI.
