@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "updated_at": "2026-08-02T08:41:00Z",
+  "updated_at": "2026-08-02T09:10:00Z",
   "mode": "autonomous",
   "phase": "idle",
   "ask_human": false,
@@ -9,21 +9,20 @@
   "live_cards": 4,
   "killed_count": 768,
   "last_tick": {
-    "at": "2026-08-02T08:41:00Z",
-    "new_judged": 1,
+    "at": "2026-08-02T09:10:00Z",
+    "new_judged": 0,
     "cards_added": 0,
-    "kills_added": 1,
+    "kills_added": 0,
     "idle_actions": [
       "watch_hoppscotch_pr_5797",
       "watch_supabase_pr_42346",
       "skip_expand_per_outreach_preference",
-      "catchup_overnight",
       "rubric_delta"
     ],
-    "highlight": "Overnight catch-up: killed HA Airtouch 5 pairwise device integration; digest clear; OUTREACH still personal-send"
+    "highlight": "0 new; skipped expand; host PRs still open; OUTREACH still awaits personal send"
   },
   "last_error": null,
-  "notes": "Tick 126 overnight catch-up (occ 40-41): killed HA Airtouch 5. Digest unsent=0. Durable pid 16212; watcher 22700; email 21524. Prefer docs/HANDOFF_LOOP.md. Human: OUTREACH.md #1-5.",
+  "notes": "Tick 127: no new cards. Durable harvest pid 16212; watcher 22700; email 21524. Prefer docs/HANDOFF_LOOP.md. Human: OUTREACH.md #1-5.",
   "defaults": {
     "always_commit": true,
     "always_push": true
@@ -34,7 +33,7 @@
     "purpose": "harvest",
     "chain": "harvest_score_gc_expand_commit",
     "do_not_rearm_if_alive": true,
-    "ticks_observed": 126,
+    "ticks_observed": 127,
     "pid": 16212
   },
   "idle_policy": {
