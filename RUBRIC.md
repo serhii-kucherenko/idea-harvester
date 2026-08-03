@@ -26,6 +26,7 @@ workflow you can sell **without** the host's permission or marketplace.
 
 ## Rubric deltas
 
+- **2026-08-03b:** Outline #8361 Discord notifications - pairwise kill. Docs-host↔messenger bridging stays host marketplace work.
 - **2026-08-03a:** Immich #15083 face metadata to sidecars - core-host kill. Photo-library metadata writeback stays host work.
 - **2026-08-02a:** HA Airtouch 5 integration - pairwise device-driver kill. HVAC/host device integrations stay HA work.
 - **2026-08-01c:** Open WebUI #11884 forgot-password + HA Hydrawise sprinkler - core-host auth and pairwise device-driver kills. Chat-UI auth and HA device integrations stay host work.
