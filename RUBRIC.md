@@ -26,6 +26,7 @@ workflow you can sell **without** the host's permission or marketplace.
 
 ## Rubric deltas
 
+- **2026-08-05a:** Next.js #61025 sitemap + Immich #1689/#2208 album sort/reorder - 3/3 core-host kills. Framework sitemap and photo-library album UX stay host work. Prefer OUTREACH personal sends.
 - **2026-08-03b:** Outline #8361 Discord notifications - pairwise kill. Docs-host↔messenger bridging stays host marketplace work.
 - **2026-08-03a:** Immich #15083 face metadata to sidecars - core-host kill. Photo-library metadata writeback stays host work.
 - **2026-08-02a:** HA Airtouch 5 integration - pairwise device-driver kill. HVAC/host device integrations stay HA work.
