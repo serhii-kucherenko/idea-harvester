@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "updated_at": "2026-08-05T05:40:00Z",
+  "updated_at": "2026-08-05T07:10:00Z",
   "mode": "autonomous",
   "phase": "idle",
   "ask_human": false,
@@ -9,20 +9,20 @@
   "live_cards": 4,
   "killed_count": 780,
   "last_tick": {
-    "at": "2026-08-05T05:40:00Z",
-    "new_judged": 1,
+    "at": "2026-08-05T07:10:00Z",
+    "new_judged": 0,
     "cards_added": 0,
-    "kills_added": 1,
+    "kills_added": 0,
     "idle_actions": [
       "watch_hoppscotch_pr_5797",
       "watch_supabase_pr_42346",
       "skip_expand_per_outreach_preference",
       "skip_reminder_within_6h"
     ],
-    "highlight": "1 board kill (Open WebUI LightRAG pairwise); skipped expand; OUTREACH still personal-send"
+    "highlight": "Catch-up occ 76-78 + email: 0 new; digest unsent=0; OUTREACH still personal-send"
   },
   "last_error": null,
-  "notes": "Tick 160: 1 pairwise kill, 0 cards. Digest unsent=0. Durable pid 16212; watcher 22700; email 21524. Reminder 9f0bcc49 still within 6h. Human: OUTREACH.md #1-5.",
+  "notes": "Tick 163 catch-up (occ 76-78 + email): 0 new. Digest unsent=0. Durable pid 16212; watcher 22700; email 21524. Reminder 9f0bcc49 still within 6h. Human: OUTREACH.md #1-5.",
   "defaults": {
     "always_commit": true,
     "always_push": true
@@ -33,7 +33,7 @@
     "purpose": "harvest",
     "chain": "harvest_score_gc_expand_commit",
     "do_not_rearm_if_alive": true,
-    "ticks_observed": 160,
+    "ticks_observed": 163,
     "pid": 16212
   },
   "idle_policy": {
