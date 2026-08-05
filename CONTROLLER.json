@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "updated_at": "2026-08-05T04:45:00Z",
+  "updated_at": "2026-08-05T05:10:00Z",
   "mode": "autonomous",
   "phase": "idle",
   "ask_human": false,
@@ -9,20 +9,20 @@
   "live_cards": 4,
   "killed_count": 779,
   "last_tick": {
-    "at": "2026-08-05T04:45:00Z",
-    "new_judged": 3,
+    "at": "2026-08-05T05:10:00Z",
+    "new_judged": 0,
     "cards_added": 0,
-    "kills_added": 3,
+    "kills_added": 0,
     "idle_actions": [
       "watch_hoppscotch_pr_5797",
       "watch_supabase_pr_42346",
       "skip_expand_per_outreach_preference",
-      "outreach_reminder_sent"
+      "skip_reminder_within_6h"
     ],
-    "highlight": "Catch-up occ 71-73 + email: 3/3 core-host kills; reminder 9f0bcc49; OUTREACH still personal-send"
+    "highlight": "Idle 0 new; skipped expand; reminder <6h; OUTREACH still personal-send"
   },
   "last_error": null,
-  "notes": "Tick 158 catch-up (occ 71-73 + email): 3 board kills, 0 cards. Digest unsent=0. Durable pid 16212; watcher 22700; email 21524. Reminder Resend 9f0bcc49 (next after ~10:45 UTC). Human: OUTREACH.md #1-5.",
+  "notes": "Tick 159: 0 new. Digest unsent=0. Durable pid 16212; watcher 22700; email 21524. Reminder 9f0bcc49 still within 6h. Human: OUTREACH.md #1-5.",
   "defaults": {
     "always_commit": true,
     "always_push": true
@@ -33,7 +33,7 @@
     "purpose": "harvest",
     "chain": "harvest_score_gc_expand_commit",
     "do_not_rearm_if_alive": true,
-    "ticks_observed": 158,
+    "ticks_observed": 159,
     "pid": 16212
   },
   "idle_policy": {
