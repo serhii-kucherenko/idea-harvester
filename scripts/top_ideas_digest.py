@@ -1027,6 +1027,108 @@ def render_email_html(cards: list[dict], generated_at: str) -> str:
     return "\n".join(parts)
 
 
+def _kill_themes_since(since_ts: float) -> tuple[int, list[tuple[str, int]]]:
+    from collections import Counter
+
+    killed_dir = ROOT / "killed"
+    counter: Counter[str] = Counter()
+    total = 0
+    for path in killed_dir.glob("*.md"):
+        if path.stat().st_mtime <= since_ts:
+            continue
+        total += 1
+        for line in path.read_text(encoding="utf-8").splitlines():
+            if line.startswith("killed:"):
+                reason = line.split(":", 1)[1].strip()
+                reason = reason.replace("hard-fail:", "").strip()
+                counter[reason] += 1
+                break
+    return total, counter.most_common(4)
+
+
+def _next_step(card: dict) -> str:
+    """One concrete action for the lead idea, derived from its own kill criteria."""
+    return (
+        "Talk to 3 people who live with this problem before writing code. "
+        f"You are trying to disprove: {card.get('kill_if', 'the idea')}"
+    )
+
+
+def render_ideas_email() -> dict:
+    """Always-has-content ideas email. Rotates which idea gets the deep write-up."""
+    state = _load_state()
+    cards = _load_top_cards()
+    if not cards:
+        raise SystemExit("no cards to send")
+
+    since_iso = state.get("last_ideas_email_at")
+    since_ts = 0.0
+    if since_iso:
+        since_ts = datetime.fromisoformat(since_iso).timestamp()
+    screened, themes = _kill_themes_since(since_ts)
+
+    focus_index = int(state.get("focus_index", 0)) % len(cards)
+    lead = cards[focus_index]
+    rest = [c for i, c in enumerate(cards) if i != focus_index]
+
+    text: list[str] = []
+    text.append(f"THIS WEEK'S IDEA: {lead['title']} ({lead['score']}/10)")
+    text.append("")
+    text.append(f"The problem: {lead['gap']}")
+    text.append("")
+    text.append(f"Why it's still open: {lead['why_host_wont']}")
+    text.append("")
+    text.append(f"What you'd build: {lead['product_angle']}")
+    text.append("")
+    text.append(f"Who's already there: {lead['competition']}")
+    text.append("")
+    text.append(f"Drop it if: {lead['kill_if']}")
+    text.append("")
+    text.append(f"Next step: {_next_step(lead)}")
+    text.append(f"Source: {lead['source']}")
+    text.append("")
+    text.append("-" * 40)
+    text.append("")
+    text.append("ALSO ON THE SHORTLIST")
+    for card in rest:
+        text.append(f"- {card['title']} ({card['score']}/10): {card['gap']}")
+        text.append(f"  {card['source']}")
+    text.append("")
+    text.append("WHAT THE HARVESTER SAW SINCE THE LAST EMAIL")
+    text.append(f"- {screened} candidates screened, 0 made the shortlist.")
+    if themes:
+        theme_str = ", ".join(f"{name} ({count})" for name, count in themes)
+        text.append(f"- Why they failed: {theme_str}.")
+    text.append(
+        "- Reading: the trackers we watch are full of work the host should do itself. "
+        "New sources are needed for genuinely new ideas."
+    )
+
+    body = "\n".join(text)
+    return {
+        "subject": f"Idea: {lead['title']}",
+        "text": body,
+        "html": (
+            "<div style=\"font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial; "
+            "color:#111; font-size:15px; line-height:1.55; max-width:640px;\"><pre style=\""
+            "white-space:pre-wrap; font-family:inherit; margin:0;\">"
+            + _escape_html(body)
+            + "</pre></div>"
+        ),
+        "screened": screened,
+        "lead_source": lead["source"],
+    }
+
+
+def mark_ideas_email_sent() -> dict:
+    state = _load_state()
+    cards = _load_top_cards()
+    state["last_ideas_email_at"] = datetime.now(timezone.utc).isoformat()
+    state["focus_index"] = (int(state.get("focus_index", 0)) + 1) % max(len(cards), 1)
+    _save_state(state)
+    return state
+
+
 def mark_current_top_sent() -> dict:
     payload = compute_payload()
     state = _load_state()
@@ -1042,7 +1144,13 @@ def mark_current_top_sent() -> dict:
 def main() -> None:
     import sys
 
-    if "--mark-current-sent" in sys.argv:
+    if "--ideas-email" in sys.argv:
+        print(json.dumps(render_ideas_email(), indent=2))
+        return
+    elif "--mark-ideas-sent" in sys.argv:
+        print(json.dumps(mark_ideas_email_sent(), indent=2))
+        return
+    elif "--mark-current-sent" in sys.argv:
         result = mark_current_top_sent()
     elif "--generate-demos" in sys.argv:
         payload = compute_payload()

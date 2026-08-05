@@ -17,8 +17,13 @@ Borrowed from ai-method-lab's endless keep-executing loop — **loop mechanics o
    - if the last **3+** expands were 100% hard-fail kills and live cards ≥1 with ready
      `OUTREACH.md` leads: prefer revalidate + outreach enrichment over another host-tracker
      expand (still commit what you learned)
-6. Commit (message: what this tick learned or carded), then `git push origin HEAD`. Do not ask the human.
-7. Re-arm the loop sentinel. Stop only on human stop or `hard_stop`.
+6. **Email.** If it has been ≥24h since `.email_digest_state.json` → `last_ideas_email_at`,
+   run `python scripts/top_ideas_digest.py --ideas-email`, send it to
+   kucherenko.web@gmail.com from `Serhii Ideas Bot <onboarding@resend.dev>`, then
+   `--mark-ideas-sent`. **Never email outreach reminders** — Serhii wants ideas in his inbox,
+   and outreach status lives in `OUTREACH.md` only.
+7. Commit (message: what this tick learned or carded), then `git push origin HEAD`. Do not ask the human.
+8. Re-arm the loop sentinel. Stop only on human stop or `hard_stop`.
 
 ## Rules
 
