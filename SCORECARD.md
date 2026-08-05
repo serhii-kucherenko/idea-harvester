@@ -11,6 +11,8 @@ Solo-indie gate (RUBRIC.md). Revalidated each idle tick when intake is empty.
 
 **Pick order for validation:** collection sync → RLS → DMARC → Coolify backups.
 
+**Idle note (2026-08-05c):** 1 board new (Open WebUI #6286 LightRAG) → pairwise kill. Skipped expand + reminder (<6h). Host PRs still open. Sentinel 16212. Still blocked on OUTREACH personal sends.
+
 **Idle note (2026-08-05b):** 0 new. Skipped expand + reminder (<6h). Host PRs #5797/#42346 still open. Sentinel 16212. Still blocked on OUTREACH personal sends.
 
 **Idle note (2026-08-05a):** Catch-up occ 71-73: 3 board news → core-host kills (Next sitemap, Immich album sort/reorder). Skipped expand. Host PRs #5797/#42346 still open. Reminder Resend 9f0bcc49. Sentinel 16212. Still blocked on OUTREACH personal sends.
