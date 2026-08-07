@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "updated_at": "2026-08-07T06:35:00Z",
+  "updated_at": "2026-08-07T09:00:00Z",
   "mode": "autonomous",
   "phase": "idle",
   "ask_human": false,
@@ -9,20 +9,20 @@
   "live_cards": 4,
   "killed_count": 789,
   "last_tick": {
-    "at": "2026-08-07T06:35:00Z",
-    "new_judged": 8,
+    "at": "2026-08-07T09:00:00Z",
+    "new_judged": 0,
     "cards_added": 0,
-    "kills_added": 8,
+    "kills_added": 0,
     "idle_actions": [
       "watch_hoppscotch_pr_5797",
       "watch_supabase_pr_42346",
       "skip_expand_per_outreach_preference",
-      "ideas_email_sent"
+      "skip_ideas_email_within_24h"
     ],
-    "highlight": "Catch-up after ~2d gap: 8/8 kills; ideas digest f118af9e (collection sync focus); funnel still starving"
+    "highlight": "Catch-up occ 81-85 + email: 0 new; ideas email <24h; funnel still starving"
   },
   "last_error": null,
-  "notes": "Tick 165 catch-up (occ 80 + email): 8 kills, 0 cards. Ideas email Resend f118af9e. Digest unsent=0. Durable pid 16212; watcher 22700; email 21524. Never outreach reminders. Human: OUTREACH.md #1-5.",
+  "notes": "Tick 170 catch-up (occ 81-85 + email): 0 new. Ideas email f118af9e still within 24h. Durable pid 16212; watcher 22700; email 21524. Never outreach reminders.",
   "defaults": {
     "always_commit": true,
     "always_push": true
@@ -33,7 +33,7 @@
     "purpose": "harvest",
     "chain": "harvest_score_gc_expand_commit",
     "do_not_rearm_if_alive": true,
-    "ticks_observed": 165,
+    "ticks_observed": 170,
     "pid": 16212
   },
   "idle_policy": {
