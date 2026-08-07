@@ -26,6 +26,7 @@ workflow you can sell **without** the host's permission or marketplace.
 
 ## Rubric deltas
 
+- **2026-08-07a:** Catch-up after gap: Fider/Kong/Harbor/Gatus/Immich×2 core-host + HA Sinope/Candy pairwise — 8/8 kills. Feedback/registry/monitoring/photo-library UX and HA device drivers stay host work. Funnel still starving on host trackers.
 - **2026-08-05e:** Immich #4278 favorite partner photo - core-host kill. Photo-library partner sharing UX stays host UI.
 - **2026-08-05c:** Open WebUI #6286 LightRAG integration - pairwise kill. Chat-UI↔RAG-engine bridging stays host marketplace work.
 - **2026-08-05a:** Next.js #61025 sitemap + Immich #1689/#2208 album sort/reorder - 3/3 core-host kills. Framework sitemap and photo-library album UX stay host work. Prefer OUTREACH personal sends.
