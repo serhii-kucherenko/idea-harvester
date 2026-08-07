@@ -1,28 +1,28 @@
 {
   "schema_version": "1.0.0",
-  "updated_at": "2026-08-07T10:30:00Z",
+  "updated_at": "2026-08-07T13:00:00Z",
   "mode": "autonomous",
   "phase": "idle",
   "ask_human": false,
   "hard_stop": false,
   "hard_stop_reason": null,
   "live_cards": 4,
-  "killed_count": 789,
+  "killed_count": 790,
   "last_tick": {
-    "at": "2026-08-07T10:30:00Z",
-    "new_judged": 0,
+    "at": "2026-08-07T13:00:00Z",
+    "new_judged": 1,
     "cards_added": 0,
-    "kills_added": 0,
+    "kills_added": 1,
     "idle_actions": [
       "watch_hoppscotch_pr_5797",
       "watch_supabase_pr_42346",
       "skip_expand_per_outreach_preference",
       "skip_ideas_email_within_24h"
     ],
-    "highlight": "Idle 0 new + email tick; skipped expand; ideas email <24h"
+    "highlight": "Catch-up occ 88-93 + email: 1 HA RBAC core-host kill; ideas email <24h"
   },
   "last_error": null,
-  "notes": "Tick 172 (occ 87 + email): 0 new. Ideas email f118af9e still within 24h. Durable pid 16212; watcher 22700; email 21524. Never outreach reminders.",
+  "notes": "Tick 178 catch-up (occ 88-93 + email): 1 core-host kill, 0 cards. Ideas email f118af9e still within 24h. Durable pid 16212; watcher 22700; email 21524. Never outreach reminders.",
   "defaults": {
     "always_commit": true,
     "always_push": true
@@ -33,7 +33,7 @@
     "purpose": "harvest",
     "chain": "harvest_score_gc_expand_commit",
     "do_not_rearm_if_alive": true,
-    "ticks_observed": 172,
+    "ticks_observed": 178,
     "pid": 16212
   },
   "idle_policy": {

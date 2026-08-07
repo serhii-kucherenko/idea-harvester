@@ -26,6 +26,7 @@ workflow you can sell **without** the host's permission or marketplace.
 
 ## Rubric deltas
 
+- **2026-08-07f:** HA Discourse RBAC users/groups - core-host kill. Home automation auth/permissions stay host platform work.
 - **2026-08-07a:** Catch-up after gap: Fider/Kong/Harbor/Gatus/Immich×2 core-host + HA Sinope/Candy pairwise — 8/8 kills. Feedback/registry/monitoring/photo-library UX and HA device drivers stay host work. Funnel still starving on host trackers.
 - **2026-08-05e:** Immich #4278 favorite partner photo - core-host kill. Photo-library partner sharing UX stays host UI.
 - **2026-08-05c:** Open WebUI #6286 LightRAG integration - pairwise kill. Chat-UI↔RAG-engine bridging stays host marketplace work.
