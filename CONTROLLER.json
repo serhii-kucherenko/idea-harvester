@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "updated_at": "2026-08-07T13:30:00Z",
+  "updated_at": "2026-08-07T17:30:00Z",
   "mode": "autonomous",
   "phase": "idle",
   "ask_human": false,
@@ -9,7 +9,7 @@
   "live_cards": 4,
   "killed_count": 790,
   "last_tick": {
-    "at": "2026-08-07T13:30:00Z",
+    "at": "2026-08-07T17:30:00Z",
     "new_judged": 0,
     "cards_added": 0,
     "kills_added": 0,
@@ -19,10 +19,10 @@
       "skip_expand_per_outreach_preference",
       "skip_ideas_email_within_24h"
     ],
-    "highlight": "Idle 0 new; skipped expand; ideas email <24h"
+    "highlight": "Catch-up occ 95-102 + email x2: 0 new; ideas email <24h"
   },
   "last_error": null,
-  "notes": "Tick 179: 0 new. Ideas email f118af9e still within 24h. Durable pid 16212; watcher 22700; email 21524. Never outreach reminders.",
+  "notes": "Tick 187 catch-up (occ 95-102 + email 43-44): 0 new. Ideas email f118af9e still within 24h. Durable pid 16212; watcher 22700; email 21524. Never outreach reminders.",
   "defaults": {
     "always_commit": true,
     "always_push": true
@@ -33,7 +33,7 @@
     "purpose": "harvest",
     "chain": "harvest_score_gc_expand_commit",
     "do_not_rearm_if_alive": true,
-    "ticks_observed": 179,
+    "ticks_observed": 187,
     "pid": 16212
   },
   "idle_policy": {

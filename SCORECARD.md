@@ -11,6 +11,8 @@ Solo-indie gate (RUBRIC.md). Revalidated each idle tick when intake is empty.
 
 **Pick order for validation:** collection sync → RLS → DMARC → Coolify backups.
 
+**Idle note (2026-08-07h):** Catch-up occ 95-102 + email x2: 0 new. Skipped expand + ideas email (<24h). Host PRs still open. Sentinel 16212. Funnel still starving.
+
 **Idle note (2026-08-07g):** 0 new. Skipped expand + ideas email (<24h). Host PRs still open. Sentinel 16212. Funnel still starving.
 
 **Idle note (2026-08-07f):** Catch-up occ 88-93 + email: 1 Discourse new (HA RBAC) → core-host kill. Skipped expand + ideas email (<24h). Host PRs still open. Sentinel 16212. Funnel still starving.
