@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "updated_at": "2026-08-08T00:30:00Z",
+  "updated_at": "2026-08-08T02:23:59Z",
   "mode": "autonomous",
   "phase": "idle",
   "ask_human": false,
@@ -9,7 +9,7 @@
   "live_cards": 4,
   "killed_count": 790,
   "last_tick": {
-    "at": "2026-08-08T00:30:00Z",
+    "at": "2026-08-08T02:23:59Z",
     "new_judged": 0,
     "cards_added": 0,
     "kills_added": 0,
@@ -17,12 +17,12 @@
       "watch_hoppscotch_pr_5797",
       "watch_supabase_pr_42346",
       "skip_expand_per_outreach_preference",
-      "skip_ideas_email_within_24h"
+      "skip_ideas_email_no_state_file_and_recent_digest"
     ],
-    "highlight": "Catch-up occ 114-116 + email: 0 new; ideas email <24h"
+    "highlight": "GSD idle tick from cue chat: 0 new across harvest/boards/discourse; Cue soak 6/28; SCORECARD MVPs parked"
   },
   "last_error": null,
-  "notes": "Tick 201 catch-up (occ 114-116 + email 48): 0 new. Ideas email f118af9e still within 24h. Durable pid 16212; watcher 22700; email 21524. Never outreach reminders.",
+  "notes": "Tick from /loop gsd_cross: 0 new. Funnel still starving. Host PRs still open. Never outreach reminders.",
   "defaults": {
     "always_commit": true,
     "always_push": true
@@ -33,7 +33,7 @@
     "purpose": "harvest",
     "chain": "harvest_score_gc_expand_commit",
     "do_not_rearm_if_alive": true,
-    "ticks_observed": 201,
+    "ticks_observed": 202,
     "pid": 16212
   },
   "idle_policy": {

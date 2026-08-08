@@ -11,6 +11,8 @@ Solo-indie gate (RUBRIC.md). Revalidated each idle tick when intake is empty.
 
 **Pick order for validation:** collection sync → RLS → DMARC → Coolify backups.
 
+**Idle note (2026-08-07 gsd_cross):** Harvest/boards/discourse 0 new. Skipped expand. Cue soak 6/28; SCORECARD MVPs parked. Funnel still starving.
+
 **Idle note (2026-08-08a):** Catch-up occ 114-116 + email: 0 new. Skipped expand + ideas email (<24h). Host PRs still open. Sentinel 16212. Funnel still starving.
 
 **Idle note (2026-08-07l):** Catch-up occ 112-113: 0 new. Skipped expand + ideas email (<24h). Host PRs still open. Sentinel 16212. Funnel still starving.
