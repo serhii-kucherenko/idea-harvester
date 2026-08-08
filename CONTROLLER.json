@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "updated_at": "2026-08-08T02:45:27Z",
+  "updated_at": "2026-08-08T02:55:44Z",
   "mode": "autonomous",
   "phase": "idle",
   "ask_human": false,
@@ -9,18 +9,18 @@
   "live_cards": 4,
   "killed_count": 790,
   "last_tick": {
-    "at": "2026-08-08T02:45:27Z",
+    "at": "2026-08-08T02:55:44Z",
     "new_judged": 0,
     "cards_added": 0,
     "kills_added": 0,
     "idle_actions": [
-      "skip_expand_per_outreach_preference",
-      "cue_soak_6_28"
+      "boards_discourse_github",
+      "skip_expand"
     ],
-    "highlight": "crossproj tick: 0 new; Cue soak 6/28; MVPs parked"
+    "highlight": "crossproj tick2: 0 new; soak 6/28"
   },
   "last_error": null,
-  "notes": "GSD crossproj 10m tick: 0 new. Funnel starving.",
+  "notes": "crossproj tick2 idle",
   "defaults": {
     "always_commit": true,
     "always_push": true
@@ -31,7 +31,7 @@
     "purpose": "harvest",
     "chain": "harvest_score_gc_expand_commit",
     "do_not_rearm_if_alive": true,
-    "ticks_observed": 203,
+    "ticks_observed": 204,
     "pid": 16212
   },
   "idle_policy": {
