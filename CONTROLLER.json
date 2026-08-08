@@ -9,15 +9,16 @@
   "live_cards": 4,
   "killed_count": 790,
   "last_tick": {
-    "at": "2026-08-08T02:55:44Z",
+    "at": "2026-08-08T02:55:45Z",
     "new_judged": 0,
     "cards_added": 0,
     "kills_added": 0,
     "idle_actions": [
-      "boards_discourse_github",
-      "skip_expand"
+      "killed_hung_harvest_race",
+      "skip_reharvest_until_next_tick",
+      "product_queues_gated"
     ],
-    "highlight": "crossproj tick2: 0 new; soak 6/28"
+    "highlight": "GSD tick: Cue soak 6/28; MVPs parked; killed hung harvest (>10m empty redirect); 0 new"
   },
   "last_error": null,
   "notes": "crossproj tick2 idle",
