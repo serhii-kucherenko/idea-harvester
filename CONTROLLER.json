@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "updated_at": "2026-08-08T02:23:59Z",
+  "updated_at": "2026-08-08T02:45:27Z",
   "mode": "autonomous",
   "phase": "idle",
   "ask_human": false,
@@ -9,20 +9,18 @@
   "live_cards": 4,
   "killed_count": 790,
   "last_tick": {
-    "at": "2026-08-08T02:44:42Z",
+    "at": "2026-08-08T02:45:27Z",
     "new_judged": 0,
     "cards_added": 0,
     "kills_added": 0,
     "idle_actions": [
-      "skip_reharvest_race_guard",
-      "reuse_prior_0_new_at_022359Z",
-      "watch_hoppscotch_pr_5797",
-      "watch_supabase_pr_42346"
+      "skip_expand_per_outreach_preference",
+      "cue_soak_6_28"
     ],
-    "highlight": "GSD tick: product queues empty (Cue soak 6/28, Phase 4 blocked on notarize); skipped destructive re-harvest (race); SCORECARD MVPs parked"
+    "highlight": "crossproj tick: 0 new; Cue soak 6/28; MVPs parked"
   },
   "last_error": null,
-  "notes": "Tick from /loop gsd_cross: 0 new. Funnel still starving. Host PRs still open. Never outreach reminders.",
+  "notes": "GSD crossproj 10m tick: 0 new. Funnel starving.",
   "defaults": {
     "always_commit": true,
     "always_push": true
@@ -33,7 +31,7 @@
     "purpose": "harvest",
     "chain": "harvest_score_gc_expand_commit",
     "do_not_rearm_if_alive": true,
-    "ticks_observed": 202,
+    "ticks_observed": 203,
     "pid": 16212
   },
   "idle_policy": {
