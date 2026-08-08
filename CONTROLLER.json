@@ -9,17 +9,17 @@
   "live_cards": 4,
   "killed_count": 790,
   "last_tick": {
-    "at": "2026-08-08T02:23:59Z",
+    "at": "2026-08-08T02:44:42Z",
     "new_judged": 0,
     "cards_added": 0,
     "kills_added": 0,
     "idle_actions": [
+      "skip_reharvest_race_guard",
+      "reuse_prior_0_new_at_022359Z",
       "watch_hoppscotch_pr_5797",
-      "watch_supabase_pr_42346",
-      "skip_expand_per_outreach_preference",
-      "skip_ideas_email_no_state_file_and_recent_digest"
+      "watch_supabase_pr_42346"
     ],
-    "highlight": "GSD idle tick from cue chat: 0 new across harvest/boards/discourse; Cue soak 6/28; SCORECARD MVPs parked"
+    "highlight": "GSD tick: product queues empty (Cue soak 6/28, Phase 4 blocked on notarize); skipped destructive re-harvest (race); SCORECARD MVPs parked"
   },
   "last_error": null,
   "notes": "Tick from /loop gsd_cross: 0 new. Funnel still starving. Host PRs still open. Never outreach reminders.",
