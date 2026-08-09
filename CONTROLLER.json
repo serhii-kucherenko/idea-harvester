@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "updated_at": "2026-08-09T18:55:41Z",
+  "updated_at": "2026-08-09T19:00:12Z",
   "mode": "autonomous",
   "phase": "idle",
   "ask_human": false,
@@ -9,17 +9,17 @@
   "live_cards": 4,
   "killed_count": 793,
   "last_tick": {
-    "at": "2026-08-09T18:55:41Z",
+    "at": "2026-08-09T19:00:12Z",
     "new_judged": 0,
     "cards_added": 0,
     "kills_added": 0,
     "idle_actions": [
-      "product_phase5_shipped"
+      "product_phases_5_7"
     ],
-    "highlight": "crossproj tick3: Phase 5 api-collection-git-sync Done; harvest 0 new"
+    "highlight": "crossproj tick4: ags Phases 6 close + Phase 7 PARTNER kit; skipped full harvest"
   },
   "last_error": null,
-  "notes": "GSD tick shipped api-collection-git-sync Phase 5; harvest idle",
+  "notes": "Product tick: api-collection-git-sync through Phase 7",
   "defaults": {
     "always_commit": true,
     "always_push": true
@@ -30,7 +30,7 @@
     "purpose": "harvest",
     "chain": "harvest_score_gc_expand_commit",
     "do_not_rearm_if_alive": true,
-    "ticks_observed": 209,
+    "ticks_observed": 210,
     "pid": 16212
   },
   "idle_policy": {

@@ -11,6 +11,8 @@ Solo-indie gate (RUBRIC.md). Revalidated each idle tick when intake is empty.
 
 **Pick order for validation:** collection sync → RLS → DMARC → Coolify backups.
 
+**Idle note (2026-08-09 crossproj-4):** Product - api-collection-git-sync Phases 5–7 Done. Phase 8 needs human outreach. Skipped full harvest this tick.
+
 **Idle note (2026-08-09 crossproj-3):** Product tick - api-collection-git-sync Phase 5 Done. Harvest 0 new. Cue soak 6/28.
 
 **Idle note (2026-08-09 crossproj-2):** 0 new. Cue soak 6/28. Funnel starving.
