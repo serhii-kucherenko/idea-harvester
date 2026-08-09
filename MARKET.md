@@ -25,13 +25,13 @@ Future ≥8 cards: add a section here before calling MVP Done.
 ## 1) API collection git sync — **active**
 
 **Repo:** `eternal/projects/api-collection-git-sync/repo`  
-**Card:** Hoppscotch #870 (106↑, open since 2020; host PR #5797 still open/unmerged as of 2026-08-09)
+**Card:** Hoppscotch #870 (106↑, open since 2020; host PR #5797 still **open / unmerged**, last update 2026-01-30 — `gh api` 2026-08-09)
 
 ### Real-world application
 
 Teams stuck on Hoppscotch / Postman / Insomnia want collections in **their** git repo for PR review, without migrating the whole client to Bruno. Buyer is often the engineer who already lost a fight to "just use Bruno."
 
-ICP: Postman/Hoppscotch holdouts, not Bruno converts.
+ICP: Postman/Hoppscotch holdouts, not Bruno converts. Adjacent: Yaak already ships plain-file Git sync inside its client (different ICP: people willing to switch clients).
 
 ### Demo flow (shipped)
 
@@ -42,14 +42,18 @@ ICP: Postman/Hoppscotch holdouts, not Bruno converts.
 
 ### Pricing (evidence)
 
-| Anchor | Public price | Source |
-|--------|--------------|--------|
-| Bruno Pro (native Git UI) | ~$6/user/mo (annual) | usebruno.com / third-party 2026 summaries |
-| Bruno Ultimate | ~$11/user/mo | same |
-| Insomnia Pro | ~$12/user/mo | 2026 client comparisons |
-| Postman Team | ~$19/user/mo (collab after Free=1 user, Mar 2026) | Postman plan changes reported 2026 |
+| Anchor | Public price | Source / verified |
+|--------|--------------|-------------------|
+| Bruno Open Source | $0 (GitUI subset; commit/push gated on Pro) | usebruno.com/pricing 2026-08-09 |
+| Bruno Pro | **$6/user/mo** billed annually | same (live page) |
+| Bruno Ultimate | **$11/user/mo** billed annually | same |
+| Yaak Individual (commercial binary) | **$79/year** (~$6.6/mo) or $349 lifetime | yaak.app/pricing 2026-08-09 |
+| Yaak Business | **$149/user/year** | same |
+| Postman Solo | **$9/mo** annual ($12 monthly) | postman.com/pricing (Mar 2026 plans) |
+| Postman Team | **$19/user/mo** annual ($23 monthly); Free = 1 user | same |
+| Postman Enterprise | **$49/user/mo** annual | same |
 
-**Recommended wedge (hypothesis, not validated):** free concierge pilot → **$9–15/seat/mo** for multi-client sync + conflict UI, or **$29/mo flat** for solo indie until seats proven. Undercut Postman; sit near Bruno Pro as "stay in your client" insurance.
+**Recommended wedge (hypothesis, not validated):** free concierge pilot → **$9–15/seat/mo** for multi-client sync + conflict UI, or **$29/mo flat** for solo indie until seats proven. Undercut Postman Team; sit near Bruno Pro / Yaak Individual as "stay in your client" insurance. Yaak proves willingness to pay ~$80/yr for local-first + Git - but that buyer already switched clients.
 
 ### Gaps
 
@@ -61,7 +65,7 @@ ICP: Postman/Hoppscotch holdouts, not Bruno converts.
 
 Send Laurenz install-command email; count completed round-trips only.
 
-**Tick:** 2026-08-09a — deep pass on this card; UI demo verified live.
+**Tick:** 2026-08-09b — verified Bruno/Yaak/Postman live prices; #5797 still open.
 
 ---
 
@@ -74,9 +78,9 @@ Send Laurenz install-command email; count completed round-trips only.
 
 Supabase / Postgres builders paste policies + JWT claims and want an allow/deny matrix before production. Complements pgTAP / CI fuzzers; interactive review is the wedge.
 
-### Demo flow (target)
+### Demo flow (exists in repo; re-smoke under eternal UI bar)
 
-`rlsd serve` → paste policies → pick roles/JWTs → green/red matrix. Must stay one-click on cold machine.
+`node dist/cli.js serve` (README) → paste policies / load fixture → allow/deny matrix. Also CLI: `matrix fixtures/sample.json`. Must stay one-click on cold machine; confirm browser surface still boots before re-parking.
 
 ### Pricing (evidence)
 
@@ -96,7 +100,7 @@ Confirm UI still runs; do not re-park without UI+demo pass under new eternal bar
 
 Re-run `rlsd serve` demo; LinkedIn/X to @aaronksaunders (OUTREACH #5).
 
-**Tick:** 2026-08-09a — landscape pass; pricing soft.
+**Tick:** 2026-08-09b — confirmed `serve` + matrix in README; browser smoke still next.
 
 ---
 
@@ -114,20 +118,21 @@ Drop aggregate XML → HTML digest in browser + optional weekly mail. UI dashboa
 
 ### Pricing (evidence)
 
-| Anchor | Public price | Source |
-|--------|--------------|--------|
-| dmarcian Basic | ~$24/mo (2 domains) | dmarcian.com/pricing (2026 summaries) |
-| dmarcian Plus | ~$240/mo | same |
-| Postmark DMARC Digests | ~$14/domain/mo | postmarkapp.com/pricing |
-| Postmark free weekly digest | limited free tier | same family |
+| Anchor | Public price | Source / verified |
+|--------|--------------|-------------------|
+| dmarcian Personal | $0 (≤2 domains, non-business, 1.25k msgs) | dmarcian.com/pricing (2026 reviews + page) |
+| dmarcian Basic | **$24/mo** or **$19.99/mo** annual (2 domains, 100k msgs) | same |
+| dmarcian Plus | **$240/mo** / **$199/mo** annual (8 domains) | same — steep step at >2 domains |
+| dmarcian Enterprise | **$600/mo** / **$499/mo** annual (15 domains, SSO/API) | same |
+| Postmark DMARC Digests | **Starts at $14/mo** | postmarkapp.com/pricing add-on 2026-08-09 |
 
-**Recommended wedge:** **$9–15/mo** for ≤5 self-host domains (self-host deploy), or free OSS + paid hosted digest. Compete on Mailcow-native onboarding, not enterprise analytics.
+**Recommended wedge:** **$9–15/mo** for ≤5 self-host domains (self-host deploy), or free OSS + paid hosted digest. Compete on Mailcow-native onboarding, not enterprise analytics. Price ceiling is Postmark $14 and dmarcian Basic $20–24; avoid climbing toward Plus ($199+).
 
 ### Next probe
 
 Email @borrelan (OUTREACH #3); ship minimal web digest UI before re-calling MVP Done.
 
-**Tick:** 2026-08-09a — pricing anchors only.
+**Tick:** 2026-08-09b — dmarcian tiers + Postmark $14 verified.
 
 ---
 
@@ -145,19 +150,22 @@ Web or TUI: pick app → backup → restore drill with green check. CLI-only fai
 
 ### Pricing (evidence)
 
-| Anchor | Notes |
-|--------|-------|
-| SimpleBackups | Historically ~$49+/mo (cited in prior SCORECARD notes) — re-verify next tick |
-| Coolify #2389 bounty | $150 WP volume ask (@riemers) — cash signal, not SaaS price |
-| Self-host restic/borg | Free; ops tax is the product |
+| Anchor | Public price | Source / verified |
+|--------|--------------|-------------------|
+| SimpleBackups Basic | **$0** (1 job, 1 GB) | simplebackups.com/pricing 2026-08-09 |
+| SimpleBackups Lite | **$49/mo** (5 jobs, 50 GB, ≤12h) | same (+ AWS Marketplace Essential $49) |
+| SimpleBackups Plus | **$99/mo** (20 jobs, 200 GB) | same |
+| SimpleBackups Max | **$299/mo** (100 jobs, 1 TB) | same |
+| Coolify #2389 bounty | $150 WP volume ask (@riemers) | issue cash signal, not SaaS price |
+| Self-host restic/borg | Free; ops tax is the product | — |
 
-**Recommended wedge:** paid restore-drill concierge first; productize at **$15–29/mo** per Coolify host or per N volumes.
+**Recommended wedge:** paid restore-drill concierge first; productize at **$15–29/mo** per Coolify host or per N volumes - well under SimpleBackups Lite ($49) if scope stays Coolify-native volumes + one-click restore proof.
 
 ### Next probe
 
 Emails to @johnmaguire / @riemers (OUTREACH #2/#4); UI for plan/backup/restore status.
 
-**Tick:** 2026-08-09a — bounty + SimpleBackups note; verify SimpleBackups price next tick.
+**Tick:** 2026-08-09b — SimpleBackups live tiers filled.
 
 ---
 
@@ -181,7 +189,7 @@ No strong public SaaS twin priced this tick. Closest: goal trackers / uptime not
 
 Personal use for 14 days; then decide keep/kill. Low priority vs #1–#4.
 
-**Tick:** 2026-08-09a — stub only.
+**Tick:** 2026-08-09b — still stub; comps deferred to next tick.
 
 ---
 
@@ -207,5 +215,5 @@ When a card scores ≥8 and graduates:
 |-------|-------|
 | Sentinel | `AGENT_LOOP_TICK_mvp_market` |
 | Interval | 10m |
-| Last tick | 2026-08-09a |
-| Focus next tick | SimpleBackups live price; Yaak license page; re-verify Hoppscotch #5797; RLS UI smoke |
+| Last tick | 2026-08-09b |
+| Focus next tick | Insomnia Pro live price; RLS `serve` browser smoke; Postmark DMARC Digests domain limits; goal-monitor comps |
