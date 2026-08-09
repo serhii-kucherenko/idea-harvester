@@ -11,7 +11,7 @@ Solo-indie gate (RUBRIC.md). Revalidated each idle tick when intake is empty.
 
 **Pick order for validation:** collection sync → RLS → DMARC → Coolify backups.
 
-**Idle note (2026-08-09 crossproj):** 0 new. Cue soak gated. Funnel starving.
+**Idle note (2026-08-09 crossproj):** 3 new → 3 core-host kills (Payload #11177 cascade FK, Stirling-PDF #4576 idle CPU, Open WebUI #12091 cleanup). Cue soak 6/28. Funnel starving.
 
 **Idle note (2026-08-09 crossproj):** boards/discourse 0 new; github harvest empty/killed. Cue soak 6/28.
 
