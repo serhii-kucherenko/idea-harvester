@@ -1,6 +1,7 @@
 # Live cards scorecard
 
 Solo-indie gate (RUBRIC.md). Revalidated each idle tick when intake is empty.
+Real-world use / demo / pricing: [`MARKET.md`](MARKET.md) (updated by `AGENT_LOOP_TICK_mvp_market`).
 
 | Card | Score | One-liner | Concierge in a week? | Main risk |
 |------|------:|-----------|----------------------|-----------|

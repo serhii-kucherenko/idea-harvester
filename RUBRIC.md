@@ -31,6 +31,9 @@ Ship must include a real interactive UI (Next.js / React / RN / desktop / etc.) 
 runnable demo of the core job. Terminal `--help` is not a UI. Do not park SCORECARD
 projects as "MVP Done" without that surface.
 
+Before / while shipping: keep [`MARKET.md`](MARKET.md) current - real-world job, demo
+flow, and pricing anchors with sources. No invented metrics.
+
 ## Rubric deltas
 
 - **2026-08-07f:** HA Discourse RBAC users/groups - core-host kill. Home automation auth/permissions stay host platform work.
