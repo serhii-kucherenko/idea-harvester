@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "updated_at": "2026-08-09T18:13:06Z",
+  "updated_at": "2026-08-09T18:33:49Z",
   "mode": "autonomous",
   "phase": "idle",
   "ask_human": false,
@@ -9,19 +9,18 @@
   "live_cards": 4,
   "killed_count": 790,
   "last_tick": {
-    "at": "2026-08-09T18:13:06Z",
+    "at": "2026-08-09T18:33:49Z",
     "new_judged": 0,
     "cards_added": 0,
     "kills_added": 0,
     "idle_actions": [
-      "boards_discourse_ok",
-      "github_harvest_empty_or_killed",
+      "intake",
       "skip_expand"
     ],
-    "highlight": "crossproj tick: ungated=0; boards/discourse 0 new; github harvest empty"
+    "highlight": "crossproj live tick: new=0; soak gated; MVPs parked"
   },
   "last_error": null,
-  "notes": "crossproj tick after await interrupt: 0 new",
+  "notes": "crossproj PID13146 tick idle",
   "defaults": {
     "always_commit": true,
     "always_push": true
@@ -32,7 +31,7 @@
     "purpose": "harvest",
     "chain": "harvest_score_gc_expand_commit",
     "do_not_rearm_if_alive": true,
-    "ticks_observed": 205,
+    "ticks_observed": 206,
     "pid": 16212
   },
   "idle_policy": {
