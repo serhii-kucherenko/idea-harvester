@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "updated_at": "2026-08-09T18:34:28Z",
+  "updated_at": "2026-08-09T18:45:02Z",
   "mode": "autonomous",
   "phase": "idle",
   "ask_human": false,
@@ -9,17 +9,17 @@
   "live_cards": 4,
   "killed_count": 793,
   "last_tick": {
-    "at": "2026-08-09T18:34:28Z",
-    "new_judged": 3,
+    "at": "2026-08-09T18:45:02Z",
+    "new_judged": 0,
     "cards_added": 0,
-    "kills_added": 3,
+    "kills_added": 0,
     "idle_actions": [
-      "skip_expand_per_outreach_preference"
+      "skip_expand"
     ],
-    "highlight": "3 new \u2192 3 kills (Payload cascade FK, Stirling idle CPU, Open WebUI cleanup); Cue soak 6/28"
+    "highlight": "crossproj tick2: 0 new; Cue soak 6/28; MVPs parked"
   },
   "last_error": null,
-  "notes": "crossproj tick scored 3 news as core-host kills. Funnel starving. Never outreach reminders.",
+  "notes": "crossproj tick2 idle 0 new after prior 3 kills",
   "defaults": {
     "always_commit": true,
     "always_push": true
@@ -30,7 +30,7 @@
     "purpose": "harvest",
     "chain": "harvest_score_gc_expand_commit",
     "do_not_rearm_if_alive": true,
-    "ticks_observed": 207,
+    "ticks_observed": 208,
     "pid": 16212
   },
   "idle_policy": {
