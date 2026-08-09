@@ -36,9 +36,9 @@ ICP: Postman/Hoppscotch holdouts, not Bruno converts. Adjacent: Yaak already shi
 ### Demo flow (shipped)
 
 1. `npm run web:dev` → http://localhost:3456  
-2. Click **Run sample demo** (or upload Hoppscotch JSON)  
-3. See git tree + `??` status + round-trip export JSON  
-4. Partner path: `docs/PILOT.md` (CLI) + `docs/PARTNER.md` (keep/kill)
+2. Click **Run seeded E2E** (Author seeds Acme API + PR dirty tree; ends as Reviewer)  
+3. Or switch **Author** / **Reviewer** roles; see story + changes vs HEAD  
+4. Download export / commit; partner CLI path still in `docs/PILOT.md`
 
 ### Pricing (evidence)
 

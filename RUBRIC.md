@@ -24,12 +24,17 @@ workflow you can sell **without** the host's permission or marketplace.
 - Self-host / Docker / packaging requests
 - One-shot migration/export utilities (no monthly buyer)
 
-### Graduation / MVP ship bar (eternal, 2026-08-09)
+### Graduation / MVP ship bar (eternal, 2026-08-09; multi-role 2026-08-09b)
 
 A scored card that graduates into a build is **not MVP-complete** as CLI/API-only.
-Ship must include a real interactive UI (Next.js / React / RN / desktop / etc.) plus a
-runnable demo of the core job. Terminal `--help` is not a UI. Do not park SCORECARD
-projects as "MVP Done" without that surface.
+Ship must include:
+
+1. Real interactive UI (Next.js / React / RN / desktop / etc.) - terminal `--help` is not a UI
+2. **Seed data** - realistic fixtures, not an empty shell
+3. **Multi-role E2E** - at least two roles (e.g. author + reviewer) with a one-click demo
+   of the core job for each
+
+Do not park SCORECARD projects as "MVP Done" without that surface.
 
 Before / while shipping: keep [`MARKET.md`](MARKET.md) current - real-world job, demo
 flow, and pricing anchors with sources. No invented metrics.
