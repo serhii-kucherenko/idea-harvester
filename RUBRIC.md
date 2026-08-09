@@ -24,6 +24,13 @@ workflow you can sell **without** the host's permission or marketplace.
 - Self-host / Docker / packaging requests
 - One-shot migration/export utilities (no monthly buyer)
 
+### Graduation / MVP ship bar (eternal, 2026-08-09)
+
+A scored card that graduates into a build is **not MVP-complete** as CLI/API-only.
+Ship must include a real interactive UI (Next.js / React / RN / desktop / etc.) plus a
+runnable demo of the core job. Terminal `--help` is not a UI. Do not park SCORECARD
+projects as "MVP Done" without that surface.
+
 ## Rubric deltas
 
 - **2026-08-07f:** HA Discourse RBAC users/groups - core-host kill. Home automation auth/permissions stay host platform work.
