@@ -33,12 +33,11 @@ Teams stuck on Hoppscotch / Postman / Insomnia want collections in **their** git
 
 ICP: Postman/Hoppscotch holdouts, not Bruno converts. Adjacent: Yaak already ships plain-file Git sync inside its client (different ICP: people willing to switch clients).
 
-### Demo flow (shipped)
+### Demo flow (prototype - not MVP)
 
-1. `npm run web:dev` → http://localhost:3456  
-2. Click **Run seeded E2E** (Author seeds Acme API + PR dirty tree; ends as Reviewer)  
-3. Or switch **Author** / **Reviewer** roles; see story + changes vs HEAD  
-4. Download export / commit; partner CLI path still in `docs/PILOT.md`
+1. Prefer CLI into **your** repo: `ags init ./collections` → import → `git push` → PR on GitHub  
+2. Optional sandbox UI: `npm run web:dev` → absolute path field or seeded ~/.ags tour  
+3. Partner one-pager (`docs/PARTNER.md`) is outreach text - not the product
 
 ### Pricing (evidence)
 
@@ -57,15 +56,17 @@ ICP: Postman/Hoppscotch holdouts, not Bruno converts. Adjacent: Yaak already shi
 
 ### Gaps
 
+- **"Complete product" claim was wrong** - sandbox demo ≠ something people use Mondays  
+- Real repo path / no nested `.git` in progress (Phase 16)  
 - Outreach not sent (Laurenz draft in `docs/EVIDENCE.md` / OUTREACH.md)  
 - Public npm publish optional; tarball path works  
 - Host #5797 may erase Hoppscotch-only wedge; multi-client is the story  
 
 ### Next probe
 
-Send Laurenz install-command email; count completed round-trips only.
+Send Laurenz install-command email; count completed round-trips only. Also prove Phase 16 path on a real repo before calling anything MVP.
 
-**Tick:** 2026-08-09b — verified Bruno/Yaak/Postman live prices; #5797 still open.
+**Tick:** 2026-08-10 — retracted complete-product claim; Phase 16 real-repo binding started.
 
 ---
 
